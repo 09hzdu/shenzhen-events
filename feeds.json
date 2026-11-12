@@ -13,5 +13,10 @@
     "name": "深圳文旅局·工作动态",
     "url": "http://wtl.sz.gov.cn/xxgk/qt/gzdt/",
     "parser": "gov_event"
+  },
+  {
+    "name": "深圳本地宝·活动汇总",
+    "url": "https://sz.bendibao.com/xiuxian/",
+    "parser": "bendibao_event"
   }
 ]
