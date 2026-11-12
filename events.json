@@ -1,6 +1,22 @@
 {
   "events": [
     {
+      "title": "「设计啊！感受日常设计之奇妙」展览",
+      "date_start": "2026-06-27",
+      "date_end": "2027-01-10",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "展览",
+      "price": "HK$100 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/68f8637dbc8709896c737a39/设计啊-感受日常设计之奇妙-展览",
+      "time_note": "活动时间: 2026-06-27 ~ 2027-01-10",
+      "source": "Timable·香港活动",
+      "id": "9453cc593f57b9e2"
+    },
+    {
       "title": "深圳自然博物馆参观攻略+实拍",
       "date_start": "2026-07-28",
       "date_end": "2027-12-31",
@@ -13,7 +29,8 @@
       "link": "http://sz.bendibao.com/xiuxian/2026728/1008865.shtm",
       "time_note": "活动时间: 2026.07.28-2027.12.31",
       "source": "深圳本地宝·活动汇总",
-      "id": "5c59b7d4e2fe8ed9"
+      "id": "5c59b7d4e2fe8ed9",
+      "city": "深圳"
     },
     {
       "title": "国家地质公园博物馆-中生代恐龙巢穴复原展",
@@ -28,7 +45,8 @@
       "link": "http://sz.bendibao.com/xiuxian/2026728/1009008.shtm",
       "time_note": "活动时间: 2026.07.28-2027.01.01",
       "source": "深圳本地宝·活动汇总",
-      "id": "3c0aa3a7fcf6c4ac"
+      "id": "3c0aa3a7fcf6c4ac",
+      "city": "深圳"
     },
     {
       "title": "2026深圳罗湖巧克力博物馆",
@@ -43,7 +61,8 @@
       "link": "http://sz.bendibao.com/xiuxian/202686/1009549.shtm",
       "time_note": "活动时间: 2026.08.01-2027.12.31",
       "source": "深圳本地宝·活动汇总",
-      "id": "cdd2543ac80527da"
+      "id": "cdd2543ac80527da",
+      "city": "深圳"
     },
     {
       "title": "2026深圳“一带一路”国际音乐季启幕",
@@ -57,7 +76,8 @@
       "is_free": "免费",
       "link": "https://wtl.sz.gov.cn/xxgk/qt/gzdt/content/post_12979223.html",
       "source": "深圳文旅局·工作动态",
-      "id": "56f06af897fe7fbc"
+      "id": "56f06af897fe7fbc",
+      "city": "深圳"
     },
     {
       "title": "深圳市文化馆新馆28日试运营",
@@ -71,7 +91,8 @@
       "is_free": "免费",
       "link": "https://wtl.sz.gov.cn/whfw/whxw/content/post_12988917.html",
       "source": "深圳文旅局·文化服务",
-      "id": "d49b60392307e463"
+      "id": "d49b60392307e463",
+      "city": "深圳"
     },
     {
       "title": "“为爱点灯”中秋公益关爱活动在深圳图书馆举行",
@@ -85,7 +106,8 @@
       "is_free": "免费",
       "link": "https://wtl.sz.gov.cn/whfw/whxw/content/post_12995556.html",
       "source": "深圳文旅局·文化服务",
-      "id": "c16467eda30e8443"
+      "id": "c16467eda30e8443",
+      "city": "深圳"
     },
     {
       "title": "比利·简·金杯总决赛深圳启幕",
@@ -99,7 +121,8 @@
       "is_free": "免费",
       "link": "https://wtl.sz.gov.cn/xxgk/qt/gzdt/content/post_12995563.html",
       "source": "深圳文旅局·工作动态",
-      "id": "f944e062ef9c9335"
+      "id": "f944e062ef9c9335",
+      "city": "深圳"
     },
     {
       "title": "深圳音乐厅双节演出启幕",
@@ -113,7 +136,8 @@
       "is_free": "免费",
       "link": "https://wtl.sz.gov.cn/whfw/whxw/content/post_13000570.html",
       "source": "深圳文旅局·文化服务",
-      "id": "2aa59e6a1a77e2f4"
+      "id": "2aa59e6a1a77e2f4",
+      "city": "深圳"
     },
     {
       "title": "新潮夜游魅力足 商圈市集人气旺",
@@ -127,7 +151,8 @@
       "is_free": "免费",
       "link": "https://wtl.sz.gov.cn/xxgk/qt/gzdt/content/post_13000303.html",
       "source": "深圳文旅局·工作动态",
-      "id": "28e8b522823a381d"
+      "id": "28e8b522823a381d",
+      "city": "深圳"
     },
     {
       "title": "深圳市文化馆新馆开馆！",
@@ -142,7 +167,8 @@
       "link": "http://sz.bendibao.com/xiuxian/2026918/1013415.shtm",
       "time_note": "活动时间: 2026.09.28-2027.01.01",
       "source": "深圳本地宝·活动汇总",
-      "id": "649d00da0abe424f"
+      "id": "649d00da0abe424f",
+      "city": "深圳"
     },
     {
       "title": "市文化馆新馆开门迎客",
@@ -156,7 +182,24 @@
       "is_free": "免费",
       "link": "https://wtl.sz.gov.cn/xxgk/qt/gzdt/content/post_13001927.html",
       "source": "深圳文旅局·工作动态",
-      "id": "83e7fe02e469f783"
+      "id": "83e7fe02e469f783",
+      "city": "深圳"
+    },
+    {
+      "title": "《呕心食物博物馆》香港站",
+      "date_start": "2026-09-29",
+      "date_end": "2026-11-26",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "展览",
+      "price": "HK$48 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6abca4c216fa69814abcd75d/呕心食物博物馆-香港站",
+      "time_note": "活动时间: 2026-09-29 ~ 2026-11-26",
+      "source": "Timable·香港活动",
+      "id": "937c3143cc8bace1"
     },
     {
       "title": "深圳10月-12月公园赏花地推荐",
@@ -171,7 +214,8 @@
       "link": "http://sz.bendibao.com/xiuxian/20261012/1014588.shtm",
       "time_note": "活动时间: 2026.10.01-2026.12.31",
       "source": "深圳本地宝·活动汇总",
-      "id": "7ec424c796ad90a7"
+      "id": "7ec424c796ad90a7",
+      "city": "深圳"
     },
     {
       "title": "仙湖植物园簕杜鹃花海+落羽杉",
@@ -186,7 +230,8 @@
       "link": "http://sz.bendibao.com/xiuxian/20261012/1014585.shtm",
       "time_note": "活动时间: 2026.10.01-2027.01.31",
       "source": "深圳本地宝·活动汇总",
-      "id": "53ee6dd23a742ce4"
+      "id": "53ee6dd23a742ce4",
+      "city": "深圳"
     },
     {
       "title": "“山海和鸣”音乐会惊艳亮相",
@@ -200,7 +245,8 @@
       "is_free": "免费",
       "link": "https://wtl.sz.gov.cn/whfw/whys/content/post_13007923.html",
       "source": "深圳文旅局·文化服务",
-      "id": "ec56758ef2326421"
+      "id": "ec56758ef2326421",
+      "city": "深圳"
     },
     {
       "title": "戏曲之美绽放青春之城",
@@ -214,7 +260,8 @@
       "is_free": "免费",
       "link": "https://wtl.sz.gov.cn/whfw/whxw/content/post_13008033.html",
       "source": "深圳文旅局·文化服务",
-      "id": "ccc2f9c14dace1b9"
+      "id": "ccc2f9c14dace1b9",
+      "city": "深圳"
     },
     {
       "title": "深圳艺术团赴韩国庆州参加“2026新罗艺术节” 两种城市文化相遇艺术舞台",
@@ -228,7 +275,40 @@
       "is_free": "免费",
       "link": "https://wtl.sz.gov.cn/xxgk/qt/gzdt/content/post_13008032.html",
       "source": "深圳文旅局·工作动态",
-      "id": "08c6ec98d13d72d3"
+      "id": "08c6ec98d13d72d3",
+      "city": "深圳"
+    },
+    {
+      "title": "北角汇海滨美食市集＠北角汇",
+      "date_start": "2026-10-10",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "北角汇",
+      "category": "市集",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6ac74ba355d23e3c578f728d/港岛东秋日美食盛会-北角汇海滨美食市集-北角汇",
+      "time_note": "活动时间: 2026-10-10 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "6c490fab1623148f"
+    },
+    {
+      "title": "「神话与怪兽：亚洲的奇幻异境」展览",
+      "date_start": "2026-10-17",
+      "date_end": "2027-04-04",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "展览",
+      "price": "HK$100 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/68f8659fbc8709896c738a35/神话-怪兽与漫画-亚洲的奇幻异境-展览",
+      "time_note": "活动时间: 2026-10-17 ~ 2027-04-04",
+      "source": "Timable·香港活动",
+      "id": "b3c30cad0f1ea281"
     },
     {
       "title": "陌上花公园粉黛乱子草",
@@ -243,7 +323,24 @@
       "link": "http://sz.bendibao.com/xiuxian/20261012/1014587.shtm",
       "time_note": "活动时间: 2026.10.25-2026.11.20",
       "source": "深圳本地宝·活动汇总",
-      "id": "df9a5095b562be96"
+      "id": "df9a5095b562be96",
+      "city": "深圳"
+    },
+    {
+      "title": "「城市漫想」 100位画师的白日梦想像 实体展览 香港站",
+      "date_start": "2026-10-25",
+      "date_end": "2026-11-25",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "展览",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6acca4a455d23e3c57d68c11/城市漫想-100位画师的白日梦想像实体展览香港站-",
+      "time_note": "活动时间: 2026-10-25 ~ 2026-11-25",
+      "source": "Timable·香港活动",
+      "id": "12f4aee1f0f396d7"
     },
     {
       "title": "第二十七届深圳读书月11月1日开幕",
@@ -257,7 +354,8 @@
       "is_free": "免费",
       "link": "https://wtl.sz.gov.cn/whfw/whxw/content/post_13042837.html",
       "source": "深圳文旅局·文化服务",
-      "id": "712bfd8d8a804d24"
+      "id": "712bfd8d8a804d24",
+      "city": "深圳"
     },
     {
       "title": "粤港澳大湾区（深圳）青年戏剧月启幕",
@@ -271,7 +369,8 @@
       "is_free": "免费",
       "link": "https://wtl.sz.gov.cn/xxgk/qt/gzdt/content/post_13042884.html",
       "source": "深圳文旅局·工作动态",
-      "id": "0f645bab1543777a"
+      "id": "0f645bab1543777a",
+      "city": "深圳"
     },
     {
       "title": "关山月美术馆源来如此设计艺术专题展",
@@ -286,7 +385,56 @@
       "link": "http://sz.bendibao.com/xiuxian/20261029/1015208.shtm",
       "time_note": "活动时间: 2026.10.28-2026.12.11",
       "source": "深圳本地宝·活动汇总",
-      "id": "87da57be6df82388"
+      "id": "87da57be6df82388",
+      "city": "深圳"
+    },
+    {
+      "title": "东港城「超次元冬幻祭」三大主题玩乐活动＠东港城",
+      "date_start": "2026-10-29",
+      "date_end": "2027-01-10",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "东港城",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6ae2e4831415a73788ed77bf/东港城-超次元冬幻祭--东港城",
+      "time_note": "活动时间: 2026-10-29 ~ 2027-01-10",
+      "source": "Timable·香港活动",
+      "id": "f43c1184d5a8d3b4"
+    },
+    {
+      "title": "TETEUM 暖萌圣诞 眼镜「熊」出没注意@置富Malls",
+      "date_start": "2026-10-31",
+      "date_end": "2027-01-01",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "置富Malls",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6acd931555d23e3c57e38286/TETEUM暖萌圣诞-眼镜-熊-出没注意-置富Malls",
+      "time_note": "活动时间: 2026-10-31 ~ 2027-01-01",
+      "source": "Timable·香港活动",
+      "id": "bf9931ae6535f104"
+    },
+    {
+      "title": "「It Takes Two: Baz & Friends 迷你怪兽兵团」期间限定店",
+      "date_start": "2026-11-01",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "展览",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6af288935a828187b95d0354/Baz-Friends迷你怪兽兵团-期间限定店",
+      "time_note": "活动时间: 2026-11-01 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "33ba6309db196993"
     },
     {
       "title": "第二十七届深圳读书月正式启动",
@@ -300,7 +448,200 @@
       "is_free": "免费",
       "link": "https://wtl.sz.gov.cn/xxgk/qt/gzdt/content/post_13048592.html",
       "source": "深圳文旅局·工作动态",
-      "id": "cfe195a7403f8a61"
+      "id": "cfe195a7403f8a61",
+      "city": "深圳"
+    },
+    {
+      "title": "昂坪360 × 黑白®港味圣诞之旅",
+      "date_start": "2026-11-03",
+      "date_end": "2027-01-10",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6ad87ea517f5a5d6d2e829bd/昂坪360-黑白-港味圣诞之旅",
+      "time_note": "活动时间: 2026-11-03 ~ 2027-01-10",
+      "source": "Timable·香港活动",
+      "id": "875b33b526e1fc53"
+    },
+    {
+      "title": "民坊 × 恒香「冬日港味．圣诞传情」期间限定店",
+      "date_start": "2026-11-03",
+      "date_end": "2027-01-01",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "展览",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6ae9a1b1f0de2836cdefc618/民坊-恒香-冬日港味-圣诞传情-期间限定店",
+      "time_note": "活动时间: 2026-11-03 ~ 2027-01-01",
+      "source": "Timable·香港活动",
+      "id": "74e7944f0cb6ada8"
+    },
+    {
+      "title": "草间弥生「Dancing Pumpkin: 你好，香港！」官方展览及期间限定店",
+      "date_start": "2026-11-06",
+      "date_end": "2027-03-31",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "展览",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6af143d2cd056e688d81d67c/草间弥生-DancingPumpkin-你好-香港--官方展览及期间限定店",
+      "time_note": "活动时间: 2026-11-06 ~ 2027-03-31",
+      "source": "Timable·香港活动",
+      "id": "1be36ff81236aa4a"
+    },
+    {
+      "title": "BLUELOCK蓝色监狱展 \"EGOIST EXHIBITION the animation\"",
+      "date_start": "2026-11-06",
+      "date_end": "2026-11-24",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "展览",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6aeb00dcf0de2836cd04a308/BLUELOCK蓝色监狱展-EGOISTEXHIBITIONtheanimation-",
+      "time_note": "活动时间: 2026-11-06 ~ 2026-11-24",
+      "source": "Timable·香港活动",
+      "id": "e32860a5b0059eea"
+    },
+    {
+      "title": "LOG-ON x Sesame Street 「芝麻街圣诞糖果小镇」期间限定店",
+      "date_start": "2026-11-06",
+      "date_end": "2027-01-01",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "展览",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6ae0442b2c2d3a916012def9/LOG-ONxSesameStreet-芝麻街圣诞糖果小镇-期间限定店",
+      "time_note": "活动时间: 2026-11-06 ~ 2027-01-01",
+      "source": "Timable·香港活动",
+      "id": "31a01ab70d949dd4"
+    },
+    {
+      "title": "「圣诞快乐研究所」装置 ＠黄金海岸商场",
+      "date_start": "2026-11-06",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "黄金海岸商场",
+      "category": "展览",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6af42f0601c3a2968ec256d5/圣诞快乐研究所--黄金海岸商场",
+      "time_note": "活动时间: 2026-11-06 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "10984bd96b2b4f5c"
+    },
+    {
+      "title": "「微风烘焙祭」活动",
+      "date_start": "2026-11-07",
+      "date_end": "2026-11-29",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "HK$108 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6aea95b501b2e8d0e993710c/微风烘焙祭BreezeBakeryFest",
+      "time_note": "活动时间: 2026-11-07 ~ 2026-11-29",
+      "source": "Timable·香港活动",
+      "id": "31744e477dc1619f"
+    },
+    {
+      "title": "\"Out of the Ashes\" Yejin Oh x Changyeol Gu 双人展览",
+      "date_start": "2026-11-07",
+      "date_end": "2026-12-24",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "展览",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6aec0a5c216eeec142170e78/YejinOhxChangyeolGu-OutoftheAshes-双人展览",
+      "time_note": "活动时间: 2026-11-07 ~ 2026-12-24",
+      "source": "Timable·香港活动",
+      "id": "5c2d93124d99e8b6"
+    },
+    {
+      "title": "圣诞「喵」想成真 ＠MOSTown新港城中心",
+      "date_start": "2026-11-07",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "MOSTown新港城中心",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6acf42c58591906f2005247b/圣诞-喵-想成真--MOSTown新港城中心",
+      "time_note": "活动时间: 2026-11-07 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "2efd8ae8661f69b6"
+    },
+    {
+      "title": "wiggle wiggle Magic Academy 圣诞笑脸花 2026 @MCP新都城中心",
+      "date_start": "2026-11-07",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "MCP新都城中心",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6ad086ab8591906f201509ee/wigglewiggleMagicAcademy-MCP新都城中心",
+      "time_note": "活动时间: 2026-11-07 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "82d916f0e3c123b9"
+    },
+    {
+      "title": "\"Spiro\" 柳应廷 Jer Lau 生日展览 2026",
+      "date_start": "2026-11-09",
+      "date_end": "2026-11-22",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "展览",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6aec4258b80bcf9a3f26a408/\"Spiro\" 柳应廷 Jer Lau 生日展览 2026",
+      "time_note": "活动时间: 2026-11-09 ~ 2026-11-22",
+      "source": "Timable·香港活动",
+      "id": "efcbb5c3a83f1082"
+    },
+    {
+      "title": "PIKMIN: 皮克敏秋季收穫祭",
+      "date_start": "2026-11-10",
+      "date_end": "2026-11-22",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6aebe9c201b2e8d0e9a97496/PIKMIN-皮克敏秋季收穫祭",
+      "time_note": "活动时间: 2026-11-10 ~ 2026-11-22",
+      "source": "Timable·香港活动",
+      "id": "83456c89dbc1b715"
     },
     {
       "title": "第十四届深圳戏曲名剧名家展演落幕",
@@ -314,7 +655,56 @@
       "is_free": "免费",
       "link": "https://wtl.sz.gov.cn/xxgk/qt/gzdt/content/post_13061816.html",
       "source": "深圳文旅局·工作动态",
-      "id": "e33981f80bca629e"
+      "id": "e33981f80bca629e",
+      "city": "深圳"
+    },
+    {
+      "title": "\"POKÉMON’s 30 YEARS OF JOY AT FESTIVAL WALK\" Pokémon 30周年庆祝活动 @又一城",
+      "date_start": "2026-11-11",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "又一城",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6a8f9f2cd7ad78bf453ce2a8/Pok-mon30周年庆祝活动-又一城",
+      "time_note": "活动时间: 2026-11-11 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "c73f29119afe0fb6"
+    },
+    {
+      "title": "\"Groovy Christmas Town\"  沉浸式圣诞音乐派对  @美丽华广场",
+      "date_start": "2026-11-11",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "美丽华广场",
+      "category": "演出",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6af418a601c3a2968ec11f2c/MiraPlace-GroovyChristmasTown-沉浸式圣诞音乐派对-MiraPlace",
+      "time_note": "活动时间: 2026-11-11 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "e1cabbe4168bcffa"
+    },
+    {
+      "title": "\"Festival of Wonders\" 圣诞主题活动＠太古城中心",
+      "date_start": "2026-11-12",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "太古城中心",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6ad9d3562c2d3a9160b77387/FestivalofWonders-主题活动-太古城中心",
+      "time_note": "活动时间: 2026-11-12 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "672396e618585d1d"
     },
     {
       "title": "全息舞剧《幻境 天鹅湖》",
@@ -328,7 +718,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/37973182/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "68f839f283667311"
+      "id": "68f839f283667311",
+      "city": "深圳"
     },
     {
       "title": "《相聚之地：走进澳大利亚原住民文化》｜韦恩·奎利安",
@@ -342,7 +733,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38143613/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "73fea52689d3f7a6"
+      "id": "73fea52689d3f7a6",
+      "city": "深圳"
     },
     {
       "title": "穹幕影片《天穹无界·民族万象》",
@@ -356,7 +748,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/37972017/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "db8109142e21426f"
+      "id": "db8109142e21426f",
+      "city": "深圳"
     },
     {
       "title": "沉浸影片《无垠之境》&《生生长流》",
@@ -370,7 +763,88 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/37971993/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "437be4ec2cdc61ce"
+      "id": "437be4ec2cdc61ce",
+      "city": "深圳"
+    },
+    {
+      "title": "国泰西九爵士音乐节",
+      "date_start": "2026-11-13",
+      "date_end": "2026-11-24",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6aaa44ec58126ca83fed0b86/国泰西九爵士音乐节",
+      "time_note": "活动时间: 2026-11-13 ~ 2026-11-24",
+      "source": "Timable·香港活动",
+      "id": "41714d3afed972d2"
+    },
+    {
+      "title": "「圣诞夜之梦」装置 @太古广场及星街小区",
+      "date_start": "2026-11-13",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "太古广场及星街小区",
+      "category": "展览",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6acd9a5855d23e3c57e3f4c5/太古广场及星街小区-圣诞夜之梦-",
+      "time_note": "活动时间: 2026-11-13 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "29590c4234fa425e"
+    },
+    {
+      "title": "Pixar 40 週年特展 圣诞奇趣之旅 2026 ＠AIRSIDE",
+      "date_start": "2026-11-13",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "AIRSIDE",
+      "category": "展览",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6ae9a2da01b2e8d0e9862ac8/Pixar40週年特展-Pixar-AIRSIDE圣诞奇趣之旅--AIRSIDE",
+      "time_note": "活动时间: 2026-11-13 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "3981b9581a7c9728"
+    },
+    {
+      "title": "荷里活广场 x 麵包超人「冬日星际之旅」＠荷里活广场",
+      "date_start": "2026-11-13",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "荷里活广场",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6ae04b7e17f5a5d6d25b815d/荷里活广场x麵包超人-冬日星际之旅--荷里活广场",
+      "time_note": "活动时间: 2026-11-13 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "7415a0759ae54f64"
+    },
+    {
+      "title": "香港首个大型成人展  MEGA FANS EXPO 2026 (取消)",
+      "date_start": "2026-11-13",
+      "date_end": "2026-11-15",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "展览",
+      "price": "HK$480 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6acdd19655d23e3c57e77335/香港首个大型成人展MEGAFANSEXPO2026",
+      "time_note": "活动时间: 2026-11-13 ~ 2026-11-15",
+      "source": "Timable·香港活动",
+      "id": "9d19626960e5e5d9"
     },
     {
       "title": "《文艺复兴·重回非主流时代》威仔＆格子兮演唱会-罗湖站",
@@ -384,7 +858,72 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38112804/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "6a50bab86d7dc5a9"
+      "id": "6a50bab86d7dc5a9",
+      "city": "深圳"
+    },
+    {
+      "title": "「独读4｣ @独立叙事读物节",
+      "date_start": "2026-11-14",
+      "date_end": "2026-11-15",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "独立叙事读物节",
+      "category": "其他",
+      "price": "HK$40 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6aeab052f0de2836cdff3033/独读4--独立叙事读物节",
+      "time_note": "活动时间: 2026-11-14 ~ 2026-11-15",
+      "source": "Timable·香港活动",
+      "id": "7b0cb6095a5c65b8"
+    },
+    {
+      "title": "「渣打艺趣嘉年华」2026",
+      "date_start": "2026-11-14",
+      "date_end": "2026-11-15",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6ae99dcfd31eae1b873025a7/渣打艺趣嘉年华-2026",
+      "time_note": "活动时间: 2026-11-14 ~ 2026-11-15",
+      "source": "Timable·香港活动",
+      "id": "58ad04763d326df2"
+    },
+    {
+      "title": "Teddy LuLu 圣诞时光之旅 2026 @奥海城",
+      "date_start": "2026-11-14",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "奥海城",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6ae84be0f3d1164a2dfee814/TeddyLuLu圣诞时光之旅2026-奥海城",
+      "time_note": "活动时间: 2026-11-14 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "d5134a329f0365ea"
+    },
+    {
+      "title": "TOYZEROPLUS MEWKY 奇幻圣诞裁缝店 2026 @iSQUARE",
+      "date_start": "2026-11-14",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "iSQUARE",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6ae9ab01216eeec142f2c5d4/iSQUARE-TOYZEROPLUSMEWKY奇幻圣诞裁缝店2026",
+      "time_note": "活动时间: 2026-11-14 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "335b1d90811b78d8"
     },
     {
       "title": "华禧艺术·枉凝眉·埙萧说红楼·民族赏析民乐音乐会",
@@ -398,7 +937,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38157095/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "95d6a48203e4d682"
+      "id": "95d6a48203e4d682",
+      "city": "深圳"
     },
     {
       "title": "次元趴·宅化危机ACG乐队拼盘-湾剧场",
@@ -412,7 +952,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38137112/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "1ac9b2b40f3cccc3"
+      "id": "1ac9b2b40f3cccc3",
+      "city": "深圳"
     },
     {
       "title": "华禧艺术 岁月鎏金 港乐怀旧金曲 民乐音乐会",
@@ -426,7 +967,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38114314/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "87b30bcfd1c5d059"
+      "id": "87b30bcfd1c5d059",
+      "city": "深圳"
     },
     {
       "title": "2027王力宏最好的地方Ⅱ世界巡回演唱会",
@@ -441,7 +983,136 @@
       "link": "http://sz.bendibao.com/xiuxian/2026115/1015539.shtm",
       "time_note": "活动时间: 2026.11.16-2026.11.17",
       "source": "深圳本地宝·活动汇总",
-      "id": "2251f780ec9dcfd0"
+      "id": "2251f780ec9dcfd0",
+      "city": "深圳"
+    },
+    {
+      "title": "\"A Disney Christmas\" 香港迪士尼乐园 2026",
+      "date_start": "2026-11-17",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6aec461f016992a51dc97548/\"A Disney Christmas\" 香港迪士尼乐园 2026",
+      "time_note": "活动时间: 2026-11-17 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "99f4428389a1f16d"
+    },
+    {
+      "title": "\"Le Petit Prince X Zu and Pi: The Rose Tale\" 圣诞装饰 ＠黄埔天地",
+      "date_start": "2026-11-17",
+      "date_end": "2026-11-17",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "黄埔天地",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6af4212301c3a2968ec197c6/StevenChoix小王子-LePetitPrinceXZuandPi-TheRoseTale--黄埔天地",
+      "time_note": "活动时间: 2026-11-17 ~ 2026-11-17",
+      "source": "Timable·香港活动",
+      "id": "f9cbd3bd2f6def48"
+    },
+    {
+      "title": "寿司郎 x《咒术迴战》香港之旅主题活动",
+      "date_start": "2026-11-17",
+      "date_end": "2026-12-17",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6af570fc5a828187b98228a7/寿司郎x-咒术迴战-香港之旅主题活动",
+      "time_note": "活动时间: 2026-11-17 ~ 2026-12-17",
+      "source": "Timable·香港活动",
+      "id": "f174d62574dfc068"
+    },
+    {
+      "title": "「香港冬日小镇．尖沙咀」香港缤纷冬日巡礼 2026",
+      "date_start": "2026-11-18",
+      "date_end": "2027-01-05",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6af3d8dc01c3a2968ebd744f/「香港冬日小镇．尖沙咀」香港缤纷冬日巡礼 2026",
+      "time_note": "活动时间: 2026-11-18 ~ 2027-01-05",
+      "source": "Timable·香港活动",
+      "id": "268b4406e9f6d0c3"
+    },
+    {
+      "title": "「香港冬日小镇．中环​」香港缤纷冬日巡礼 2026",
+      "date_start": "2026-11-18",
+      "date_end": "2027-01-05",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6af54b2f01c3a2968ed00ad6/「香港冬日小镇．中环​」香港缤纷冬日巡礼 2026",
+      "time_note": "活动时间: 2026-11-18 ~ 2027-01-05",
+      "source": "Timable·香港活动",
+      "id": "ee0a7160e5ca77e1"
+    },
+    {
+      "title": "DesignInspire 2026",
+      "date_start": "2026-11-19",
+      "date_end": "2026-11-21",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6ae02af01415a73788c12e74/DesignInspire2026",
+      "time_note": "活动时间: 2026-11-19 ~ 2026-11-21",
+      "source": "Timable·香港活动",
+      "id": "4167611ff6972a04"
+    },
+    {
+      "title": "Pingu™ 「NOOT NOOT 圣诞冰FUN小镇」 @海港城LCX",
+      "date_start": "2026-11-19",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "海港城LCX",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6ae99c4af3d1164a2d0e7606/Pingu-xLCX-NOOTNOOT圣诞冰FUN小镇-",
+      "time_note": "活动时间: 2026-11-19 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "006c3d69f2d4bedc"
+    },
+    {
+      "title": "PETIT FACTORY 圣诞星光梦工场 2026 @天玺•天MALL",
+      "date_start": "2026-11-19",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "天玺•天MALL",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6af2a76a01c3a2968eae4ed1/PETITFACTORY圣诞星光梦工场2026-天玺-天MALL",
+      "time_note": "活动时间: 2026-11-19 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "7fcf51577d2489de"
     },
     {
       "title": "KF1 擂台英雄（我是拳手）第一季",
@@ -455,7 +1126,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38050712/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "9f9f4874c55875ac"
+      "id": "9f9f4874c55875ac",
+      "city": "深圳"
     },
     {
       "title": "洪湖公园秋季落羽杉",
@@ -470,7 +1142,280 @@
       "link": "http://sz.bendibao.com/xiuxian/20261012/1014586.shtm",
       "time_note": "活动时间: 2026.11.20-2027.02.28",
       "source": "深圳本地宝·活动汇总",
-      "id": "03e214fa0f0226d5"
+      "id": "03e214fa0f0226d5",
+      "city": "深圳"
+    },
+    {
+      "title": "「Santa’s Christmas Airway圣诞梦幻航空」 @ifc商场",
+      "date_start": "2026-11-20",
+      "date_end": "2027-01-01",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "ifc商场",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6aec3f19b80bcf9a3f2674d4/Santa-sChristmasAirway圣诞梦幻航空--圣诞中央客运大楼--ifc商场",
+      "time_note": "活动时间: 2026-11-20 ~ 2027-01-01",
+      "source": "Timable·香港活动",
+      "id": "9174d7645a0eeece"
+    },
+    {
+      "title": "告罗士打酒店: 圣诞传奇 2026 @置地广场",
+      "date_start": "2026-11-20",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "置地广场",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6af28fb301c3a2968eac9fd3/告罗士打酒店-圣诞传奇-",
+      "time_note": "活动时间: 2026-11-20 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "01605856c476ff43"
+    },
+    {
+      "title": "「冬日飘雪小镇」沉浸式雪国体验＠D‧PARK",
+      "date_start": "2026-11-20",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "D‧PARK",
+      "category": "其他",
+      "price": "HK$40 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6ae052ee2c2d3a9160139ed0/冬日飘雪小镇-沉浸式雪国体验-D-PARK",
+      "time_note": "活动时间: 2026-11-20 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "c7b2546269a27858"
+    },
+    {
+      "title": "SKIPPY® Brand 「花生烘焙所」圣诞主题活动 @东荟城名店仓",
+      "date_start": "2026-11-20",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "东荟城名店仓",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6ae0513f1415a73788c3327d/SKIPPY-Brand-花生烘焙所-圣诞主题活动-东荟城名店仓",
+      "time_note": "活动时间: 2026-11-20 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "aa66b6580e1a6df5"
+    },
+    {
+      "title": "Citywalk X ART-ZOO 「Joy From The Stars 星愿圣诞」",
+      "date_start": "2026-11-20",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6aec327a216eeec1421973aa/CitywalkXART-ZOO-JoyFromTheStars星愿圣诞",
+      "time_note": "活动时间: 2026-11-20 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "976e3e60c7cd127b"
+    },
+    {
+      "title": "The Coolest Xmas 零度冰雪乐园 2026 @荃湾广场",
+      "date_start": "2026-11-21",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "荃湾广场",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6ae85ee1d31eae1b872201b7/TheCoolestXmas零度冰雪乐园2026-荃湾广场",
+      "time_note": "活动时间: 2026-11-21 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "b5821cba4de60451"
+    },
+    {
+      "title": "\"THE GUNDAM BASE HONG KONG \" 展览 @啟德双子汇",
+      "date_start": "2026-11-21",
+      "date_end": "2027-01-10",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "啟德双子汇",
+      "category": "展览",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6aeab77401b2e8d0e9962b5d/THEGUNDAMBASEHONGKONG-展览-啟德双子汇",
+      "time_note": "活动时间: 2026-11-21 ~ 2027-01-10",
+      "source": "Timable·香港活动",
+      "id": "ce333d171782953a"
+    },
+    {
+      "title": "「冰蓝乐园 Rolling Xmas」 圣诞装饰 @新都会广场",
+      "date_start": "2026-11-21",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "新都会广场",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6af548935a828187b9800c13/冰蓝乐园RollingXmas-圣诞装饰-新都会广场",
+      "time_note": "活动时间: 2026-11-21 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "f32121ab23b3d1a3"
+    },
+    {
+      "title": "圣诞筑梦小镇 2026 ＠裕民坊",
+      "date_start": "2026-11-21",
+      "date_end": "2026-11-21",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "裕民坊",
+      "category": "其他",
+      "price": "HK$52 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6ae976fcf3d1164a2d0c7ce0/圣诞筑梦小镇2026-裕民坊",
+      "time_note": "活动时间: 2026-11-21 ~ 2026-11-21",
+      "source": "Timable·香港活动",
+      "id": "3e7a9248e645476c"
+    },
+    {
+      "title": "圣诞小镇「壹」号车站 2026 ＠朗壹广场",
+      "date_start": "2026-11-21",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "朗壹广场",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6aeaff8c01b2e8d0e99b01c6/圣诞小镇-壹-号车站--朗壹广场",
+      "time_note": "活动时间: 2026-11-21 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "37c00b6186375568"
+    },
+    {
+      "title": "\"The Encounter 3\" 国际职业拳击赛 2026",
+      "date_start": "2026-11-21",
+      "date_end": "2026-11-21",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "HK$750 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6af593336842ba2c825b1301/TheEncounter3-国际职业拳击赛2026",
+      "time_note": "活动时间: 2026-11-21 ~ 2026-11-21",
+      "source": "Timable·香港活动",
+      "id": "28c6fb8f928d9b15"
+    },
+    {
+      "title": "WINDSOR X BUCKET MAN \"A BUCKETFUL OF XMAS\" 圣诞主题装置 ＠皇室堡",
+      "date_start": "2026-11-22",
+      "date_end": "2026-12-29",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "皇室堡",
+      "category": "展览",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6af582a65a828187b9832bed/WINDSORXBUCKETMAN-ABUCKETFULOFXMAS-圣诞主题装置-皇室堡",
+      "time_note": "活动时间: 2026-11-22 ~ 2026-12-29",
+      "source": "Timable·香港活动",
+      "id": "6502eb0577952eaa"
+    },
+    {
+      "title": "「圣诞音乐馆: 璀璨圣诞之旅」@MegaBox",
+      "date_start": "2026-11-23",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "MegaBox",
+      "category": "演出",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6aec2f02216eeec14219366e/圣诞音乐馆-璀璨圣诞之旅--MegaBox",
+      "time_note": "活动时间: 2026-11-23 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "d6823d7386c4f25d"
+    },
+    {
+      "title": "《葬送的芙莉莲特展》香港站",
+      "date_start": "2026-11-24",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "展览",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6ae19b1517f5a5d6d26f191e/《葬送的芙莉莲特展》香港站",
+      "time_note": "活动时间: 2026-11-24 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "67822cc244aafd74"
+    },
+    {
+      "title": "Kakao Friends 《Ryan 10週年圣诞派对》/ 《Ryan 10週年圣诞交响乐》＠大埔超级城 元朗广场",
+      "date_start": "2026-11-24",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6aec5082cd056e688d35729a/KakaoFriends-Ryan10週年圣诞派对---Ryan10週年圣诞交响乐--大埔超级城元朗广场",
+      "time_note": "活动时间: 2026-11-24 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "3560c7b213729ce8"
+    },
+    {
+      "title": "「香港冬日小镇．铜锣湾​」香港缤纷冬日巡礼 2026",
+      "date_start": "2026-11-25",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6af54d1501c3a2968ed0367d/「香港冬日小镇．铜锣湾​​」香港缤纷冬日巡礼 2026",
+      "time_note": "活动时间: 2026-11-25 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "13e3e6fa2de771d2"
+    },
+    {
+      "title": "「New Town Crystal Palace 星愿水晶殿」圣诞装饰 @新城市广场",
+      "date_start": "2026-11-25",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "新城市广场",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6af51e075a828187b97d9816/NewTownCrystalPalace星愿水晶殿--新城市广场",
+      "time_note": "活动时间: 2026-11-25 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "cabd1bbe147d033c"
     },
     {
       "title": "《好势乘双》—乘风25｜26跨季演唱会",
@@ -484,7 +1429,88 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38124642/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "b9cf6d5b5139b776"
+      "id": "b9cf6d5b5139b776",
+      "city": "深圳"
+    },
+    {
+      "title": "梁咏琪《LOVE GiGi爱自己》世界巡迴演唱会 2026 香港站",
+      "date_start": "2026-11-27",
+      "date_end": "2026-11-29",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$480 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6a3a46757f53726bb87d0615/梁咏琪红馆演唱会2026",
+      "time_note": "活动时间: 2026-11-27 ~ 2026-11-29",
+      "source": "Timable·香港活动",
+      "id": "dd7ea4d926b10071"
+    },
+    {
+      "title": "优里YUURI 香港演唱会 2026",
+      "date_start": "2026-11-27",
+      "date_end": "2026-11-27",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$980 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6a68269deac1ed563bcf8d8a/优里YUURI香港演唱会2026",
+      "time_note": "活动时间: 2026-11-27 ~ 2026-11-27",
+      "source": "Timable·香港活动",
+      "id": "50a07a228c1e60bf"
+    },
+    {
+      "title": "今个圣诞碳水自由！ @《集不甩市集系列》碳水主题圣诞市集",
+      "date_start": "2026-11-27",
+      "date_end": "2026-12-06",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "《集不甩市集系列》碳水主题圣诞市集",
+      "category": "市集",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6ab3759b9bbd8535a99a4301/今个圣诞碳水自由---集不甩市集系列-碳水主题圣诞市集",
+      "time_note": "活动时间: 2026-11-27 ~ 2026-12-06",
+      "source": "Timable·香港活动",
+      "id": "bebace24b4af96f5"
+    },
+    {
+      "title": "《HAPPY GO RIDE 冬日歷险村》@西沙 GO PARK",
+      "date_start": "2026-11-27",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6af41c2a6842ba2c8248702f/西沙GOPARK-HAPPYGORIDE冬日歷险村-",
+      "time_note": "活动时间: 2026-11-27 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "af234b2848d428d5"
+    },
+    {
+      "title": "Chiikawa Clinic 主题区 @CHIIKAWA SHOP in HONG KONG",
+      "date_start": "2026-11-27",
+      "date_end": "2027-01-12",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6af5807c01c3a2968ed2f66f/ChiikawaClinic主题区-CHIIKAWASHOPinHONGKONG",
+      "time_note": "活动时间: 2026-11-27 ~ 2027-01-12",
+      "source": "Timable·香港活动",
+      "id": "9c852a4fb4b15779"
     },
     {
       "title": "奇妙嘿夜烛光音乐会“最伟大的作品”流行曲目钢琴&小提琴&大提琴演奏",
@@ -498,7 +1524,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/37970179/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "cb3fb2637bb48172"
+      "id": "cb3fb2637bb48172",
+      "city": "深圳"
     },
     {
       "title": "奇妙嘿夜烛光音乐会“海上钢琴师”&“汉斯季默”曲目钢琴&小提琴&大提琴三重奏",
@@ -512,7 +1539,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38006199/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "cee2c309e9746cde"
+      "id": "cee2c309e9746cde",
+      "city": "深圳"
     },
     {
       "title": "蒲熠星《银河系旅行攻略》巡回演唱会-深圳站",
@@ -526,7 +1554,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38103266/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "196c1666d8135119"
+      "id": "196c1666d8135119",
+      "city": "深圳"
     },
     {
       "title": "好戏来了！全场半价！成人浪漫奇幻！治愈系《小王子》",
@@ -540,7 +1569,55 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38154667/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "97854c7fb59a9ca8"
+      "id": "97854c7fb59a9ca8",
+      "city": "深圳"
+    },
+    {
+      "title": "奇妙嘿夜烛光音乐会“爱乐之城”汉斯季默\"双主题曲目演奏钢琴&小提琴&大提琴曲目",
+      "date_start": "2026-11-28",
+      "date_end": null,
+      "district_raw": "南山区",
+      "district": "南山",
+      "location": "青春无限乐团烛光音乐会音乐厅 沙河街道侨发路侨城坊1栋1层主会场",
+      "category": "演出",
+      "price": "388.00元起",
+      "is_free": "收费",
+      "link": "https://www.douban.com/event/37976172/",
+      "source": "豆瓣同城·深圳热门活动",
+      "city": "深圳",
+      "id": "42e1f2584f3a82db"
+    },
+    {
+      "title": "「Hello Kitty Bowtiful: Christmas 红丝绒时尚」2026 期间限定店 @朗豪坊",
+      "date_start": "2026-11-28",
+      "date_end": "2027-01-10",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "朗豪坊",
+      "category": "展览",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6af295dc6842ba2c8233fc96/HelloKittyBowtiful-Christmas红丝绒时尚精品店-2026-朗豪坊",
+      "time_note": "活动时间: 2026-11-28 ~ 2027-01-10",
+      "source": "Timable·香港活动",
+      "id": "e6dbeeb789a1d0b5"
+    },
+    {
+      "title": "乐．谊国际音乐节 – 闭幕音乐会《相相之约》曼托瓦室乐团 2026",
+      "date_start": "2026-11-28",
+      "date_end": "2026-11-28",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$190 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6af58a435a828187b9838362/乐-谊国际音乐节-闭幕音乐会-相相之约-曼托瓦室乐团2026",
+      "time_note": "活动时间: 2026-11-28 ~ 2026-11-28",
+      "source": "Timable·香港活动",
+      "id": "3e934a7f17b3e3f7"
     },
     {
       "title": "2026声动南山 张玮玮 feat. 郭龙「特别专场」",
@@ -554,7 +1631,24 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38115332/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "27cd83d5a583cd5b"
+      "id": "27cd83d5a583cd5b",
+      "city": "深圳"
+    },
+    {
+      "title": "Joji \"SOLARIS\" 世界巡迴演唱会 2026 香港站",
+      "date_start": "2026-11-29",
+      "date_end": "2026-11-29",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$699 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/69a4f442f4daf21a84c4f94c/Joji-SOLARIS-世界巡迴演唱会2026香港站",
+      "time_note": "活动时间: 2026-11-29 ~ 2026-11-29",
+      "source": "Timable·香港活动",
+      "id": "adf4d3530730de6a"
     },
     {
       "title": "深圳湾文化广场-南馆通票",
@@ -568,7 +1662,72 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38142269/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "597a5075d848a8cf"
+      "id": "597a5075d848a8cf",
+      "city": "深圳"
+    },
+    {
+      "title": "Khalid \"It's Always Summer Somewhere\" 亚洲巡迴演唱会 2026 香港站",
+      "date_start": "2026-12-01",
+      "date_end": "2026-12-01",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$699 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6a5d8a703dfaa92fdf976063/Khalid-It-sAlwaysSummerSomewhere-亚洲巡迴演唱会2026香港站",
+      "time_note": "活动时间: 2026-12-01 ~ 2026-12-01",
+      "source": "Timable·香港活动",
+      "id": "6ae3cdf7826a448a"
+    },
+    {
+      "title": "小心意 • 大众乐 2026",
+      "date_start": "2026-12-01",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6a8e53d1d7ad78bf4521e17f/小心意-大众乐2026",
+      "time_note": "活动时间: 2026-12-01 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "a0aa4502a7260082"
+    },
+    {
+      "title": "French Kiwi Juice \"FKJ – Tyber Tour\" 巡迴演唱会 2026 香港站",
+      "date_start": "2026-12-03",
+      "date_end": "2026-12-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6a4b55084dc0b24de0d41fab/FrenchKiwiJuice-FKJ-TyberTour-巡迴演唱会2026香港站",
+      "time_note": "活动时间: 2026-12-03 ~ 2026-12-03",
+      "source": "Timable·香港活动",
+      "id": "d0b67444567c2703"
+    },
+    {
+      "title": "\"THE PRESENT OF MOMENTS\" 太古地产白色圣诞市集 2026",
+      "date_start": "2026-12-03",
+      "date_end": "2026-12-06",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "市集",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6abb48a258126ca83fffeb3f/THEPRESENTOFMOMENTS-太古地产白色圣诞市集2026",
+      "time_note": "活动时间: 2026-12-03 ~ 2026-12-06",
+      "source": "Timable·香港活动",
+      "id": "80aa22aa8ee2d83c"
     },
     {
       "title": "桂冠之声｜沈周慧《根脉凝光：钢琴名作的溯源之旅》钢琴独奏音乐会",
@@ -582,7 +1741,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38070183/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "14e09bafdbd6c3e8"
+      "id": "14e09bafdbd6c3e8",
+      "city": "深圳"
     },
     {
       "title": "爱沙尼亚奇趣弓弦琴二人组PUULUUP音乐会",
@@ -596,7 +1756,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38148608/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "168335994b91c91d"
+      "id": "168335994b91c91d",
+      "city": "深圳"
     },
     {
       "title": "第二十四届中外艺术精品演出季——澳大利亚爵士天后Simone Waddell “天籁之音”音乐会",
@@ -610,7 +1771,24 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38164052/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "a0f4716953efb4b6"
+      "id": "a0f4716953efb4b6",
+      "city": "深圳"
+    },
+    {
+      "title": "Clockenflap 音乐及艺术节 2026",
+      "date_start": "2026-12-04",
+      "date_end": "2026-12-06",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$833 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/69362062cde2ba55de795112/Clockenflap音乐及艺术节2026",
+      "time_note": "活动时间: 2026-12-04 ~ 2026-12-06",
+      "source": "Timable·香港活动",
+      "id": "5bbba2c59a1ede3b"
     },
     {
       "title": "萧忆情 ALEX【拾·忆】2026巡回演唱会--深圳站",
@@ -624,7 +1802,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38060668/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "586b720ae79f06de"
+      "id": "586b720ae79f06de",
+      "city": "深圳"
     },
     {
       "title": "黎明ROBBABA演唱会2026 - 深圳站",
@@ -638,7 +1817,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38111922/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "6c3c5f10f26d03ab"
+      "id": "6c3c5f10f26d03ab",
+      "city": "深圳"
     },
     {
       "title": "合韵四重奏《不止是古典——音乐的意义》室内乐音乐会-南山站",
@@ -652,7 +1832,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38153646/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "a0e37ff924199722"
+      "id": "a0e37ff924199722",
+      "city": "深圳"
     },
     {
       "title": "龙岗歌剧周——张诚杰、宋倩、于浩磊领衔 《经典歌剧选段音乐会》",
@@ -666,7 +1847,40 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38111271/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "b5763a7c25195478"
+      "id": "b5763a7c25195478",
+      "city": "深圳"
+    },
+    {
+      "title": "Stray Kids \"RUN IT\" 世界巡迴演唱会 2026 香港站",
+      "date_start": "2026-12-05",
+      "date_end": "2026-12-05",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$799 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6a3a1a67dc90e3783f2d2a1c/StrayKids-RUNIT-世界巡迴演唱会香港站2026",
+      "time_note": "活动时间: 2026-12-05 ~ 2026-12-05",
+      "source": "Timable·香港活动",
+      "id": "77b23f810ca2495e"
+    },
+    {
+      "title": "维港爱乐管弦乐团《My Inner Christmas Symphony 圣诞心声交响乐》音乐会",
+      "date_start": "2026-12-05",
+      "date_end": "2026-12-05",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$90 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6adefbd91415a73788b12248/维港爱乐管弦乐团-MyInnerChristmasSymphony圣诞心声交响乐-音乐会",
+      "time_note": "活动时间: 2026-12-05 ~ 2026-12-05",
+      "source": "Timable·香港活动",
+      "id": "e7d0bea992399628"
     },
     {
       "title": "「复刻回忆」Pianoboy高至豪流行钢琴音乐会",
@@ -680,7 +1894,24 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/37973030/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "b912c97d6f0a18a5"
+      "id": "b912c97d6f0a18a5",
+      "city": "深圳"
+    },
+    {
+      "title": "维港圣诞市集 2026",
+      "date_start": "2026-12-08",
+      "date_end": "2027-02-14",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "市集",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6aab6a9bd7ad78bf4543dd04/维港圣诞市集2026",
+      "time_note": "活动时间: 2026-12-08 ~ 2027-02-14",
+      "source": "Timable·香港活动",
+      "id": "052d5da1fab5c3c4"
     },
     {
       "title": "12月11-13日法语音乐剧《茶花女》",
@@ -694,7 +1925,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38052560/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "d937ad0f68075c5a"
+      "id": "d937ad0f68075c5a",
+      "city": "深圳"
     },
     {
       "title": "老舍经典话剧《骆驼祥子》 深圳",
@@ -708,7 +1940,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/37972885/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "c4384e74093589a3"
+      "id": "c4384e74093589a3",
+      "city": "深圳"
     },
     {
       "title": "Sold Out、Wildfire 原唱 Jon Steingard 2026 深圳演唱会",
@@ -722,7 +1955,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/37972164/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "e8698443096a426d"
+      "id": "e8698443096a426d",
+      "city": "深圳"
     },
     {
       "title": "深圳交响乐团2026-2027乐季——布鲁克纳的浪漫",
@@ -736,7 +1970,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/37973381/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "6a68e61febd657f3"
+      "id": "6a68e61febd657f3",
+      "city": "深圳"
     },
     {
       "title": "开心麻花惊怂爆笑喜剧《出马》深圳",
@@ -750,7 +1985,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38150519/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "91634008641553aa"
+      "id": "91634008641553aa",
+      "city": "深圳"
     },
     {
       "title": "大道文化出品 陈佩斯主演 话剧《惊梦》",
@@ -764,7 +2000,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38017371/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "ded9078ebfa762a2"
+      "id": "ded9078ebfa762a2",
+      "city": "深圳"
     },
     {
       "title": "赖声川导演作品 话剧《暗恋桃花源》专属版 深圳站",
@@ -778,7 +2015,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38109587/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "606a9828fe84ff46"
+      "id": "606a9828fe84ff46",
+      "city": "深圳"
     },
     {
       "title": "Quark夸克乐队“下蛋蛋” No Stage 2026 不巡 演！深圳",
@@ -792,7 +2030,56 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38166115/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "1c3abfa0c5882d2f"
+      "id": "1c3abfa0c5882d2f",
+      "city": "深圳"
+    },
+    {
+      "title": "玩转大馆马戏季 2026",
+      "date_start": "2026-12-11",
+      "date_end": "2027-01-01",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6a991797d7ad78bf45e7ab9f/玩转大馆马戏季2026",
+      "time_note": "活动时间: 2026-12-11 ~ 2027-01-01",
+      "source": "Timable·香港活动",
+      "id": "030ed0b7f6ea0d86"
+    },
+    {
+      "title": "中港城 × START FROM ZERO 车尾箱圣诞市集 2026",
+      "date_start": "2026-12-11",
+      "date_end": "2026-12-27",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "市集",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6acc6a169bb0baabc375eaeb/中港城-STARTFROMZERO车尾箱圣诞市集2026",
+      "time_note": "活动时间: 2026-12-11 ~ 2026-12-27",
+      "source": "Timable·香港活动",
+      "id": "9660282ce6b607b2"
+    },
+    {
+      "title": "《胡桃夹子》芭蕾舞剧场",
+      "date_start": "2026-12-11",
+      "date_end": "2026-12-27",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$180 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6aeae426216eeec14204d8ed/胡桃夹子-剧场",
+      "time_note": "活动时间: 2026-12-11 ~ 2026-12-27",
+      "source": "Timable·香港活动",
+      "id": "9a31b3c1aeb5e0cf"
     },
     {
       "title": "龙岗新年古典音乐季——《海上升明月·清歌落大湾》中外声乐经典音乐会",
@@ -806,7 +2093,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38097480/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "a13346383590d68c"
+      "id": "a13346383590d68c",
+      "city": "深圳"
     },
     {
       "title": "鬼卞2026「FOR TEN」巡演·深圳站",
@@ -820,7 +2108,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38090588/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "f58eb9fa201750fb"
+      "id": "f58eb9fa201750fb",
+      "city": "深圳"
     },
     {
       "title": "610乐队致敬家驹33周年海阔天空演唱会-罗湖站",
@@ -834,7 +2123,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38123160/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "9e57f985e2d1850a"
+      "id": "9e57f985e2d1850a",
+      "city": "深圳"
     },
     {
       "title": "花开四季~心路歌者乌兰图雅演唱会专场",
@@ -848,7 +2138,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38033764/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "02fd3f32fd25ce15"
+      "id": "02fd3f32fd25ce15",
+      "city": "深圳"
     },
     {
       "title": "莉莉周她說「致走到這裡的」2026巡演深圳站",
@@ -862,7 +2153,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38123170/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "55fb8fa720572e5c"
+      "id": "55fb8fa720572e5c",
+      "city": "深圳"
     },
     {
       "title": "深圳·纸梦相逢嘉年华",
@@ -876,7 +2168,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38130993/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "1acd887a8bcc7cc0"
+      "id": "1acd887a8bcc7cc0",
+      "city": "深圳"
     },
     {
       "title": "2026「良辰·吟风成曲 」国风女声深圳音乐会(阵容：银临/少司命/董真/不才等）",
@@ -890,7 +2183,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38129282/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "48339ccd84a2a0cf"
+      "id": "48339ccd84a2a0cf",
+      "city": "深圳"
     },
     {
       "title": "原创话剧《不到园林，怎知春色如许》",
@@ -904,7 +2198,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38166947/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "5d9ff95921ff4c87"
+      "id": "5d9ff95921ff4c87",
+      "city": "深圳"
     },
     {
       "title": "翩跹琴舞——扬·利谢茨基钢琴独奏音乐会",
@@ -918,7 +2213,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38072505/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "d4b8a8464fcf1453"
+      "id": "d4b8a8464fcf1453",
+      "city": "深圳"
     },
     {
       "title": "呐喊剧团《渐冻——在呼吸消失之前》丨2026“艺述”湾区演出季",
@@ -932,7 +2228,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38114648/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "7323a32ea8e7d6a9"
+      "id": "7323a32ea8e7d6a9",
+      "city": "深圳"
     },
     {
       "title": "Max李玄“星际漫游”2026巡演深圳站",
@@ -946,7 +2243,8 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38079665/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "1167c4553d0fe130"
+      "id": "1167c4553d0fe130",
+      "city": "深圳"
     },
     {
       "title": "深圳星幻动漫节2026第25届|深圳漫展",
@@ -960,7 +2258,104 @@
       "is_free": "收费",
       "link": "https://www.douban.com/event/38100041/",
       "source": "豆瓣同城·深圳热门活动",
-      "id": "bd113de471596175"
+      "id": "bd113de471596175",
+      "city": "深圳"
+    },
+    {
+      "title": "陈奕迅 \"Recording Sessions with Mr. Eason Chan\" 现场录音音乐会 2026",
+      "date_start": "2026-12-12",
+      "date_end": "2027-02-20",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$980 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6ad1b4b255d23e3c571d576c/陈奕迅-新创举-连开26场不过唔係演唱会-",
+      "time_note": "活动时间: 2026-12-12 ~ 2027-02-20",
+      "source": "Timable·香港活动",
+      "id": "b5bb34459fbbdc32"
+    },
+    {
+      "title": "JY Dance 圣诞舞蹈汇演 2026",
+      "date_start": "2026-12-13",
+      "date_end": "2026-12-13",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$160 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6ae953b1d31eae1b872c3c84/JYDance圣诞舞蹈汇演2026",
+      "time_note": "活动时间: 2026-12-13 ~ 2026-12-13",
+      "source": "Timable·香港活动",
+      "id": "613508968575516c"
+    },
+    {
+      "title": "Merry Balloon Hong Kong 2026",
+      "date_start": "2026-12-18",
+      "date_end": "2026-12-27",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6ad6e47717f5a5d6d2d5c510/MerryBalloonHongKong2026",
+      "time_note": "活动时间: 2026-12-18 ~ 2026-12-27",
+      "source": "Timable·香港活动",
+      "id": "ab3835f255000659"
+    },
+    {
+      "title": "赤柱广场海滨圣诞市集 2026 ＠赤柱广场",
+      "date_start": "2026-12-18",
+      "date_end": "2026-12-27",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "赤柱广场",
+      "category": "市集",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6aa8c1ed9bbd8535a9daaac9/赤柱广场海滨圣诞市集2026--赤柱广场",
+      "time_note": "活动时间: 2026-12-18 ~ 2026-12-27",
+      "source": "Timable·香港活动",
+      "id": "298cf9aa7b46885f"
+    },
+    {
+      "title": "「香港地」巨型充气嘉年华 2026",
+      "date_start": "2026-12-18",
+      "date_end": "2027-01-03",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "HK$165 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6ae2fa7aea5b5089ed671c74/香港地-巨型充气嘉年华",
+      "time_note": "活动时间: 2026-12-18 ~ 2027-01-03",
+      "source": "Timable·香港活动",
+      "id": "4fd2a113d375e934"
+    },
+    {
+      "title": "冬日暖心好物市集＠大埔超级城",
+      "date_start": "2026-12-18",
+      "date_end": "2026-12-27",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "大埔超级城",
+      "category": "市集",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6ae019f817f5a5d6d2588a92/冬日暖心好物市集-大埔超级城",
+      "time_note": "活动时间: 2026-12-18 ~ 2026-12-27",
+      "source": "Timable·香港活动",
+      "id": "d8126170d7ea7804"
     },
     {
       "title": "南山区第十九届“鸳鸯和鸣”集体婚礼",
@@ -975,7 +2370,136 @@
       "link": "http://sz.bendibao.com/xiuxian/2026113/1015436.shtm",
       "time_note": "活动时间: 2026.12.19",
       "source": "深圳本地宝·活动汇总",
-      "id": "c77ae1574ca86041"
+      "id": "c77ae1574ca86041",
+      "city": "深圳"
+    },
+    {
+      "title": "《Cinderella 圣诞奇缘》圣诞音乐剧 @POP Theatre",
+      "date_start": "2026-12-19",
+      "date_end": "2026-12-27",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$150 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6a7bd7234951f58fb8d54c46/Cinderella圣诞奇缘-圣诞音乐剧-POPTheatre",
+      "time_note": "活动时间: 2026-12-19 ~ 2026-12-27",
+      "source": "Timable·香港活动",
+      "id": "7d5aefb1b58d048c"
+    },
+    {
+      "title": "陈婉榆《JAZZ X COMEDY焦头烂额年终派对」》音乐栋笃笑演出",
+      "date_start": "2026-12-19",
+      "date_end": "2026-12-19",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$380 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6ac4804e55d23e3c57703e90/陈婉榆-JAZZXCOMEDY-焦头烂额年终派对音乐栋笃笑演出",
+      "time_note": "活动时间: 2026-12-19 ~ 2026-12-19",
+      "source": "Timable·香港活动",
+      "id": "71c29f2b2a803f76"
+    },
+    {
+      "title": "普世平安星光夜音乐会2026",
+      "date_start": "2026-12-19",
+      "date_end": "2026-12-20",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$580 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6acdd4c455d23e3c57e798f1/普世平安星光夜音乐会2026",
+      "time_note": "活动时间: 2026-12-19 ~ 2026-12-20",
+      "source": "Timable·香港活动",
+      "id": "f85d2dd5408750ce"
+    },
+    {
+      "title": "WYK Old Boys' Music Association \"Songs of Peace - The Christmas Concert 2026\"  圣诞音乐会",
+      "date_start": "2026-12-19",
+      "date_end": "2026-12-19",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$50 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6af5234601c3a2968ecdb244/WYKOldBoys-MusicAssociation-SongsofPeace-TheChristmasConcert2026-巡迴演唱会2026香港站",
+      "time_note": "活动时间: 2026-12-19 ~ 2026-12-19",
+      "source": "Timable·香港活动",
+      "id": "d4bce858dc3732d4"
+    },
+    {
+      "title": "《童真仰望》音乐剧",
+      "date_start": "2026-12-20",
+      "date_end": "2026-12-20",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$224 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6ad735e117f5a5d6d2d9f050/童真仰望-音乐剧",
+      "time_note": "活动时间: 2026-12-20 ~ 2026-12-20",
+      "source": "Timable·香港活动",
+      "id": "6fe947ede279c0ce"
+    },
+    {
+      "title": "AIA Carnival 友邦嘉年华 2026",
+      "date_start": "2026-12-22",
+      "date_end": "2027-02-21",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "HK$85 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6ad8834e1415a737885046f2/AIACarnival友邦嘉年华2026",
+      "time_note": "活动时间: 2026-12-22 ~ 2027-02-21",
+      "source": "Timable·香港活动",
+      "id": "82fcc2350cac252b"
+    },
+    {
+      "title": "张贝芝 x 廖国敏《节庆华彩:张贝芝的梦幻圣诞乐章》音乐会",
+      "date_start": "2026-12-22",
+      "date_end": "2026-12-23",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$260 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6a72be321e2442085c9eda40/张贝芝x廖国敏-节庆华彩-张贝芝的梦幻圣诞乐章-音乐会",
+      "time_note": "活动时间: 2026-12-22 ~ 2026-12-23",
+      "source": "Timable·香港活动",
+      "id": "5fedb148d2f184c6"
+    },
+    {
+      "title": "\"WISHMAS MARKET in AQUABEAT\"圣诞市集",
+      "date_start": "2026-12-24",
+      "date_end": "2026-12-27",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "市集",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6ad09d048591906f20166d39/WISHMASMARKETinAQUABEAT-圣诞市集",
+      "time_note": "活动时间: 2026-12-24 ~ 2026-12-27",
+      "source": "Timable·香港活动",
+      "id": "7d26c9f2d9d66792"
     },
     {
       "title": "2026尤长靖深圳演唱会",
@@ -990,7 +2514,24 @@
       "link": "http://sz.bendibao.com/xiuxian/2026113/1015445.shtm",
       "time_note": "活动时间: 2026.12.25",
       "source": "深圳本地宝·活动汇总",
-      "id": "d61217a65e76cf26"
+      "id": "d61217a65e76cf26",
+      "city": "深圳"
+    },
+    {
+      "title": "Rainbow Gala HK 34 同人誌即卖会",
+      "date_start": "2026-12-25",
+      "date_end": "2026-12-26",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6a4b3b334dc0b24de0d2cb8e/RainbowGalaHK34同人誌即卖会",
+      "time_note": "活动时间: 2026-12-25 ~ 2026-12-26",
+      "source": "Timable·香港活动",
+      "id": "b20282f5df98a42b"
     },
     {
       "title": "苏醒2026-2027巡回演唱会深圳站情歌而已",
@@ -1005,7 +2546,8 @@
       "link": "http://sz.bendibao.com/xiuxian/20261110/1015660.shtm",
       "time_note": "活动时间: 2026.12.26",
       "source": "深圳本地宝·活动汇总",
-      "id": "ef734bb97013c202"
+      "id": "ef734bb97013c202",
+      "city": "深圳"
     },
     {
       "title": "2026周传雄念念不忘再遇见plus演唱会深圳站",
@@ -1020,7 +2562,168 @@
       "link": "http://sz.bendibao.com/xiuxian/202694/1012231.shtm",
       "time_note": "活动时间: 2026.12.31-2027.01.01",
       "source": "深圳本地宝·活动汇总",
-      "id": "1e21af9a070809ab"
+      "id": "1e21af9a070809ab",
+      "city": "深圳"
+    },
+    {
+      "title": "QWER \"ROCKATION: ROCKET LAUNCH!!\" 香港站2027",
+      "date_start": "2027-01-02",
+      "date_end": "2027-01-02",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6a570cb97cf1fb0d6e247633/QWER-ROCKATION-ROCKETLAUNCH---第二次巡迴演唱会香港站",
+      "time_note": "活动时间: 2027-01-02 ~ 2027-01-02",
+      "source": "Timable·香港活动",
+      "id": "11804971e25a8316"
+    },
+    {
+      "title": "BABYMONSTER \"CHOOM\" 世界巡迴演唱会 2027 香港站",
+      "date_start": "2027-01-08",
+      "date_end": "2027-01-10",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$799 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6a015d84b4b2e9056dd5dcc3/BABYMONSTER-CHOOM-世界巡迴演唱会2027香港站",
+      "time_note": "活动时间: 2027-01-08 ~ 2027-01-10",
+      "source": "Timable·香港活动",
+      "id": "21548f3dbeb22784"
+    },
+    {
+      "title": "陈卉蕾《第六届 即兴喜剧夜 IMPROV NIGHT》剧场栋笃笑演出",
+      "date_start": "2027-01-15",
+      "date_end": "2027-01-15",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$188 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6af585016842ba2c825a558f/陈卉蕾-第六届即兴喜剧夜IMPROVNIGHT-剧场栋笃笑演出",
+      "time_note": "活动时间: 2027-01-15 ~ 2027-01-15",
+      "source": "Timable·香港活动",
+      "id": "f2d841040eb75296"
+    },
+    {
+      "title": "都敬秀 \"DAY OFF\" 巡迴演唱会 2027 香港站",
+      "date_start": "2027-01-16",
+      "date_end": "2027-01-16",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6a7ad15397024b799aa7bf12/都暻秀-DAYOFF-巡迴演唱会2026-2027香港站",
+      "time_note": "活动时间: 2027-01-16 ~ 2027-01-16",
+      "source": "Timable·香港活动",
+      "id": "dc9c017e1dcaa9fd"
+    },
+    {
+      "title": "Gareth.T 汤令山 Coliseum 演唱会 2027",
+      "date_start": "2027-01-20",
+      "date_end": "2027-01-23",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$680 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6a4ef0024dc0b24de00562a3/Gareth-T汤令山红馆演唱会2027",
+      "time_note": "活动时间: 2027-01-20 ~ 2027-01-23",
+      "source": "Timable·香港活动",
+      "id": "ee5014437efa7f6d"
+    },
+    {
+      "title": "YOASOBI  \"SUPER PLANET\"  亚洲巡迴演唱会 2027 香港站",
+      "date_start": "2027-01-21",
+      "date_end": "2027-01-22",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$980 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/692d050b67fc5f31050747f6/YOASOBI香港演唱会2026-27",
+      "time_note": "活动时间: 2027-01-21 ~ 2027-01-22",
+      "source": "Timable·香港活动",
+      "id": "f37d77ec8c6c57b7"
+    },
+    {
+      "title": "WESTLIFE 25週年纪念世界巡迴演唱会 2027 香港站",
+      "date_start": "2027-01-27",
+      "date_end": "2027-01-30",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6a016049b4b2e9056dd5fd98/WESTLIFE25週年世界巡迴演唱会2027香港站",
+      "time_note": "活动时间: 2027-01-27 ~ 2027-01-30",
+      "source": "Timable·香港活动",
+      "id": "17cb26dd49c9edbb"
+    },
+    {
+      "title": "乐童音乐家 AKMU \"AKDONGDEUL\" 亚洲巡迴演唱会 2027 香港站",
+      "date_start": "2027-01-30",
+      "date_end": "2027-01-30",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6ad6d18e2c2d3a916089a22f/AKMU乐童音乐家-AKDONGDEUL-亚洲巡迴演唱会2027香港站",
+      "time_note": "活动时间: 2027-01-30 ~ 2027-01-30",
+      "source": "Timable·香港活动",
+      "id": "5c37e94a3b29738a"
+    },
+    {
+      "title": "BTS \"ARIRANG\" 世界巡迴演唱会 2027 香港站",
+      "date_start": "2027-03-04",
+      "date_end": "2027-03-07",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$799 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6966eb6ec7e30d3b81c6adb2/BTS-ARIRANG-世界巡迴演唱会2027香港站",
+      "time_note": "活动时间: 2027-03-04 ~ 2027-03-07",
+      "source": "Timable·香港活动",
+      "id": "9dfe5010e0be2c57"
+    },
+    {
+      "title": "Justin Bieber \"THE ERAS\" 世界巡迴演唱会 2027 香港站",
+      "date_start": "2027-08-20",
+      "date_end": "2027-08-20",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/69e58e1fb7dc6867e9d8b918/JustinBieber-THEERAS-世界巡迴演唱会2027香港站",
+      "time_note": "活动时间: 2027-08-20 ~ 2027-08-20",
+      "source": "Timable·香港活动",
+      "id": "86447bdac68271d3"
     }
   ]
 }
