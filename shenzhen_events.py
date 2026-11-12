@@ -187,13 +187,137 @@ def parse_gov_event(feed):
     return out
 
 
-PARSERS = {"douban_event": parse_douban_event, "gov_event": parse_gov_event}
+# ---------- 深圳本地宝 · 活动汇总（sz.bendibao.com/xiuxian/） ----------
+# 首页为服务端渲染，约 40 张 .main-block-single 卡片，字段：
+#   标题 / 活动地址 / 活动亮点 / 活动时间（仅约 4 成有值）/ 详情链接。
+# 没有付费字段，也无分页，只能按文案与标题关键词推断费用。
+# 首页混入香港展览（油麻地、九龙寨城、西九 M+ 等），需按地域剔除。
+
+BDB_OUT_OF_SZ = ("香港", "澳门", "油麻地", "九龙", "西九", "广州", "东莞",
+                 "惠州", "珠海", "佛山", "中山", "江门")
+BDB_FREE_RE = re.compile(r"免费")
+BDB_PAID_RE = re.compile(r"演唱会|音乐节|巡演|音乐剧|话剧|儿童剧|购票|售票|票价|门票")
+BDB_DISTRICT_RE = re.compile(r"(福田|南山|罗湖|宝安|龙华|龙岗|盐田|坪山|光明|大鹏)")
+
+
+def _bdb_strip(s):
+    s = re.sub(r"<[^>]+>", "", s or "")
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def _bdb_timerange(raw):
+    """'2026.11.20-2027.02.28' / '2026.12.19' / '2026.07.18起' -> (start, end, note)
+    部分区块是 JS 模板占位（形如 '+data.res[item].dates_format[0]+'），直接判为无时间。"""
+    if not raw or "data.res" in raw or "+" in raw:
+        return None, None, ""
+    s = raw.replace(" ", "")
+    m = re.search(r"(20\d{2})\.(\d{1,2})\.(\d{1,2})"
+                  r"(?:\s*[-~—至]\s*(20\d{2})\.(\d{1,2})\.(\d{1,2}))?", s)
+    if not m:
+        return None, None, ""
+    try:
+        start = "%04d-%02d-%02d" % (int(m.group(1)), int(m.group(2)), int(m.group(3)))
+    except ValueError:
+        return None, None, ""
+    end = None
+    if m.group(4):
+        try:
+            end = "%04d-%02d-%02d" % (int(m.group(4)), int(m.group(5)), int(m.group(6)))
+        except ValueError:
+            end = None
+    return start, end, "活动时间: " + raw.strip()
+
+
+def _bdb_category(title):
+    if re.search(r"演唱会|音乐节|巡演|音乐会|音乐剧|话剧|儿童剧|戏曲|戏剧", title):
+        return "演出"
+    if re.search(r"博物馆|美术馆|艺术馆", title) or \
+            re.search(r"展(?!演)", title):
+        return "展览"
+    return _gov_category(title)
+
+
+def parse_bendibao_event(feed):
+    """解析本地宝深圳活动汇总首页。只保留能确定活动日期的条目，
+    活动时间缺失的（约六成）直接丢弃——宁缺勿造。
+
+    注意：本地宝有反爬风控，短时间多次访问会被 302 到 /challenge?reason=highrisk
+    （JS 拼图验证），严重时直接断连。命中时静默跳过，不影响其他源。"""
+    raw = fetch_html(feed["url"])
+    if "请完成拼图验证" in raw or "challenge-container" in raw or "/challenge?" in raw:
+        print("bendibao: 命中反爬拼图验证，本次跳过", file=sys.stderr)
+        return []
+    if '<div class="main-block-single"' not in raw:
+        print("bendibao: 页面结构不符（可能改版或空页），本次跳过", file=sys.stderr)
+        return []
+    out = []
+    for blk in raw.split('<div class="main-block-single"')[1:]:
+        mt = re.search(r'main-single-block-titles">([\s\S]*?)</div>', blk)
+        title = _bdb_strip(mt.group(1)) if mt else ""
+        if not title:
+            continue
+        ma = re.search(r'活动地址</span>\s*<span[^>]*>([\s\S]*?)</span>', blk)
+        addr = _bdb_strip(ma.group(1)) if ma else ""
+        mh = re.search(r'活动亮点</span>\s*<span[^>]*>([\s\S]*?)</span>', blk)
+        hl = _bdb_strip(mh.group(1)) if mh else ""
+        mtm = re.search(r'time-dia-hover">([\s\S]*?)</span>', blk)
+        ml = re.search(r'href="([^"]+)" class="ticket-buttons"', blk)
+        link = ml.group(1) if ml else ""
+        if not link:
+            continue
+
+        # 剔除外地（含香港）内容
+        loc_text = title + " " + addr
+        if any(k in loc_text for k in BDB_OUT_OF_SZ) and "深圳" not in loc_text:
+            continue
+
+        date_start, date_end, note = _bdb_timerange(
+            _bdb_strip(mtm.group(1)) if mtm else "")
+        if not date_start:
+            continue
+
+        md = BDB_DISTRICT_RE.search(addr) or BDB_DISTRICT_RE.search(title)
+        if md:
+            name = md.group(1)
+            district_raw = name + ("新区" if name == "大鹏" else "区")
+        else:
+            district_raw = "其他"
+        district = PLAN_DISTRICTS.get(district_raw, "其他")
+
+        text = title + " " + hl
+        if BDB_FREE_RE.search(text):
+            is_free, price = "免费", "免费"
+        elif BDB_PAID_RE.search(text):
+            is_free, price = "收费", "需购票"
+        else:
+            is_free, price = "未知", ""
+
+        out.append({
+            "title": title,
+            "date_start": date_start,
+            "date_end": date_end,
+            "district_raw": district_raw,
+            "district": district,
+            "location": addr or hl[:40],
+            "category": _bdb_category(title),
+            "price": price,
+            "is_free": is_free,
+            "link": link,
+            "time_note": note,
+        })
+    return out
+
+
+PARSERS = {"douban_event": parse_douban_event, "gov_event": parse_gov_event,
+           "bendibao_event": parse_bendibao_event}
 
 
 def process_feed(feed):
     parser_name = feed.get("parser", "douban_event")
     if parser_name == "gov_event":
         evs = parse_gov_event(feed)
+    elif parser_name == "bendibao_event":
+        evs = parse_bendibao_event(feed)
     else:
         raw = fetch(feed["url"])
         root = ET.fromstring(raw)
@@ -236,22 +360,32 @@ def build_ics(events):
     ]
     for ev in events:
         ds = ics_date(ev["date_start"])
+        de_str = ""
         if ev.get("date_end"):
-            de = datetime.date.fromisoformat(ev["date_end"]) + datetime.timedelta(days=1)
-            de_str = de.strftime("%Y%m%d")
-        else:
-            de_str = ""
+            try:
+                d1 = datetime.date.fromisoformat(ev["date_start"])
+                d2 = datetime.date.fromisoformat(ev["date_end"])
+            except ValueError:
+                d1 = d2 = None
+            # 跨度超 120 天的视为常年展览/长期开放：只标开始日，
+            # 否则日历里会横一条长条把其他活动全挤下去（真实区间见描述里的“活动时间”）。
+            if d1 and d2 and (d2 - d1).days <= 120:
+                de_str = (d2 + datetime.timedelta(days=1)).strftime("%Y%m%d")
         fee_tag = {"免费": "【免费】", "收费": "【收费】", "未知": "【待定】"}.get(ev["is_free"], "")
         summary = (fee_tag + ev["title"]).replace(",", "，").replace(";", "；").replace("\n", "")
-        location = (ev["district_raw"] + " " + ev["location"]).strip() \
+        loc_parts = [ev["district_raw"] if ev["district_raw"] != "其他" else "",
+                     ev.get("location", "")]
+        location = " ".join(p for p in loc_parts if p.strip()) \
             .replace(",", "，").replace(";", "；")
-        desc = "\\n".join([
-            "类型: " + ev["category"],
-            "价格: " + (ev["price"] or "未知"),
+        desc_lines = ["类型: " + ev["category"], "价格: " + (ev["price"] or "未知")]
+        if ev.get("time_note"):
+            desc_lines.append(ev["time_note"])
+        desc_lines += [
             "区域: " + ev["district"],
             "来源: " + ev["source"],
             "链接: " + ev["link"],
-        ])
+        ]
+        desc = "\\n".join(desc_lines)
         L.append("BEGIN:VEVENT")
         L.append("UID:" + ev["id"] + "@shenzhen-events")
         L.append("DTSTAMP:" + now)
@@ -372,6 +506,7 @@ def main():
             print("feed failed:", feed["name"], "->", e, file=sys.stderr)
             continue
         is_gov = feed.get("parser") == "gov_event"
+        is_bdb = feed.get("parser") == "bendibao_event"
         for ev in evs:
             try:
                 d = datetime.date.fromisoformat(ev["date_start"])
@@ -379,8 +514,20 @@ def main():
                 d = today
             # 政府站为新闻稿式：date_start 是发布日，用近 60 天窗口保留资讯；
             # 豆瓣为真实活动日：按开始日过期淘汰。
+            # 本地宝为真实活动日，但多有结束日：跨期且未结束的（已开始仍在展）要留。
             if is_gov:
                 if d < cutoff:
+                    continue
+            elif is_bdb:
+                end = ev.get("date_end")
+                if end:
+                    try:
+                        if datetime.date.fromisoformat(end) < today:
+                            continue
+                    except Exception:
+                        if d < today:
+                            continue
+                elif d < today:
                     continue
             else:
                 if d < today:
