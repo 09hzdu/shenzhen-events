@@ -15,6 +15,7 @@ import sys
 import html
 import hashlib
 import datetime
+import time
 import urllib.request
 import urllib.error
 import xml.etree.ElementTree as ET
@@ -106,12 +107,25 @@ def parse_douban_event(item):
     }
 
 
-def fetch_html(url):
-    if url.startswith("https://"):
-        url = "http://" + url[8:]
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return r.read().decode("utf-8", "replace")
+def fetch_html(url, retries=2):
+    """抓 HTML。政府站对境外/云机房 IP 时常 reset，加少量重试；
+    本地宝有反爬风控，重试反而会激怒它，调用时传 retries=0。"""
+    last = None
+    for i in range(retries + 1):
+        try:
+            u = "http://" + url[8:] if url.startswith("https://") else url
+            req = urllib.request.Request(u, headers={
+                "User-Agent": UA,
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "zh-CN,zh;q=0.9",
+            })
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.read().decode("utf-8", "replace")
+        except Exception as e:
+            last = e
+            if i < retries:
+                time.sleep(2 + 3 * i)
+    raise last
 
 
 def _gov_category(title):
@@ -243,7 +257,7 @@ def parse_bendibao_event(feed):
 
     注意：本地宝有反爬风控，短时间多次访问会被 302 到 /challenge?reason=highrisk
     （JS 拼图验证），严重时直接断连。命中时静默跳过，不影响其他源。"""
-    raw = fetch_html(feed["url"])
+    raw = fetch_html(feed["url"], retries=0)
     if "请完成拼图验证" in raw or "challenge-container" in raw or "/challenge?" in raw:
         print("bendibao: 命中反爬拼图验证，本次跳过", file=sys.stderr)
         return []
