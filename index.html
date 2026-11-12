@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>深圳线下活动看板</title>
+<style>
+  :root { --bg:#f5f7fa; --card:#fff; --ink:#1f2329; --muted:#6b7280; --line:#e5e7eb; --blue:#2563eb; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); }
+  header { position:sticky; top:0; background:#fff; border-bottom:1px solid var(--line); padding:14px 18px; display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+  h1 { font-size:18px; margin:0; }
+  .count { color:var(--muted); font-size:13px; }
+  .sub { background:var(--blue); color:#fff; border:none; padding:8px 14px; border-radius:8px; text-decoration:none; font-size:13px; }
+  .filters { display:flex; flex-wrap:wrap; gap:6px; padding:12px 18px; }
+  .chip { border:1px solid var(--line); background:#fff; border-radius:999px; padding:4px 12px; font-size:12px; cursor:pointer; color:var(--muted); }
+  .chip.on { background:var(--blue); color:#fff; border-color:var(--blue); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:12px; padding:0 18px 32px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px; }
+  .date { font-size:12px; color:var(--blue); font-weight:600; }
+  .title { font-size:15px; font-weight:600; margin:6px 0; line-height:1.4; }
+  .title a { color:var(--ink); text-decoration:none; }
+  .meta { display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:8px; }
+  .tag { font-size:11px; padding:2px 8px; border-radius:6px; background:#eef2ff; color:#3730a3; }
+  .tag.dist { background:#ecfdf5; color:#047857; }
+  .tag.free { background:#ecfdf5; color:#047857; }
+  .tag.paid { background:#fef2f2; color:#b91c1c; }
+  .tag.unk { background:#f3f4f6; color:#6b7280; }
+  .price { font-size:12px; color:var(--muted); }
+  .loc { font-size:12px; color:var(--muted); }
+  .empty { color:var(--muted); padding:40px; text-align:center; }
+</style></head>
+<body>
+<header>
+  <h1>深圳线下活动看板</h1>
+  <span class="count">共 31 场 · 更新于 2026-11-13</span>
+  <a class="sub" href="events.ics">订阅日历 (webcal)</a>
+</header>
+<div class="filters" id="filters"></div>
+<div class="grid" id="grid">
+        <div class="card" data-district="龙岗" data-category="展览">
+          <div class="date">2026-11-13</div>
+          <div class="title"><a href="https://www.douban.com/event/37973182/" target="_blank" rel="noopener">全息舞剧《幻境 天鹅湖》</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag dist">龙岗</span>
+            <span class="tag paid">收费</span>
+            <span class="price">38.0元起</span>
+          </div>
+          <div class="loc">龙岗区 D+数字艺术馆 坂田街道贝尔路4号(贝尔路地铁站D出口前行100米)</div>
+        </div>
+
+        <div class="card" data-district="其他" data-category="展览">
+          <div class="date">2026-11-13</div>
+          <div class="title"><a href="https://www.douban.com/event/38143613/" target="_blank" rel="noopener">《相聚之地：走进澳大利亚原住民文化》｜韦恩·奎利安</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag dist">其他</span>
+            <span class="tag paid">收费</span>
+            <span class="price">48.0元起</span>
+          </div>
+          <div class="loc">坪山区 坪山展览馆 汇德路4号（美术馆旁）</div>
+        </div>
+
+        <div class="card" data-district="龙岗" data-category="展览">
+          <div class="date">2026-11-13</div>
+          <div class="title"><a href="https://www.douban.com/event/37972017/" target="_blank" rel="noopener">穹幕影片《天穹无界·民族万象》</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag dist">龙岗</span>
+            <span class="tag paid">收费</span>
+            <span class="price">38.0元起</span>
+          </div>
+          <div class="loc">龙岗区 D+数字艺术馆 坂田街道贝尔路4号(贝尔路地铁站D出口前行100米)</div>
+        </div>
+
+        <div class="card" data-district="龙岗" data-category="展览">
+          <div class="date">2026-11-13</div>
+          <div class="title"><a href="https://www.douban.com/event/37971993/" target="_blank" rel="noopener">沉浸影片《无垠之境》&amp;《生生长流》</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag dist">龙岗</span>
+            <span class="tag paid">收费</span>
+            <span class="price">53.0元起</span>
+          </div>
+          <div class="loc">龙岗区 D+数字艺术馆 坂田街道贝尔路4号(贝尔路地铁站D出口前行100米)</div>
+        </div>
+
+        <div class="card" data-district="罗湖" data-category="演出">
+          <div class="date">2026-11-14</div>
+          <div class="title"><a href="https://www.douban.com/event/38112804/" target="_blank" rel="noopener">《文艺复兴·重回非主流时代》威仔＆格子兮演唱会-罗湖站</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">罗湖</span>
+            <span class="tag paid">收费</span>
+            <span class="price">147.0元起</span>
+          </div>
+          <div class="loc">罗湖区 罗湖先锋剧场 黄贝街道碧波社区怡景路1014号罗湖区图书馆、罗湖区青少年宫101（罗湖先锋剧场）</div>
+        </div>
+
+        <div class="card" data-district="罗湖" data-category="演出">
+          <div class="date">2026-11-15</div>
+          <div class="title"><a href="https://www.douban.com/event/38157095/" target="_blank" rel="noopener">华禧艺术·枉凝眉·埙萧说红楼·民族赏析民乐音乐会</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">罗湖</span>
+            <span class="tag paid">收费</span>
+            <span class="price">58.0元起</span>
+          </div>
+          <div class="loc">罗湖区 华禧文化艺术中心 黄贝岭街怡景路2008号德必深广电数创公园B区一楼华禧艺术文化中心</div>
+        </div>
+
+        <div class="card" data-district="罗湖" data-category="演出">
+          <div class="date">2026-11-16</div>
+          <div class="title"><a href="https://www.douban.com/event/38114314/" target="_blank" rel="noopener">华禧艺术 岁月鎏金 港乐怀旧金曲 民乐音乐会</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">罗湖</span>
+            <span class="tag paid">收费</span>
+            <span class="price">48.0元起</span>
+          </div>
+          <div class="loc">罗湖区 华禧文化艺术中心 黄贝岭街怡景路2008号德必深广电数创公园B区一楼华禧艺术文化中心</div>
+        </div>
+
+        <div class="card" data-district="其他" data-category="展览">
+          <div class="date">2026-11-20</div>
+          <div class="title"><a href="https://www.douban.com/event/38050712/" target="_blank" rel="noopener">KF1 擂台英雄（我是拳手）第一季</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag dist">其他</span>
+            <span class="tag paid">收费</span>
+            <span class="price">58.0元起</span>
+          </div>
+          <div class="loc">光明区 茅洲河体育艺术中心·剧场 公明北环大道633号茅洲河体育艺术中心文化和图书中心2栋403</div>
+        </div>
+
+        <div class="card" data-district="南山" data-category="演出">
+          <div class="date">2026-11-28</div>
+          <div class="title"><a href="https://www.douban.com/event/37970179/" target="_blank" rel="noopener">奇妙嘿夜烛光音乐会“最伟大的作品”流行曲目钢琴&amp;小提琴&amp;大提琴演奏</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">南山</span>
+            <span class="tag paid">收费</span>
+            <span class="price">388.00元起</span>
+          </div>
+          <div class="loc">南山区 青春无限乐团烛光音乐会音乐厅 沙河街道侨发路侨城坊1栋1层主会场</div>
+        </div>
+
+        <div class="card" data-district="南山" data-category="演出">
+          <div class="date">2026-11-28</div>
+          <div class="title"><a href="https://www.douban.com/event/38006199/" target="_blank" rel="noopener">奇妙嘿夜烛光音乐会“海上钢琴师”&amp;“汉斯季默”曲目钢琴&amp;小提琴&amp;大提琴三重奏</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">南山</span>
+            <span class="tag paid">收费</span>
+            <span class="price">198.0元起</span>
+          </div>
+          <div class="loc">南山区 青春无限乐团烛光音乐会音乐厅 沙河街道侨发路侨城坊1栋1层主会场</div>
+        </div>
+
+        <div class="card" data-district="南山" data-category="演出">
+          <div class="date">2026-11-29</div>
+          <div class="title"><a href="https://www.douban.com/event/38115332/" target="_blank" rel="noopener">2026声动南山 张玮玮 feat. 郭龙「特别专场」</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">南山</span>
+            <span class="tag paid">收费</span>
+            <span class="price">50.0元起</span>
+          </div>
+          <div class="loc">南山区 南山文体中心聚橙剧院 南山大道南头街62号</div>
+        </div>
+
+        <div class="card" data-district="南山" data-category="展览">
+          <div class="date">2026-12-01</div>
+          <div class="title"><a href="https://www.douban.com/event/38142269/" target="_blank" rel="noopener">深圳湾文化广场-南馆通票</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag dist">南山</span>
+            <span class="tag paid">收费</span>
+            <span class="price">90.0元起</span>
+          </div>
+          <div class="loc">南山区 深圳湾文化广场展览区 创业路阿里中心东北侧约270米</div>
+        </div>
+
+        <div class="card" data-district="福田" data-category="演出">
+          <div class="date">2026-12-04</div>
+          <div class="title"><a href="https://www.douban.com/event/38070183/" target="_blank" rel="noopener">桂冠之声｜沈周慧《根脉凝光：钢琴名作的溯源之旅》钢琴独奏音乐会</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">福田</span>
+            <span class="tag paid">收费</span>
+            <span class="price">80.0元</span>
+          </div>
+          <div class="loc">福田区 安托山公共文化中心(演出售票) 香蜜湖街道安托山六路与侨香四道安托山公共文化中心</div>
+        </div>
+
+        <div class="card" data-district="南山" data-category="演出">
+          <div class="date">2026-12-05</div>
+          <div class="title"><a href="https://www.douban.com/event/38060668/" target="_blank" rel="noopener">萧忆情 ALEX【拾·忆】2026巡回演唱会--深圳站</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">南山</span>
+            <span class="tag paid">收费</span>
+            <span class="price">180.0元起</span>
+          </div>
+          <div class="loc">南山区 南山文体中心聚橙剧院 南山大道南头街62号</div>
+        </div>
+
+        <div class="card" data-district="龙岗" data-category="演出">
+          <div class="date">2026-12-05</div>
+          <div class="title"><a href="https://www.douban.com/event/38111922/" target="_blank" rel="noopener">黎明ROBBABA演唱会2026 - 深圳站</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">龙岗</span>
+            <span class="tag paid">收费</span>
+            <span class="price">588.0元起</span>
+          </div>
+          <div class="loc">龙岗区 深圳大运中心体育馆 龙城街道黄阁路99号(龙岗区黄阁路)</div>
+        </div>
+
+        <div class="card" data-district="南山" data-category="演出">
+          <div class="date">2026-12-05</div>
+          <div class="title"><a href="https://www.douban.com/event/38153646/" target="_blank" rel="noopener">合韵四重奏《不止是古典——音乐的意义》室内乐音乐会-南山站</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">南山</span>
+            <span class="tag paid">收费</span>
+            <span class="price">80.0元起</span>
+          </div>
+          <div class="loc">南山区 南山文体中心聚橙剧院 南山大道南头街62号</div>
+        </div>
+
+        <div class="card" data-district="龙岗" data-category="演出">
+          <div class="date">2026-12-05</div>
+          <div class="title"><a href="https://www.douban.com/event/38111271/" target="_blank" rel="noopener">龙岗歌剧周——张诚杰、宋倩、于浩磊领衔 《经典歌剧选段音乐会》</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">龙岗</span>
+            <span class="tag paid">收费</span>
+            <span class="price">80.0元起</span>
+          </div>
+          <div class="loc">龙岗区 龙岗文化中心大剧院 龙岗中心城龙翔大道8308号</div>
+        </div>
+
+        <div class="card" data-district="其他" data-category="演出">
+          <div class="date">2026-12-11</div>
+          <div class="title"><a href="https://www.douban.com/event/38052560/" target="_blank" rel="noopener">12月11-13日法语音乐剧《茶花女》</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">其他</span>
+            <span class="tag paid">收费</span>
+            <span class="price">180.0元起</span>
+          </div>
+          <div class="loc">坪山区 坪山大剧院 汇德路2号坪山大剧院</div>
+        </div>
+
+        <div class="card" data-district="宝安" data-category="演出">
+          <div class="date">2026-12-11</div>
+          <div class="title"><a href="https://www.douban.com/event/37972885/" target="_blank" rel="noopener">老舍经典话剧《骆驼祥子》 深圳</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">宝安</span>
+            <span class="tag paid">收费</span>
+            <span class="price">100.00元起</span>
+          </div>
+          <div class="loc">宝安区 海雅大剧院 建安一路99号海雅缤纷城F3层L399、F4层</div>
+        </div>
+
+        <div class="card" data-district="南山" data-category="演出">
+          <div class="date">2026-12-11</div>
+          <div class="title"><a href="https://www.douban.com/event/37972164/" target="_blank" rel="noopener">Sold Out、Wildfire 原唱 Jon Steingard 2026 深圳演唱会</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">南山</span>
+            <span class="tag paid">收费</span>
+            <span class="price">280.00元起</span>
+          </div>
+          <div class="loc">南山区 MAO Livehouse深圳-海上世界店 招商街道水湾社区海上世界C区船后广场C-L2005A、C-L3002A</div>
+        </div>
+
+        <div class="card" data-district="福田" data-category="演出">
+          <div class="date">2026-12-11</div>
+          <div class="title"><a href="https://www.douban.com/event/37973381/" target="_blank" rel="noopener">深圳交响乐团2026-2027乐季——布鲁克纳的浪漫</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">福田</span>
+            <span class="tag paid">收费</span>
+            <span class="price">80.0元起</span>
+          </div>
+          <div class="loc">福田区 深圳音乐厅·演奏大厅 福中一路2016号深圳音乐厅二楼演奏大厅</div>
+        </div>
+
+        <div class="card" data-district="龙华" data-category="演出">
+          <div class="date">2026-12-11</div>
+          <div class="title"><a href="https://www.douban.com/event/38150519/" target="_blank" rel="noopener">开心麻花惊怂爆笑喜剧《出马》深圳</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">龙华</span>
+            <span class="tag paid">收费</span>
+            <span class="price">80.0元起</span>
+          </div>
+          <div class="loc">龙华区 深圳开心麻花红山剧场 大岭社区红山6979三期1栋B区</div>
+        </div>
+
+        <div class="card" data-district="宝安" data-category="演出">
+          <div class="date">2026-12-11</div>
+          <div class="title"><a href="https://www.douban.com/event/38017371/" target="_blank" rel="noopener">大道文化出品 陈佩斯主演 话剧《惊梦》</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">宝安</span>
+            <span class="tag paid">收费</span>
+            <span class="price">180.0元起</span>
+          </div>
+          <div class="loc">宝安区 深圳滨海艺术中心 宝兴路欢乐港湾16号（滨海文化公园内）</div>
+        </div>
+
+        <div class="card" data-district="南山" data-category="演出">
+          <div class="date">2026-12-11</div>
+          <div class="title"><a href="https://www.douban.com/event/38109587/" target="_blank" rel="noopener">赖声川导演作品 话剧《暗恋桃花源》专属版 深圳站</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">南山</span>
+            <span class="tag paid">收费</span>
+            <span class="price">180.0元起</span>
+          </div>
+          <div class="loc">南山区 华夏艺术中心 华侨城光侨街1号2楼</div>
+        </div>
+
+        <div class="card" data-district="龙岗" data-category="演出">
+          <div class="date">2026-12-12</div>
+          <div class="title"><a href="https://www.douban.com/event/38097480/" target="_blank" rel="noopener">龙岗新年古典音乐季——《海上升明月·清歌落大湾》中外声乐经典音乐会</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">龙岗</span>
+            <span class="tag paid">收费</span>
+            <span class="price">50.0元起</span>
+          </div>
+          <div class="loc">龙岗区 龙岗文化中心大剧院 龙岗中心城龙翔大道8308号</div>
+        </div>
+
+        <div class="card" data-district="南山" data-category="演出">
+          <div class="date">2026-12-12</div>
+          <div class="title"><a href="https://www.douban.com/event/38090588/" target="_blank" rel="noopener">鬼卞2026「FOR TEN」巡演·深圳站</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">南山</span>
+            <span class="tag paid">收费</span>
+            <span class="price">198.0元起</span>
+          </div>
+          <div class="loc">南山区 ON AIR音乐现场 粤海街道科苑南路2666号中国华润大厦B1层发布厅</div>
+        </div>
+
+        <div class="card" data-district="罗湖" data-category="演出">
+          <div class="date">2026-12-12</div>
+          <div class="title"><a href="https://www.douban.com/event/38123160/" target="_blank" rel="noopener">610乐队致敬家驹33周年海阔天空演唱会-罗湖站</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">罗湖</span>
+            <span class="tag paid">收费</span>
+            <span class="price">90.0元起</span>
+          </div>
+          <div class="loc">罗湖区 罗湖先锋剧场 黄贝街道碧波社区怡景路1014号罗湖区图书馆、罗湖区青少年宫101（罗湖先锋剧场）</div>
+        </div>
+
+        <div class="card" data-district="龙岗" data-category="演出">
+          <div class="date">2026-12-12</div>
+          <div class="title"><a href="https://www.douban.com/event/38033764/" target="_blank" rel="noopener">花开四季~心路歌者乌兰图雅演唱会专场</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">龙岗</span>
+            <span class="tag paid">收费</span>
+            <span class="price">380.00元起</span>
+          </div>
+          <div class="loc">龙岗区 龙岗国际艺术中心 贝尔路4号</div>
+        </div>
+
+        <div class="card" data-district="福田" data-category="演出">
+          <div class="date">2026-12-12</div>
+          <div class="title"><a href="https://www.douban.com/event/38123170/" target="_blank" rel="noopener">莉莉周她說「致走到這裡的」2026巡演深圳站</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">福田</span>
+            <span class="tag paid">收费</span>
+            <span class="price">168.0元起</span>
+          </div>
+          <div class="loc">福田区 HOU LIVE 滨河路9289号京基滨河时代广场B112A</div>
+        </div>
+
+        <div class="card" data-district="宝安" data-category="展览">
+          <div class="date">2026-12-12</div>
+          <div class="title"><a href="https://www.douban.com/event/38130993/" target="_blank" rel="noopener">深圳·纸梦相逢嘉年华</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag dist">宝安</span>
+            <span class="tag paid">收费</span>
+            <span class="price">88.0元起</span>
+          </div>
+          <div class="loc">宝安区 深圳纸梦相逢嘉年华 沙井街道锦程路与南环路交汇处昌达国际酒店会议厅二楼多功能会议厅</div>
+        </div>
+
+        <div class="card" data-district="龙岗" data-category="演出">
+          <div class="date">2026-12-12</div>
+          <div class="title"><a href="https://www.douban.com/event/38129282/" target="_blank" rel="noopener">2026「良辰·吟风成曲 」国风女声深圳音乐会(阵容：银临/少司命/董真/不才等）</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">龙岗</span>
+            <span class="tag paid">收费</span>
+            <span class="price">188.0元起</span>
+          </div>
+          <div class="loc">龙岗区 回响之地·深圳馆 宝龙街道宝龙大道景园公寓西侧约170米宝龙文体中心内</div>
+        </div></div>
+<script>
+  const cats=["展览","演出","讲座","市集","亲子","其他"];
+  const dists=["福田","南山","罗湖","宝安","龙华","龙岗","其他"];
+  const f=document.getElementById('filters');
+  let active={cat:'',dist:''};
+  function chip(label,kind,val){
+    const b=document.createElement('button');
+    b.className='chip'+(active[kind]===val?' on':'');
+    b.textContent=label;
+    b.onclick=()=>{ active[kind]=active[kind]===val?'':val; render(); };
+    return b;
+  }
+  function render(){
+    f.innerHTML='';
+    f.appendChild(chip('全部类型','cat',''));
+    cats.forEach(c=>f.appendChild(chip(c,'cat',c)));
+    f.appendChild(chip('全部区域','dist',''));
+    dists.forEach(d=>f.appendChild(chip(d,'dist',d)));
+    document.querySelectorAll('.card').forEach(c=>{
+      const ok=(!active.cat||c.dataset.category===active.cat)&&(!active.dist||c.dataset.district===active.dist);
+      c.style.display=ok?'':'none';
+    });
+    document.querySelectorAll('.chip').forEach((b,i)=>{
+      const label=b.textContent;
+      const kind= i< (1+cats.length) ? 'cat':'dist';
+      const val= i===0?'': (i<=cats.length? cats[i-1] : dists[i-(2+cats.length)]);
+      b.className='chip'+((kind==='cat'&&active.cat===val)||(kind==='dist'&&active.dist===val)?' on':'');
+    });
+  }
+  render();
+</script>
+</body></html>
