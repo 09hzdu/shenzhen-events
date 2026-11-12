@@ -1,0 +1,36 @@
+name: 深圳活动每日更新
+
+on:
+  schedule:
+    - cron: '0 1 * * *'        # UTC 01:00 = 北京时间 09:00（免费层可能有 15~30 分钟抖动）
+  workflow_dispatch:           # 允许在 Actions 页面手动触发
+
+permissions:
+  contents: write              # 允许工作流把生成的文件提交回仓库（Pages 直接 serve）
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 配置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 生成活动数据
+        run: python shenzhen_events.py
+
+      - name: 提交并推送
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add events.json events.ics index.html
+          if git diff --cached --quiet; then
+            echo "无变化，跳过提交"
+          else
+            git commit -m "auto: 更新深圳活动 $(date +%F)"
+            git push
+          fi
