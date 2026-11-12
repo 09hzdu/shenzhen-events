@@ -18,5 +18,10 @@
     "name": "深圳本地宝·活动汇总",
     "url": "https://sz.bendibao.com/xiuxian/",
     "parser": "bendibao_event"
+  },
+  {
+    "name": "Timable·香港活动",
+    "url": "https://timable.com/hk/cn",
+    "parser": "timable_event"
   }
 ]
