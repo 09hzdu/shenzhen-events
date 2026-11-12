@@ -106,23 +106,108 @@ def parse_douban_event(item):
     }
 
 
-PARSERS = {"douban_event": parse_douban_event}
+def fetch_html(url):
+    if url.startswith("https://"):
+        url = "http://" + url[8:]
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return r.read().decode("utf-8", "replace")
+
+
+def _gov_category(title):
+    if any(k in title for k in ("展览", "画展", "艺术展", "美术展")):
+        return "展览"
+    if any(k in title for k in ("演出", "戏曲", "戏剧", "话剧", "音乐会", "歌舞", "展演", "杂技")):
+        return "演出"
+    if any(k in title for k in ("讲座", "读书", "论坛", "沙龙", "分享", "讲坛")):
+        return "讲座"
+    if "市集" in title:
+        return "市集"
+    if any(k in title for k in ("亲子", "儿童", "少儿", "研学")):
+        return "亲子"
+    return "其他"
+
+
+def _gov_free(title):
+    if re.search(r"收费|购票|票价|门票|¥|\d+\s*元", title):
+        return "收费"
+    return "免费"
+
+
+GOV_KEYWORDS = ("展览", "活动", "演出", "展", "戏曲", "戏剧", "读书", "市集",
+                "音乐", "美术", "文化", "开幕", "启幕", "赛事", "比赛", "展演")
+
+
+def parse_gov_event(feed):
+    """解析深圳文旅局官网 HTML 列表页（文化服务 / 工作动态）。
+    政府站活动为新闻稿式，仅列表级信息：标题 + 发布日期 + 链接。
+    类型按标题关键词判定；是否免费默认'免费'（官方活动绝大多数为免费）。"""
+    raw = fetch_html(feed["url"])
+    out = []
+    for m in re.finditer(r"<li[^>]*>(.*?)</li>", raw, re.S):
+        blk = m.group(1)
+        a = re.search(
+            r'<a[^>]*href=["\']([^"\']+)["\'][^>]*?(?:title=["\']([^"\']*)["\'])?>(.*?)</a>',
+            blk, re.S)
+        if not a:
+            continue
+        href, title_attr, inner = a.group(1), a.group(2) or "", a.group(3) or ""
+        title = (title_attr or re.sub(r"<[^>]+>", "", inner)).strip()
+        if not title:
+            continue
+        dm = re.search(r"\d{4}[-/年]\d{1,2}[-/月]\d{1,2}", blk)
+        if not dm:
+            continue
+        if not any(k in title for k in GOV_KEYWORDS):
+            continue
+        date = dm.group(0).replace("年", "-").replace("月", "-").replace("日", "").replace("/", "-")
+        parts = re.split(r"[-/]", date)
+        if len(parts) != 3:
+            continue
+        try:
+            date = "%04d-%02d-%02d" % (int(parts[0]), int(parts[1]), int(parts[2]))
+        except ValueError:
+            continue
+        if href.startswith("/"):
+            href = "http://wtl.sz.gov.cn" + href
+        elif href.startswith("//"):
+            href = "http:" + href
+        out.append({
+            "title": title,
+            "date_start": date,
+            "date_end": None,
+            "district_raw": "其他",
+            "district": "其他",
+            "location": "",
+            "category": _gov_category(title),
+            "price": "" if _gov_free(title) == "免费" else "详见原文",
+            "is_free": _gov_free(title),
+            "link": href,
+        })
+    return out
+
+
+PARSERS = {"douban_event": parse_douban_event, "gov_event": parse_gov_event}
 
 
 def process_feed(feed):
-    raw = fetch(feed["url"])
-    root = ET.fromstring(raw)
-    out = []
-    for item in root.iter("item"):
-        parser = PARSERS.get(feed.get("parser", "douban_event"), parse_douban_event)
-        ev = parser(item)
-        if ev:
-            ev["source"] = feed["name"]
-            ev["id"] = hashlib.md5(
-                (ev["title"] + ev["date_start"] + ev["link"]).encode("utf-8")
-            ).hexdigest()[:16]
-            out.append(ev)
-    return out
+    parser_name = feed.get("parser", "douban_event")
+    if parser_name == "gov_event":
+        evs = parse_gov_event(feed)
+    else:
+        raw = fetch(feed["url"])
+        root = ET.fromstring(raw)
+        evs = []
+        for item in root.iter("item"):
+            ev = parse_douban_event(item)
+            if ev:
+                evs.append(ev)
+    for ev in evs:
+        ev["source"] = feed["name"]
+        ev["id"] = hashlib.md5(
+            (ev["title"] + ev["date_start"] + ev["link"]).encode("utf-8")
+        ).hexdigest()[:16]
+    return evs
 
 
 def load_state():
@@ -156,7 +241,8 @@ def build_ics(events):
             de_str = de.strftime("%Y%m%d")
         else:
             de_str = ""
-        summary = ev["title"].replace(",", "，").replace(";", "；").replace("\n", "")
+        fee_tag = {"免费": "【免费】", "收费": "【收费】", "未知": "【待定】"}.get(ev["is_free"], "")
+        summary = (fee_tag + ev["title"]).replace(",", "，").replace(";", "；").replace("\n", "")
         location = (ev["district_raw"] + " " + ev["location"]).strip() \
             .replace(",", "，").replace(";", "；")
         desc = "\\n".join([
@@ -188,7 +274,7 @@ def build_html(events):
     for ev in events:
         free_badge = {"免费": "free", "收费": "paid", "未知": "unk"}.get(ev["is_free"], "unk")
         cards.append(f"""
-        <div class="card" data-district="{ev['district']}" data-category="{ev['category']}">
+        <div class="card" data-district="{ev['district']}" data-category="{ev['category']}" data-fee="{ev['is_free']}">
           <div class="date">{ev['date_start']}{(' ~ '+ev['date_end']) if ev.get('date_end') else ''}</div>
           <div class="title"><a href="{html.escape(ev['link'])}" target="_blank" rel="noopener">{html.escape(ev['title'])}</a></div>
           <div class="meta">
@@ -241,8 +327,9 @@ def build_html(events):
 <script>
   const cats=["展览","演出","讲座","市集","亲子","其他"];
   const dists=["福田","南山","罗湖","宝安","龙华","龙岗","其他"];
+  const fees=["免费","收费","未知"];
   const f=document.getElementById('filters');
-  let active={{cat:'',dist:''}};
+  let active={{cat:'',dist:'',fee:''}};
   function chip(label,kind,val){{
     const b=document.createElement('button');
     b.className='chip'+(active[kind]===val?' on':'');
@@ -256,15 +343,13 @@ def build_html(events):
     cats.forEach(c=>f.appendChild(chip(c,'cat',c)));
     f.appendChild(chip('全部区域','dist',''));
     dists.forEach(d=>f.appendChild(chip(d,'dist',d)));
+    f.appendChild(chip('全部费用','fee',''));
+    fees.forEach(x=>f.appendChild(chip(x,'fee',x)));
     document.querySelectorAll('.card').forEach(c=>{{
-      const ok=(!active.cat||c.dataset.category===active.cat)&&(!active.dist||c.dataset.district===active.dist);
+      const ok=(!active.cat||c.dataset.category===active.cat)
+              &&(!active.dist||c.dataset.district===active.dist)
+              &&(!active.fee||c.dataset.fee===active.fee);
       c.style.display=ok?'':'none';
-    }});
-    document.querySelectorAll('.chip').forEach((b,i)=>{{
-      const label=b.textContent;
-      const kind= i< (1+cats.length) ? 'cat':'dist';
-      const val= i===0?'': (i<=cats.length? cats[i-1] : dists[i-(2+cats.length)]);
-      b.className='chip'+((kind==='cat'&&active.cat===val)||(kind==='dist'&&active.dist===val)?' on':'');
     }});
   }}
   render();
@@ -278,6 +363,7 @@ def main():
     state = load_state()
     existing = {e["id"]: e for e in state.get("events", [])}
     today = datetime.date.today()
+    cutoff = today - datetime.timedelta(days=60)
     added = []
     for feed in feeds:
         try:
@@ -285,13 +371,20 @@ def main():
         except Exception as e:
             print("feed failed:", feed["name"], "->", e, file=sys.stderr)
             continue
+        is_gov = feed.get("parser") == "gov_event"
         for ev in evs:
             try:
                 d = datetime.date.fromisoformat(ev["date_start"])
             except Exception:
                 d = today
-            if d < today:
-                continue
+            # 政府站为新闻稿式：date_start 是发布日，用近 60 天窗口保留资讯；
+            # 豆瓣为真实活动日：按开始日过期淘汰。
+            if is_gov:
+                if d < cutoff:
+                    continue
+            else:
+                if d < today:
+                    continue
             if ev["id"] in existing:
                 continue
             existing[ev["id"]] = ev
