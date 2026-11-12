@@ -3,5 +3,15 @@
     "name": "豆瓣同城·深圳热门活动",
     "url": "https://rsshub.rssforever.com/douban/event/hot/118282",
     "parser": "douban_event"
+  },
+  {
+    "name": "深圳文旅局·文化服务",
+    "url": "http://wtl.sz.gov.cn/whfw/index.html",
+    "parser": "gov_event"
+  },
+  {
+    "name": "深圳文旅局·工作动态",
+    "url": "http://wtl.sz.gov.cn/xxgk/qt/gzdt/",
+    "parser": "gov_event"
   }
 ]
