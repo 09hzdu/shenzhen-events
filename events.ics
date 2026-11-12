@@ -7,7 +7,7 @@ X-WR-CALNAME:深圳线下活动
 X-WR-TIMEZONE:Asia/Shanghai
 BEGIN:VEVENT
 UID:68f839f283667311@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261113
 SUMMARY:【收费】全息舞剧《幻境 天鹅湖》
 LOCATION:龙岗区 D+数字艺术馆 坂田街道贝尔路4号(贝尔路地铁站D出口前行100米)
@@ -17,7 +17,7 @@ URL:https://www.douban.com/event/37973182/
 END:VEVENT
 BEGIN:VEVENT
 UID:73fea52689d3f7a6@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261113
 SUMMARY:【收费】《相聚之地：走进澳大利亚原住民文化》｜韦恩·奎利安
 LOCATION:坪山区 坪山展览馆 汇德路4号（美术馆旁）
@@ -27,7 +27,7 @@ URL:https://www.douban.com/event/38143613/
 END:VEVENT
 BEGIN:VEVENT
 UID:db8109142e21426f@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261113
 SUMMARY:【收费】穹幕影片《天穹无界·民族万象》
 LOCATION:龙岗区 D+数字艺术馆 坂田街道贝尔路4号(贝尔路地铁站D出口前行100米)
@@ -37,7 +37,7 @@ URL:https://www.douban.com/event/37972017/
 END:VEVENT
 BEGIN:VEVENT
 UID:437be4ec2cdc61ce@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261113
 SUMMARY:【收费】沉浸影片《无垠之境》&《生生长流》
 LOCATION:龙岗区 D+数字艺术馆 坂田街道贝尔路4号(贝尔路地铁站D出口前行100米)
@@ -47,7 +47,7 @@ URL:https://www.douban.com/event/37971993/
 END:VEVENT
 BEGIN:VEVENT
 UID:6a50bab86d7dc5a9@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261114
 SUMMARY:【收费】《文艺复兴·重回非主流时代》威仔＆格子兮演唱会-罗湖站
 LOCATION:罗湖区 罗湖先锋剧场 黄贝街道碧波社区怡景路1014号罗湖区图书馆、罗湖区青少年宫101（罗湖先锋剧场）
@@ -57,7 +57,7 @@ URL:https://www.douban.com/event/38112804/
 END:VEVENT
 BEGIN:VEVENT
 UID:95d6a48203e4d682@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261115
 SUMMARY:【收费】华禧艺术·枉凝眉·埙萧说红楼·民族赏析民乐音乐会
 LOCATION:罗湖区 华禧文化艺术中心 黄贝岭街怡景路2008号德必深广电数创公园B区一楼华禧艺术文化中心
@@ -67,7 +67,7 @@ URL:https://www.douban.com/event/38157095/
 END:VEVENT
 BEGIN:VEVENT
 UID:1ac9b2b40f3cccc3@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261115
 SUMMARY:【收费】次元趴·宅化危机ACG乐队拼盘-湾剧场
 LOCATION:宝安区 湾剧场(万有空间) 新安街道宝华路1号湾区之眼南区B120
@@ -77,7 +77,7 @@ URL:https://www.douban.com/event/38137112/
 END:VEVENT
 BEGIN:VEVENT
 UID:87b30bcfd1c5d059@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261116
 SUMMARY:【收费】华禧艺术 岁月鎏金 港乐怀旧金曲 民乐音乐会
 LOCATION:罗湖区 华禧文化艺术中心 黄贝岭街怡景路2008号德必深广电数创公园B区一楼华禧艺术文化中心
@@ -87,7 +87,7 @@ URL:https://www.douban.com/event/38114314/
 END:VEVENT
 BEGIN:VEVENT
 UID:9f9f4874c55875ac@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261120
 SUMMARY:【收费】KF1 擂台英雄（我是拳手）第一季
 LOCATION:光明区 茅洲河体育艺术中心·剧场 公明北环大道633号茅洲河体育艺术中心文化和图书中心2栋403
@@ -97,7 +97,7 @@ URL:https://www.douban.com/event/38050712/
 END:VEVENT
 BEGIN:VEVENT
 UID:cb3fb2637bb48172@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261128
 SUMMARY:【收费】奇妙嘿夜烛光音乐会“最伟大的作品”流行曲目钢琴&小提琴&大提琴演奏
 LOCATION:南山区 青春无限乐团烛光音乐会音乐厅 沙河街道侨发路侨城坊1栋1层主会场
@@ -107,7 +107,7 @@ URL:https://www.douban.com/event/37970179/
 END:VEVENT
 BEGIN:VEVENT
 UID:cee2c309e9746cde@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261128
 SUMMARY:【收费】奇妙嘿夜烛光音乐会“海上钢琴师”&“汉斯季默”曲目钢琴&小提琴&大提琴三重奏
 LOCATION:南山区 青春无限乐团烛光音乐会音乐厅 沙河街道侨发路侨城坊1栋1层主会场
@@ -117,7 +117,7 @@ URL:https://www.douban.com/event/38006199/
 END:VEVENT
 BEGIN:VEVENT
 UID:196c1666d8135119@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261128
 SUMMARY:【收费】蒲熠星《银河系旅行攻略》巡回演唱会-深圳站
 LOCATION:福田区 深圳市体育中心体育馆主馆 体育中心笋岗西路2006号
@@ -127,7 +127,7 @@ URL:https://www.douban.com/event/38103266/
 END:VEVENT
 BEGIN:VEVENT
 UID:27cd83d5a583cd5b@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261129
 SUMMARY:【收费】2026声动南山 张玮玮 feat. 郭龙「特别专场」
 LOCATION:南山区 南山文体中心聚橙剧院 南山大道南头街62号
@@ -137,7 +137,7 @@ URL:https://www.douban.com/event/38115332/
 END:VEVENT
 BEGIN:VEVENT
 UID:597a5075d848a8cf@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261201
 SUMMARY:【收费】深圳湾文化广场-南馆通票
 LOCATION:南山区 深圳湾文化广场展览区 创业路阿里中心东北侧约270米
@@ -147,7 +147,7 @@ URL:https://www.douban.com/event/38142269/
 END:VEVENT
 BEGIN:VEVENT
 UID:14e09bafdbd6c3e8@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261204
 SUMMARY:【收费】桂冠之声｜沈周慧《根脉凝光：钢琴名作的溯源之旅》钢琴独奏音乐会
 LOCATION:福田区 安托山公共文化中心(演出售票) 香蜜湖街道安托山六路与侨香四道安托山公共文化中心
@@ -157,7 +157,7 @@ URL:https://www.douban.com/event/38070183/
 END:VEVENT
 BEGIN:VEVENT
 UID:168335994b91c91d@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261204
 SUMMARY:【收费】爱沙尼亚奇趣弓弦琴二人组PUULUUP音乐会
 LOCATION:南山区 境山剧场 望海路1187号海上世界文化艺术中心3-4楼
@@ -167,7 +167,7 @@ URL:https://www.douban.com/event/38148608/
 END:VEVENT
 BEGIN:VEVENT
 UID:586b720ae79f06de@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261205
 SUMMARY:【收费】萧忆情 ALEX【拾·忆】2026巡回演唱会--深圳站
 LOCATION:南山区 南山文体中心聚橙剧院 南山大道南头街62号
@@ -177,7 +177,7 @@ URL:https://www.douban.com/event/38060668/
 END:VEVENT
 BEGIN:VEVENT
 UID:6c3c5f10f26d03ab@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261205
 SUMMARY:【收费】黎明ROBBABA演唱会2026 - 深圳站
 LOCATION:龙岗区 深圳大运中心体育馆 龙城街道黄阁路99号(龙岗区黄阁路)
@@ -187,7 +187,7 @@ URL:https://www.douban.com/event/38111922/
 END:VEVENT
 BEGIN:VEVENT
 UID:a0e37ff924199722@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261205
 SUMMARY:【收费】合韵四重奏《不止是古典——音乐的意义》室内乐音乐会-南山站
 LOCATION:南山区 南山文体中心聚橙剧院 南山大道南头街62号
@@ -197,7 +197,7 @@ URL:https://www.douban.com/event/38153646/
 END:VEVENT
 BEGIN:VEVENT
 UID:b5763a7c25195478@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261205
 SUMMARY:【收费】龙岗歌剧周——张诚杰、宋倩、于浩磊领衔 《经典歌剧选段音乐会》
 LOCATION:龙岗区 龙岗文化中心大剧院 龙岗中心城龙翔大道8308号
@@ -207,7 +207,7 @@ URL:https://www.douban.com/event/38111271/
 END:VEVENT
 BEGIN:VEVENT
 UID:b912c97d6f0a18a5@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261206
 SUMMARY:【收费】「复刻回忆」Pianoboy高至豪流行钢琴音乐会
 LOCATION:南山区 深圳保利剧院 后海滨路3013号（后海地铁站E口旁）
@@ -217,7 +217,7 @@ URL:https://www.douban.com/event/37973030/
 END:VEVENT
 BEGIN:VEVENT
 UID:d937ad0f68075c5a@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261211
 SUMMARY:【收费】12月11-13日法语音乐剧《茶花女》
 LOCATION:坪山区 坪山大剧院 汇德路2号坪山大剧院
@@ -227,7 +227,7 @@ URL:https://www.douban.com/event/38052560/
 END:VEVENT
 BEGIN:VEVENT
 UID:c4384e74093589a3@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261211
 SUMMARY:【收费】老舍经典话剧《骆驼祥子》 深圳
 LOCATION:宝安区 海雅大剧院 建安一路99号海雅缤纷城F3层L399、F4层
@@ -237,7 +237,7 @@ URL:https://www.douban.com/event/37972885/
 END:VEVENT
 BEGIN:VEVENT
 UID:e8698443096a426d@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261211
 SUMMARY:【收费】Sold Out、Wildfire 原唱 Jon Steingard 2026 深圳演唱会
 LOCATION:南山区 MAO Livehouse深圳-海上世界店 招商街道水湾社区海上世界C区船后广场C-L2005A、C-L3002A
@@ -247,7 +247,7 @@ URL:https://www.douban.com/event/37972164/
 END:VEVENT
 BEGIN:VEVENT
 UID:6a68e61febd657f3@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261211
 SUMMARY:【收费】深圳交响乐团2026-2027乐季——布鲁克纳的浪漫
 LOCATION:福田区 深圳音乐厅·演奏大厅 福中一路2016号深圳音乐厅二楼演奏大厅
@@ -257,7 +257,7 @@ URL:https://www.douban.com/event/37973381/
 END:VEVENT
 BEGIN:VEVENT
 UID:91634008641553aa@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261211
 SUMMARY:【收费】开心麻花惊怂爆笑喜剧《出马》深圳
 LOCATION:龙华区 深圳开心麻花红山剧场 大岭社区红山6979三期1栋B区
@@ -267,7 +267,7 @@ URL:https://www.douban.com/event/38150519/
 END:VEVENT
 BEGIN:VEVENT
 UID:ded9078ebfa762a2@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261211
 SUMMARY:【收费】大道文化出品 陈佩斯主演 话剧《惊梦》
 LOCATION:宝安区 深圳滨海艺术中心 宝兴路欢乐港湾16号（滨海文化公园内）
@@ -277,7 +277,7 @@ URL:https://www.douban.com/event/38017371/
 END:VEVENT
 BEGIN:VEVENT
 UID:606a9828fe84ff46@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261211
 SUMMARY:【收费】赖声川导演作品 话剧《暗恋桃花源》专属版 深圳站
 LOCATION:南山区 华夏艺术中心 华侨城光侨街1号2楼
@@ -287,7 +287,7 @@ URL:https://www.douban.com/event/38109587/
 END:VEVENT
 BEGIN:VEVENT
 UID:1c3abfa0c5882d2f@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261211
 SUMMARY:【收费】Quark夸克乐队“下蛋蛋” No Stage 2026 不巡 演！深圳
 LOCATION:福田区 HOU LIVE 滨河路9289号京基滨河时代广场B112A
@@ -297,7 +297,7 @@ URL:https://www.douban.com/event/38166115/
 END:VEVENT
 BEGIN:VEVENT
 UID:a13346383590d68c@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261212
 SUMMARY:【收费】龙岗新年古典音乐季——《海上升明月·清歌落大湾》中外声乐经典音乐会
 LOCATION:龙岗区 龙岗文化中心大剧院 龙岗中心城龙翔大道8308号
@@ -307,7 +307,7 @@ URL:https://www.douban.com/event/38097480/
 END:VEVENT
 BEGIN:VEVENT
 UID:f58eb9fa201750fb@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261212
 SUMMARY:【收费】鬼卞2026「FOR TEN」巡演·深圳站
 LOCATION:南山区 ON AIR音乐现场 粤海街道科苑南路2666号中国华润大厦B1层发布厅
@@ -317,7 +317,7 @@ URL:https://www.douban.com/event/38090588/
 END:VEVENT
 BEGIN:VEVENT
 UID:9e57f985e2d1850a@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261212
 SUMMARY:【收费】610乐队致敬家驹33周年海阔天空演唱会-罗湖站
 LOCATION:罗湖区 罗湖先锋剧场 黄贝街道碧波社区怡景路1014号罗湖区图书馆、罗湖区青少年宫101（罗湖先锋剧场）
@@ -327,7 +327,7 @@ URL:https://www.douban.com/event/38123160/
 END:VEVENT
 BEGIN:VEVENT
 UID:02fd3f32fd25ce15@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261212
 SUMMARY:【收费】花开四季~心路歌者乌兰图雅演唱会专场
 LOCATION:龙岗区 龙岗国际艺术中心 贝尔路4号
@@ -337,7 +337,7 @@ URL:https://www.douban.com/event/38033764/
 END:VEVENT
 BEGIN:VEVENT
 UID:55fb8fa720572e5c@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261212
 SUMMARY:【收费】莉莉周她說「致走到這裡的」2026巡演深圳站
 LOCATION:福田区 HOU LIVE 滨河路9289号京基滨河时代广场B112A
@@ -347,7 +347,7 @@ URL:https://www.douban.com/event/38123170/
 END:VEVENT
 BEGIN:VEVENT
 UID:1acd887a8bcc7cc0@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261212
 SUMMARY:【收费】深圳·纸梦相逢嘉年华
 LOCATION:宝安区 深圳纸梦相逢嘉年华 沙井街道锦程路与南环路交汇处昌达国际酒店会议厅二楼多功能会议厅
@@ -357,7 +357,7 @@ URL:https://www.douban.com/event/38130993/
 END:VEVENT
 BEGIN:VEVENT
 UID:48339ccd84a2a0cf@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261212
 SUMMARY:【收费】2026「良辰·吟风成曲 」国风女声深圳音乐会(阵容：银临/少司命/董真/不才等）
 LOCATION:龙岗区 回响之地·深圳馆 宝龙街道宝龙大道景园公寓西侧约170米宝龙文体中心内
@@ -367,7 +367,7 @@ URL:https://www.douban.com/event/38129282/
 END:VEVENT
 BEGIN:VEVENT
 UID:5d9ff95921ff4c87@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261212
 SUMMARY:【收费】原创话剧《不到园林，怎知春色如许》
 LOCATION:福田区 安托山公共文化中心(演出售票) 香蜜湖街道安托山六路与侨香四道安托山公共文化中心
@@ -377,7 +377,7 @@ URL:https://www.douban.com/event/38166947/
 END:VEVENT
 BEGIN:VEVENT
 UID:d4b8a8464fcf1453@shenzhen-events
-DTSTAMP:20261112T182313Z
+DTSTAMP:20261112T182539Z
 DTSTART;VALUE=DATE:20261212
 SUMMARY:【收费】翩跹琴舞——扬·利谢茨基钢琴独奏音乐会
 LOCATION:福田区 深圳音乐厅·演奏大厅 福中一路2016号深圳音乐厅二楼演奏大厅
