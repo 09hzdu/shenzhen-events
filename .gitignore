@@ -1,0 +1,6 @@
+# 含敏感凭证，切勿提交/发布
+github_config.json
+
+# 本地生成产物（可选，按需）
+__pycache__/
+*.pyc
