@@ -17,6 +17,7 @@ import hashlib
 import datetime
 import time
 import urllib.request
+from urllib.parse import quote
 import urllib.error
 import xml.etree.ElementTree as ET
 
@@ -205,10 +206,21 @@ def parse_gov_event(feed):
 # 首页为服务端渲染，约 40 张 .main-block-single 卡片，字段：
 #   标题 / 活动地址 / 活动亮点 / 活动时间（仅约 4 成有值）/ 详情链接。
 # 没有付费字段，也无分页，只能按文案与标题关键词推断费用。
-# 首页混入香港展览（油麻地、九龙寨城、西九 M+ 等），需按地域剔除。
+# 首页混入香港展览（油麻地、九龙寨城、西九 M+ 等），按城市标注后可保留。
 
-BDB_OUT_OF_SZ = ("香港", "澳门", "油麻地", "九龙", "西九", "广州", "东莞",
-                 "惠州", "珠海", "佛山", "中山", "江门")
+# 城市识别：地标关键词 -> 城市（深圳周边 + 港澳都收）
+BDB_CITY_HINTS = [
+    ("香港", ("香港", "九龙", "西九", "油麻地", "中环", "尖沙咀", "铜锣湾",
+              "湾仔", "沙田", "大埔", "元朗", "M+")),
+    ("澳门", ("澳门", "氹仔", "路环")),
+    ("广州", ("广州",)),
+    ("东莞", ("东莞",)),
+    ("惠州", ("惠州",)),
+    ("珠海", ("珠海",)),
+    ("佛山", ("佛山",)),
+    ("中山", ("中山市",)),
+    ("江门", ("江门",)),
+]
 BDB_FREE_RE = re.compile(r"免费")
 BDB_PAID_RE = re.compile(r"演唱会|音乐节|巡演|音乐剧|话剧|儿童剧|购票|售票|票价|门票")
 BDB_DISTRICT_RE = re.compile(r"(福田|南山|罗湖|宝安|龙华|龙岗|盐田|坪山|光明|大鹏)")
@@ -251,6 +263,14 @@ def _bdb_category(title):
     return _gov_category(title)
 
 
+def _bdb_city(text):
+    """从标题/地址判断城市。默认深圳（这是深圳站）。"""
+    for city, keys in BDB_CITY_HINTS:
+        if any(k in text for k in keys):
+            return city
+    return "深圳"
+
+
 def parse_bendibao_event(feed):
     """解析本地宝深圳活动汇总首页。只保留能确定活动日期的条目，
     活动时间缺失的（约六成）直接丢弃——宁缺勿造。
@@ -280,23 +300,24 @@ def parse_bendibao_event(feed):
         if not link:
             continue
 
-        # 剔除外地（含香港）内容
-        loc_text = title + " " + addr
-        if any(k in loc_text for k in BDB_OUT_OF_SZ) and "深圳" not in loc_text:
-            continue
+        # 城市识别：深圳 + 周边（莞惠广珠佛中江）+ 港澳都收
+        city = _bdb_city(title + " " + addr)
 
         date_start, date_end, note = _bdb_timerange(
             _bdb_strip(mtm.group(1)) if mtm else "")
         if not date_start:
             continue
 
-        md = BDB_DISTRICT_RE.search(addr) or BDB_DISTRICT_RE.search(title)
-        if md:
-            name = md.group(1)
-            district_raw = name + ("新区" if name == "大鹏" else "区")
+        if city != "深圳":
+            district_raw, district = city, "周边"
         else:
-            district_raw = "其他"
-        district = PLAN_DISTRICTS.get(district_raw, "其他")
+            md = BDB_DISTRICT_RE.search(addr) or BDB_DISTRICT_RE.search(title)
+            if md:
+                name = md.group(1)
+                district_raw = name + ("新区" if name == "大鹏" else "区")
+            else:
+                district_raw = "其他"
+            district = PLAN_DISTRICTS.get(district_raw, "其他")
 
         text = title + " " + hl
         if BDB_FREE_RE.search(text):
@@ -310,6 +331,7 @@ def parse_bendibao_event(feed):
             "title": title,
             "date_start": date_start,
             "date_end": date_end,
+            "city": city,
             "district_raw": district_raw,
             "district": district,
             "location": addr or hl[:40],
@@ -322,8 +344,108 @@ def parse_bendibao_event(feed):
     return out
 
 
+# ---------- Timable · 中国香港活动 ----------
+# https://timable.com/hk/cn 为简体版，页面内嵌 window.__remixContext（Remix SSR 数据），
+# 含 100+ 条 Event：name / permalink / sections(起止时间) / fees(票价)。无需解析 DOM。
+
+def _hk_date(ts):
+    """Timable 时间戳是 UTC，转香港时间（UTC+8）取日期。"""
+    if not ts:
+        return None
+    try:
+        dt = datetime.datetime.fromisoformat(ts.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return (dt + datetime.timedelta(hours=8)).date()
+
+
+def _hk_category(name):
+    if re.search(r"市集|夜市|墟市", name):
+        return "市集"
+    if re.search(r"演唱会|音乐会|音乐节|音乐|艺术节|剧场|话剧|音乐剧|栋笃笑|舞蹈|戏曲|演奏|演出", name):
+        return "演出"
+    if re.search(r"亲子|儿童|小童|童趣", name):
+        return "亲子"
+    if re.search(r"讲座|分享会|工作坊|论坛|导赏|课程", name):
+        return "讲座"
+    if re.search(r"展览|博物馆|美术馆|艺术展|博览会|展览会|展会|装置|期间限定|展", name):
+        return "展览"
+    return "其他"
+
+
+def _walk_events(obj):
+    if isinstance(obj, dict):
+        if obj.get("__typename") == "Event" and obj.get("name"):
+            yield obj
+        for v in obj.values():
+            yield from _walk_events(v)
+    elif isinstance(obj, list):
+        for v in obj:
+            yield from _walk_events(v)
+
+
+def parse_timable_event(feed):
+    raw = fetch_html(feed["url"])
+    m = re.search(r"window\.__remixContext\s*=\s*(\{[\s\S]*?\});\s*</script>", raw)
+    if not m:
+        print("timable: 未找到 __remixContext 数据，可能改版，本次跳过", file=sys.stderr)
+        return []
+    try:
+        data = json.loads(m.group(1))
+    except ValueError as e:
+        print("timable: SSR 数据解析失败:", e, file=sys.stderr)
+        return []
+
+    uniq = {}
+    for ev in _walk_events(data):
+        uniq[ev["id"]] = ev
+
+    out = []
+    for ev in uniq.values():
+        sections = ev.get("sections") or []
+        starts = [d for d in (_hk_date(s.get("startDatetime")) for s in sections) if d]
+        ends = []
+        for s in sections:
+            d = _hk_date(s.get("toThisDay")) or _hk_date(s.get("endDatetime"))
+            if d:
+                ends.append(d)
+        if not starts:
+            continue
+        name = (ev.get("name") or "").strip()
+        if not name:
+            continue
+
+        fees = [f.get("fee") for f in (ev.get("fees") or [])
+                if isinstance(f.get("fee"), (int, float)) and f.get("fee") > 0]
+        if fees:
+            is_free, price = "收费", "HK$%d 起" % int(min(fees))
+        else:
+            is_free, price = "免费", "免费"
+
+        # 场地多数写在名称尾部，形如「XXX＠东港城」
+        mv = re.search(r"[@＠]\s*([^\s@＠]{2,20})\s*$", name)
+        d_start, d_end = min(starts), (max(ends) if ends else None)
+        note = "活动时间: %s ~ %s" % (d_start, d_end) if d_end else "活动时间: %s 起" % d_start
+
+        out.append({
+            "title": name,
+            "date_start": d_start.isoformat(),
+            "date_end": d_end.isoformat() if d_end else None,
+            "city": "香港",
+            "district_raw": "香港",
+            "district": "周边",
+            "location": mv.group(1) if mv else "",
+            "category": _hk_category(name),
+            "price": price,
+            "is_free": is_free,
+            "link": "https://timable.com/hk/cn/event/%s/%s" % (ev["id"], ev.get("permalink") or ""),
+            "time_note": note,
+        })
+    return out
+
+
 PARSERS = {"douban_event": parse_douban_event, "gov_event": parse_gov_event,
-           "bendibao_event": parse_bendibao_event}
+           "bendibao_event": parse_bendibao_event, "timable_event": parse_timable_event}
 
 
 def process_feed(feed):
@@ -332,6 +454,8 @@ def process_feed(feed):
         evs = parse_gov_event(feed)
     elif parser_name == "bendibao_event":
         evs = parse_bendibao_event(feed)
+    elif parser_name == "timable_event":
+        evs = parse_timable_event(feed)
     else:
         raw = fetch(feed["url"])
         root = ET.fromstring(raw)
@@ -342,6 +466,7 @@ def process_feed(feed):
                 evs.append(ev)
     for ev in evs:
         ev["source"] = feed["name"]
+        ev.setdefault("city", "深圳")
         ev["id"] = hashlib.md5(
             (ev["title"] + ev["date_start"] + ev["link"]).encode("utf-8")
         ).hexdigest()[:16]
@@ -366,25 +491,37 @@ def ics_date(d):
 
 def build_ics(events):
     now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    today_d = datetime.date.today()
     L = [
         "BEGIN:VCALENDAR", "VERSION:2.0",
         "PRODID:-//ShenzhenEvents//ZH//", "CALSCALE:GREGORIAN",
-        "METHOD:PUBLISH", "X-WR-CALNAME:深圳线下活动",
+        "METHOD:PUBLISH", "X-WR-CALNAME:深圳及周边活动",
         "X-WR-TIMEZONE:Asia/Shanghai",
     ]
     for ev in events:
-        ds = ics_date(ev["date_start"])
-        de_str = ""
+        try:
+            d1 = datetime.date.fromisoformat(ev["date_start"])
+        except ValueError:
+            d1 = today_d
+        d2 = None
         if ev.get("date_end"):
             try:
-                d1 = datetime.date.fromisoformat(ev["date_start"])
                 d2 = datetime.date.fromisoformat(ev["date_end"])
             except ValueError:
-                d1 = d2 = None
-            # 跨度超 120 天的视为常年展览/长期开放：只标开始日，
-            # 否则日历里会横一条长条把其他活动全挤下去（真实区间见描述里的“活动时间”）。
-            if d1 and d2 and (d2 - d1).days <= 120:
-                de_str = (d2 + datetime.timedelta(days=1)).strftime("%Y%m%d")
+                d2 = None
+        # 已开始但未结束的（正在展出/演出季）：从今天起显示。
+        # 否则 DTSTART 落在过去，日历里根本不显示，等于白收。
+        ongoing = bool(d2 and d1 < today_d <= d2)
+        # 已经开始又没结束日期的，说明只剩资讯价值（政府站新闻稿常见），
+        # 日历里放过去的日子看不见，直接不进 ICS（看板仍保留）。
+        if not ongoing and d1 < today_d:
+            continue
+        show_start = today_d if ongoing else d1
+        ds = show_start.strftime("%Y%m%d")
+        # 跨度超 120 天的视为常年展：只标一天，否则日历里横一条长条挤掉其他活动
+        de_str = ""
+        if d2 and (d2 - d1).days <= 120:
+            de_str = (d2 + datetime.timedelta(days=1)).strftime("%Y%m%d")
         fee_tag = {"免费": "【免费】", "收费": "【收费】", "未知": "【待定】"}.get(ev["is_free"], "")
         summary = (fee_tag + ev["title"]).replace(",", "，").replace(";", "；").replace("\n", "")
         loc_parts = [ev["district_raw"] if ev["district_raw"] != "其他" else "",
@@ -394,6 +531,8 @@ def build_ics(events):
         desc_lines = ["类型: " + ev["category"], "价格: " + (ev["price"] or "未知")]
         if ev.get("time_note"):
             desc_lines.append(ev["time_note"])
+        if ev.get("city") and ev["city"] != "深圳":
+            desc_lines.append("城市: " + ev["city"])
         desc_lines += [
             "区域: " + ev["district"],
             "来源: " + ev["source"],
@@ -410,7 +549,7 @@ def build_ics(events):
         L.append("LOCATION:" + location)
         L.append("DESCRIPTION:" + desc)
         L.append("CATEGORIES:" + ev["category"])
-        L.append("URL:" + ev["link"])
+        L.append("URL:" + quote(ev["link"], safe=":/?&=#%"))
         L.append("END:VEVENT")
     L.append("END:VCALENDAR")
     return "\r\n".join(L)
@@ -418,16 +557,21 @@ def build_ics(events):
 
 def build_html(events):
     today = datetime.date.today().isoformat()
+    cities = sorted({(e.get("city") or "深圳") for e in events},
+                    key=lambda c: (c != "深圳", c))
     cards = []
     for ev in events:
         free_badge = {"免费": "free", "收费": "paid", "未知": "unk"}.get(ev["is_free"], "unk")
+        city = ev.get("city") or "深圳"
+        city_tag = "" if city == "深圳" else \
+            f'<span class="tag city">{html.escape(city)}</span>'
         cards.append(f"""
-        <div class="card" data-district="{ev['district']}" data-category="{ev['category']}" data-fee="{ev['is_free']}">
+        <div class="card" data-city="{html.escape(city)}" data-district="{ev['district']}" data-category="{ev['category']}" data-fee="{ev['is_free']}">
           <div class="date">{ev['date_start']}{(' ~ '+ev['date_end']) if ev.get('date_end') else ''}</div>
           <div class="title"><a href="{html.escape(ev['link'])}" target="_blank" rel="noopener">{html.escape(ev['title'])}</a></div>
           <div class="meta">
             <span class="tag cat">{html.escape(ev['category'])}</span>
-            <span class="tag dist">{html.escape(ev['district'])}</span>
+            {city_tag}<span class="tag dist">{html.escape(ev['district'])}</span>
             <span class="tag {free_badge}">{html.escape(ev['is_free'])}</span>
             <span class="price">{html.escape(ev['price'] or '未知')}</span>
           </div>
@@ -457,6 +601,7 @@ def build_html(events):
   .meta {{ display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:8px; }}
   .tag {{ font-size:11px; padding:2px 8px; border-radius:6px; background:#eef2ff; color:#3730a3; }}
   .tag.dist {{ background:#ecfdf5; color:#047857; }}
+  .tag.city {{ background:#fff7ed; color:#c2410c; }}
   .tag.free {{ background:#ecfdf5; color:#047857; }}
   .tag.paid {{ background:#fef2f2; color:#b91c1c; }}
   .tag.unk {{ background:#f3f4f6; color:#6b7280; }}
@@ -474,10 +619,11 @@ def build_html(events):
 <div class="grid" id="grid">{body}</div>
 <script>
   const cats=["展览","演出","讲座","市集","亲子","其他"];
-  const dists=["福田","南山","罗湖","宝安","龙华","龙岗","其他"];
+  const dists=["福田","南山","罗湖","宝安","龙华","龙岗","周边","其他"];
   const fees=["免费","收费","未知"];
+  const cities={json.dumps(cities, ensure_ascii=False)};
   const f=document.getElementById('filters');
-  let active={{cat:'',dist:'',fee:''}};
+  let active={{cat:'',dist:'',fee:'',city:''}};
   function chip(label,kind,val){{
     const b=document.createElement('button');
     b.className='chip'+(active[kind]===val?' on':'');
@@ -493,10 +639,13 @@ def build_html(events):
     dists.forEach(d=>f.appendChild(chip(d,'dist',d)));
     f.appendChild(chip('全部费用','fee',''));
     fees.forEach(x=>f.appendChild(chip(x,'fee',x)));
+    f.appendChild(chip('全部城市','city',''));
+    cities.forEach(c=>f.appendChild(chip(c,'city',c)));
     document.querySelectorAll('.card').forEach(c=>{{
       const ok=(!active.cat||c.dataset.category===active.cat)
               &&(!active.dist||c.dataset.district===active.dist)
-              &&(!active.fee||c.dataset.fee===active.fee);
+              &&(!active.fee||c.dataset.fee===active.fee)
+              &&(!active.city||c.dataset.city===active.city);
       c.style.display=ok?'':'none';
     }});
   }}
@@ -520,7 +669,9 @@ def main():
             print("feed failed:", feed["name"], "->", e, file=sys.stderr)
             continue
         is_gov = feed.get("parser") == "gov_event"
-        is_bdb = feed.get("parser") == "bendibao_event"
+        # 本地宝 / Timable 给的 date_start 就是真实活动日，且多有结束日：
+        # 已开始但未结束的（正在展）要保留。
+        is_realtime = feed.get("parser") in ("bendibao_event", "timable_event")
         for ev in evs:
             try:
                 d = datetime.date.fromisoformat(ev["date_start"])
@@ -532,7 +683,7 @@ def main():
             if is_gov:
                 if d < cutoff:
                     continue
-            elif is_bdb:
+            elif is_realtime:
                 end = ev.get("date_end")
                 if end:
                     try:
@@ -550,7 +701,33 @@ def main():
                 continue
             existing[ev["id"]] = ev
             added.append(ev)
+    # 清理已过期事件：有结束日的看结束日；无结束日的按类型给窗口
+    # （政府站 date_start 是发布日，留 60 天；其余是活动日，过了就删）。
+    # 不做这步 events.json 会无限堆积，越跑越大。
+    parser_of = {f["name"]: f.get("parser", "") for f in feeds}
+    dropped = 0
+    for eid, e in list(existing.items()):
+        pt = parser_of.get(e.get("source"), "")
+        try:
+            d = datetime.date.fromisoformat(e["date_start"])
+        except (KeyError, ValueError):
+            continue
+        if e.get("date_end"):
+            try:
+                if datetime.date.fromisoformat(e["date_end"]) < today:
+                    del existing[eid]
+                    dropped += 1
+            except ValueError:
+                pass
+            continue
+        limit = today - datetime.timedelta(days=60) if pt == "gov_event" else today
+        if d < limit:
+            del existing[eid]
+            dropped += 1
+
     merged = list(existing.values())
+    for e in merged:
+        e.setdefault("city", "深圳")
     merged.sort(key=lambda e: e["date_start"])
     state["events"] = merged
     save_state(state)
