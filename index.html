@@ -21,6 +21,7 @@
   .meta { display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:8px; }
   .tag { font-size:11px; padding:2px 8px; border-radius:6px; background:#eef2ff; color:#3730a3; }
   .tag.dist { background:#ecfdf5; color:#047857; }
+  .tag.city { background:#fff7ed; color:#c2410c; }
   .tag.free { background:#ecfdf5; color:#047857; }
   .tag.paid { background:#fef2f2; color:#b91c1c; }
   .tag.unk { background:#f3f4f6; color:#6b7280; }
@@ -31,12 +32,24 @@
 <body>
 <header>
   <h1>深圳线下活动看板</h1>
-  <span class="count">共 72 场 · 更新于 2026-11-12</span>
+  <span class="count">共 174 场 · 更新于 2026-11-13</span>
   <a class="sub" href="events.ics">订阅日历 (webcal)</a>
 </header>
 <div class="filters" id="filters"></div>
 <div class="grid" id="grid">
-        <div class="card" data-district="其他" data-category="展览" data-fee="免费">
+        <div class="card" data-city="香港" data-district="周边" data-category="展览" data-fee="收费">
+          <div class="date">2026-06-27 ~ 2027-01-10</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/68f8637dbc8709896c737a39/设计啊-感受日常设计之奇妙-展览" target="_blank" rel="noopener">「设计啊！感受日常设计之奇妙」展览</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$100 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="深圳" data-district="其他" data-category="展览" data-fee="免费">
           <div class="date">2026-07-28 ~ 2027-12-31</div>
           <div class="title"><a href="http://sz.bendibao.com/xiuxian/2026728/1008865.shtm" target="_blank" rel="noopener">深圳自然博物馆参观攻略+实拍</a></div>
           <div class="meta">
@@ -48,7 +61,7 @@
           <div class="loc">其他 深圳自然博物馆</div>
         </div>
 
-        <div class="card" data-district="其他" data-category="展览" data-fee="未知">
+        <div class="card" data-city="深圳" data-district="其他" data-category="展览" data-fee="未知">
           <div class="date">2026-07-28 ~ 2027-01-01</div>
           <div class="title"><a href="http://sz.bendibao.com/xiuxian/2026728/1009008.shtm" target="_blank" rel="noopener">国家地质公园博物馆-中生代恐龙巢穴复原展</a></div>
           <div class="meta">
@@ -60,7 +73,7 @@
           <div class="loc">大鹏新区 深圳大鹏半岛国家地质公园博物馆</div>
         </div>
 
-        <div class="card" data-district="罗湖" data-category="展览" data-fee="未知">
+        <div class="card" data-city="深圳" data-district="罗湖" data-category="展览" data-fee="未知">
           <div class="date">2026-08-01 ~ 2027-12-31</div>
           <div class="title"><a href="http://sz.bendibao.com/xiuxian/202686/1009549.shtm" target="_blank" rel="noopener">2026深圳罗湖巧克力博物馆</a></div>
           <div class="meta">
@@ -72,7 +85,7 @@
           <div class="loc">罗湖区 深圳巧克力博物馆</div>
         </div>
 
-        <div class="card" data-district="其他" data-category="其他" data-fee="免费">
+        <div class="card" data-city="深圳" data-district="其他" data-category="其他" data-fee="免费">
           <div class="date">2026-09-14</div>
           <div class="title"><a href="https://wtl.sz.gov.cn/xxgk/qt/gzdt/content/post_12979223.html" target="_blank" rel="noopener">2026深圳“一带一路”国际音乐季启幕</a></div>
           <div class="meta">
@@ -84,7 +97,7 @@
           <div class="loc">其他 </div>
         </div>
 
-        <div class="card" data-district="其他" data-category="其他" data-fee="免费">
+        <div class="card" data-city="深圳" data-district="其他" data-category="其他" data-fee="免费">
           <div class="date">2026-09-18</div>
           <div class="title"><a href="https://wtl.sz.gov.cn/whfw/whxw/content/post_12988917.html" target="_blank" rel="noopener">深圳市文化馆新馆28日试运营</a></div>
           <div class="meta">
@@ -96,7 +109,7 @@
           <div class="loc">其他 </div>
         </div>
 
-        <div class="card" data-district="其他" data-category="其他" data-fee="免费">
+        <div class="card" data-city="深圳" data-district="其他" data-category="其他" data-fee="免费">
           <div class="date">2026-09-23</div>
           <div class="title"><a href="https://wtl.sz.gov.cn/whfw/whxw/content/post_12995556.html" target="_blank" rel="noopener">“为爱点灯”中秋公益关爱活动在深圳图书馆举行</a></div>
           <div class="meta">
@@ -108,7 +121,7 @@
           <div class="loc">其他 </div>
         </div>
 
-        <div class="card" data-district="其他" data-category="其他" data-fee="免费">
+        <div class="card" data-city="深圳" data-district="其他" data-category="其他" data-fee="免费">
           <div class="date">2026-09-23</div>
           <div class="title"><a href="https://wtl.sz.gov.cn/xxgk/qt/gzdt/content/post_12995563.html" target="_blank" rel="noopener">比利·简·金杯总决赛深圳启幕</a></div>
           <div class="meta">
@@ -120,7 +133,7 @@
           <div class="loc">其他 </div>
         </div>
 
-        <div class="card" data-district="其他" data-category="演出" data-fee="免费">
+        <div class="card" data-city="深圳" data-district="其他" data-category="演出" data-fee="免费">
           <div class="date">2026-09-28</div>
           <div class="title"><a href="https://wtl.sz.gov.cn/whfw/whxw/content/post_13000570.html" target="_blank" rel="noopener">深圳音乐厅双节演出启幕</a></div>
           <div class="meta">
@@ -132,7 +145,7 @@
           <div class="loc">其他 </div>
         </div>
 
-        <div class="card" data-district="其他" data-category="市集" data-fee="免费">
+        <div class="card" data-city="深圳" data-district="其他" data-category="市集" data-fee="免费">
           <div class="date">2026-09-28</div>
           <div class="title"><a href="https://wtl.sz.gov.cn/xxgk/qt/gzdt/content/post_13000303.html" target="_blank" rel="noopener">新潮夜游魅力足 商圈市集人气旺</a></div>
           <div class="meta">
@@ -144,7 +157,7 @@
           <div class="loc">其他 </div>
         </div>
 
-        <div class="card" data-district="其他" data-category="其他" data-fee="未知">
+        <div class="card" data-city="深圳" data-district="其他" data-category="其他" data-fee="未知">
           <div class="date">2026-09-28 ~ 2027-01-01</div>
           <div class="title"><a href="http://sz.bendibao.com/xiuxian/2026918/1013415.shtm" target="_blank" rel="noopener">深圳市文化馆新馆开馆！</a></div>
           <div class="meta">
@@ -156,7 +169,7 @@
           <div class="loc">其他 深圳文化馆新馆</div>
         </div>
 
-        <div class="card" data-district="其他" data-category="其他" data-fee="免费">
+        <div class="card" data-city="深圳" data-district="其他" data-category="其他" data-fee="免费">
           <div class="date">2026-09-29</div>
           <div class="title"><a href="https://wtl.sz.gov.cn/xxgk/qt/gzdt/content/post_13001927.html" target="_blank" rel="noopener">市文化馆新馆开门迎客</a></div>
           <div class="meta">
@@ -168,7 +181,19 @@
           <div class="loc">其他 </div>
         </div>
 
-        <div class="card" data-district="其他" data-category="其他" data-fee="未知">
+        <div class="card" data-city="香港" data-district="周边" data-category="展览" data-fee="收费">
+          <div class="date">2026-09-29 ~ 2026-11-26</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6abca4c216fa69814abcd75d/呕心食物博物馆-香港站" target="_blank" rel="noopener">《呕心食物博物馆》香港站</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$48 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="深圳" data-district="其他" data-category="其他" data-fee="未知">
           <div class="date">2026-10-01 ~ 2026-12-31</div>
           <div class="title"><a href="http://sz.bendibao.com/xiuxian/20261012/1014588.shtm" target="_blank" rel="noopener">深圳10月-12月公园赏花地推荐</a></div>
           <div class="meta">
@@ -180,7 +205,7 @@
           <div class="loc">其他 陌上花公园</div>
         </div>
 
-        <div class="card" data-district="其他" data-category="其他" data-fee="未知">
+        <div class="card" data-city="深圳" data-district="其他" data-category="其他" data-fee="未知">
           <div class="date">2026-10-01 ~ 2027-01-31</div>
           <div class="title"><a href="http://sz.bendibao.com/xiuxian/20261012/1014585.shtm" target="_blank" rel="noopener">仙湖植物园簕杜鹃花海+落羽杉</a></div>
           <div class="meta">
@@ -192,7 +217,7 @@
           <div class="loc">其他 仙湖植物园</div>
         </div>
 
-        <div class="card" data-district="其他" data-category="演出" data-fee="免费">
+        <div class="card" data-city="深圳" data-district="其他" data-category="演出" data-fee="免费">
           <div class="date">2026-10-02</div>
           <div class="title"><a href="https://wtl.sz.gov.cn/whfw/whys/content/post_13007923.html" target="_blank" rel="noopener">“山海和鸣”音乐会惊艳亮相</a></div>
           <div class="meta">
@@ -204,7 +229,7 @@
           <div class="loc">其他 </div>
         </div>
 
-        <div class="card" data-district="其他" data-category="演出" data-fee="免费">
+        <div class="card" data-city="深圳" data-district="其他" data-category="演出" data-fee="免费">
           <div class="date">2026-10-06</div>
           <div class="title"><a href="https://wtl.sz.gov.cn/whfw/whxw/content/post_13008033.html" target="_blank" rel="noopener">戏曲之美绽放青春之城</a></div>
           <div class="meta">
@@ -216,7 +241,7 @@
           <div class="loc">其他 </div>
         </div>
 
-        <div class="card" data-district="其他" data-category="其他" data-fee="免费">
+        <div class="card" data-city="深圳" data-district="其他" data-category="其他" data-fee="免费">
           <div class="date">2026-10-06</div>
           <div class="title"><a href="https://wtl.sz.gov.cn/xxgk/qt/gzdt/content/post_13008032.html" target="_blank" rel="noopener">深圳艺术团赴韩国庆州参加“2026新罗艺术节” 两种城市文化相遇艺术舞台</a></div>
           <div class="meta">
@@ -228,7 +253,31 @@
           <div class="loc">其他 </div>
         </div>
 
-        <div class="card" data-district="其他" data-category="其他" data-fee="未知">
+        <div class="card" data-city="香港" data-district="周边" data-category="市集" data-fee="免费">
+          <div class="date">2026-10-10 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ac74ba355d23e3c578f728d/港岛东秋日美食盛会-北角汇海滨美食市集-北角汇" target="_blank" rel="noopener">北角汇海滨美食市集＠北角汇</a></div>
+          <div class="meta">
+            <span class="tag cat">市集</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 北角汇</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="展览" data-fee="收费">
+          <div class="date">2026-10-17 ~ 2027-04-04</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/68f8659fbc8709896c738a35/神话-怪兽与漫画-亚洲的奇幻异境-展览" target="_blank" rel="noopener">「神话与怪兽：亚洲的奇幻异境」展览</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$100 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="深圳" data-district="其他" data-category="其他" data-fee="未知">
           <div class="date">2026-10-25 ~ 2026-11-20</div>
           <div class="title"><a href="http://sz.bendibao.com/xiuxian/20261012/1014587.shtm" target="_blank" rel="noopener">陌上花公园粉黛乱子草</a></div>
           <div class="meta">
@@ -240,7 +289,19 @@
           <div class="loc">其他 陌上花公园</div>
         </div>
 
-        <div class="card" data-district="其他" data-category="讲座" data-fee="免费">
+        <div class="card" data-city="香港" data-district="周边" data-category="展览" data-fee="免费">
+          <div class="date">2026-10-25 ~ 2026-11-25</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6acca4a455d23e3c57d68c11/城市漫想-100位画师的白日梦想像实体展览香港站-" target="_blank" rel="noopener">「城市漫想」 100位画师的白日梦想像 实体展览 香港站</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="深圳" data-district="其他" data-category="讲座" data-fee="免费">
           <div class="date">2026-10-28</div>
           <div class="title"><a href="https://wtl.sz.gov.cn/whfw/whxw/content/post_13042837.html" target="_blank" rel="noopener">第二十七届深圳读书月11月1日开幕</a></div>
           <div class="meta">
@@ -252,7 +313,7 @@
           <div class="loc">其他 </div>
         </div>
 
-        <div class="card" data-district="其他" data-category="演出" data-fee="免费">
+        <div class="card" data-city="深圳" data-district="其他" data-category="演出" data-fee="免费">
           <div class="date">2026-10-28</div>
           <div class="title"><a href="https://wtl.sz.gov.cn/xxgk/qt/gzdt/content/post_13042884.html" target="_blank" rel="noopener">粤港澳大湾区（深圳）青年戏剧月启幕</a></div>
           <div class="meta">
@@ -264,7 +325,7 @@
           <div class="loc">其他 </div>
         </div>
 
-        <div class="card" data-district="其他" data-category="展览" data-fee="未知">
+        <div class="card" data-city="深圳" data-district="其他" data-category="展览" data-fee="未知">
           <div class="date">2026-10-28 ~ 2026-12-11</div>
           <div class="title"><a href="http://sz.bendibao.com/xiuxian/20261029/1015208.shtm" target="_blank" rel="noopener">关山月美术馆源来如此设计艺术专题展</a></div>
           <div class="meta">
@@ -276,7 +337,43 @@
           <div class="loc">其他 关山月美术馆</div>
         </div>
 
-        <div class="card" data-district="其他" data-category="讲座" data-fee="免费">
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-10-29 ~ 2027-01-10</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ae2e4831415a73788ed77bf/东港城-超次元冬幻祭--东港城" target="_blank" rel="noopener">东港城「超次元冬幻祭」三大主题玩乐活动＠东港城</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 东港城</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-10-31 ~ 2027-01-01</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6acd931555d23e3c57e38286/TETEUM暖萌圣诞-眼镜-熊-出没注意-置富Malls" target="_blank" rel="noopener">TETEUM 暖萌圣诞 眼镜「熊」出没注意@置富Malls</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 置富Malls</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="展览" data-fee="免费">
+          <div class="date">2026-11-01 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6af288935a828187b95d0354/Baz-Friends迷你怪兽兵团-期间限定店" target="_blank" rel="noopener">「It Takes Two: Baz &amp; Friends 迷你怪兽兵团」期间限定店</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="深圳" data-district="其他" data-category="讲座" data-fee="免费">
           <div class="date">2026-11-02</div>
           <div class="title"><a href="https://wtl.sz.gov.cn/xxgk/qt/gzdt/content/post_13048592.html" target="_blank" rel="noopener">第二十七届深圳读书月正式启动</a></div>
           <div class="meta">
@@ -288,7 +385,151 @@
           <div class="loc">其他 </div>
         </div>
 
-        <div class="card" data-district="其他" data-category="演出" data-fee="免费">
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-03 ~ 2027-01-10</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ad87ea517f5a5d6d2e829bd/昂坪360-黑白-港味圣诞之旅" target="_blank" rel="noopener">昂坪360 × 黑白®港味圣诞之旅</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="展览" data-fee="免费">
+          <div class="date">2026-11-03 ~ 2027-01-01</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ae9a1b1f0de2836cdefc618/民坊-恒香-冬日港味-圣诞传情-期间限定店" target="_blank" rel="noopener">民坊 × 恒香「冬日港味．圣诞传情」期间限定店</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="展览" data-fee="免费">
+          <div class="date">2026-11-06 ~ 2027-03-31</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6af143d2cd056e688d81d67c/草间弥生-DancingPumpkin-你好-香港--官方展览及期间限定店" target="_blank" rel="noopener">草间弥生「Dancing Pumpkin: 你好，香港！」官方展览及期间限定店</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="展览" data-fee="免费">
+          <div class="date">2026-11-06 ~ 2026-11-24</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6aeb00dcf0de2836cd04a308/BLUELOCK蓝色监狱展-EGOISTEXHIBITIONtheanimation-" target="_blank" rel="noopener">BLUELOCK蓝色监狱展 &quot;EGOIST EXHIBITION the animation&quot;</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="展览" data-fee="免费">
+          <div class="date">2026-11-06 ~ 2027-01-01</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ae0442b2c2d3a916012def9/LOG-ONxSesameStreet-芝麻街圣诞糖果小镇-期间限定店" target="_blank" rel="noopener">LOG-ON x Sesame Street 「芝麻街圣诞糖果小镇」期间限定店</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="展览" data-fee="免费">
+          <div class="date">2026-11-06 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6af42f0601c3a2968ec256d5/圣诞快乐研究所--黄金海岸商场" target="_blank" rel="noopener">「圣诞快乐研究所」装置 ＠黄金海岸商场</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 黄金海岸商场</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="收费">
+          <div class="date">2026-11-07 ~ 2026-11-29</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6aea95b501b2e8d0e993710c/微风烘焙祭BreezeBakeryFest" target="_blank" rel="noopener">「微风烘焙祭」活动</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$108 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="展览" data-fee="免费">
+          <div class="date">2026-11-07 ~ 2026-12-24</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6aec0a5c216eeec142170e78/YejinOhxChangyeolGu-OutoftheAshes-双人展览" target="_blank" rel="noopener">&quot;Out of the Ashes&quot; Yejin Oh x Changyeol Gu 双人展览</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-07 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6acf42c58591906f2005247b/圣诞-喵-想成真--MOSTown新港城中心" target="_blank" rel="noopener">圣诞「喵」想成真 ＠MOSTown新港城中心</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 MOSTown新港城中心</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-07 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ad086ab8591906f201509ee/wigglewiggleMagicAcademy-MCP新都城中心" target="_blank" rel="noopener">wiggle wiggle Magic Academy 圣诞笑脸花 2026 @MCP新都城中心</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 MCP新都城中心</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="展览" data-fee="免费">
+          <div class="date">2026-11-09 ~ 2026-11-22</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6aec4258b80bcf9a3f26a408/&quot;Spiro&quot; 柳应廷 Jer Lau 生日展览 2026" target="_blank" rel="noopener">&quot;Spiro&quot; 柳应廷 Jer Lau 生日展览 2026</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-10 ~ 2026-11-22</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6aebe9c201b2e8d0e9a97496/PIKMIN-皮克敏秋季收穫祭" target="_blank" rel="noopener">PIKMIN: 皮克敏秋季收穫祭</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="深圳" data-district="其他" data-category="演出" data-fee="免费">
           <div class="date">2026-11-11</div>
           <div class="title"><a href="https://wtl.sz.gov.cn/xxgk/qt/gzdt/content/post_13061816.html" target="_blank" rel="noopener">第十四届深圳戏曲名剧名家展演落幕</a></div>
           <div class="meta">
@@ -300,7 +541,43 @@
           <div class="loc">其他 </div>
         </div>
 
-        <div class="card" data-district="龙岗" data-category="展览" data-fee="收费">
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-11 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6a8f9f2cd7ad78bf453ce2a8/Pok-mon30周年庆祝活动-又一城" target="_blank" rel="noopener">&quot;POKÉMON’s 30 YEARS OF JOY AT FESTIVAL WALK&quot; Pokémon 30周年庆祝活动 @又一城</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 又一城</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="免费">
+          <div class="date">2026-11-11 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6af418a601c3a2968ec11f2c/MiraPlace-GroovyChristmasTown-沉浸式圣诞音乐派对-MiraPlace" target="_blank" rel="noopener">&quot;Groovy Christmas Town&quot;  沉浸式圣诞音乐派对  @美丽华广场</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 美丽华广场</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-12 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ad9d3562c2d3a9160b77387/FestivalofWonders-主题活动-太古城中心" target="_blank" rel="noopener">&quot;Festival of Wonders&quot; 圣诞主题活动＠太古城中心</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 太古城中心</div>
+        </div>
+
+        <div class="card" data-city="深圳" data-district="龙岗" data-category="展览" data-fee="收费">
           <div class="date">2026-11-13</div>
           <div class="title"><a href="https://www.douban.com/event/37973182/" target="_blank" rel="noopener">全息舞剧《幻境 天鹅湖》</a></div>
           <div class="meta">
@@ -312,7 +589,7 @@
           <div class="loc">龙岗区 D+数字艺术馆 坂田街道贝尔路4号(贝尔路地铁站D出口前行100米)</div>
         </div>
 
-        <div class="card" data-district="其他" data-category="展览" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="其他" data-category="展览" data-fee="收费">
           <div class="date">2026-11-13</div>
           <div class="title"><a href="https://www.douban.com/event/38143613/" target="_blank" rel="noopener">《相聚之地：走进澳大利亚原住民文化》｜韦恩·奎利安</a></div>
           <div class="meta">
@@ -324,7 +601,7 @@
           <div class="loc">坪山区 坪山展览馆 汇德路4号（美术馆旁）</div>
         </div>
 
-        <div class="card" data-district="龙岗" data-category="展览" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="龙岗" data-category="展览" data-fee="收费">
           <div class="date">2026-11-13</div>
           <div class="title"><a href="https://www.douban.com/event/37972017/" target="_blank" rel="noopener">穹幕影片《天穹无界·民族万象》</a></div>
           <div class="meta">
@@ -336,7 +613,7 @@
           <div class="loc">龙岗区 D+数字艺术馆 坂田街道贝尔路4号(贝尔路地铁站D出口前行100米)</div>
         </div>
 
-        <div class="card" data-district="龙岗" data-category="展览" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="龙岗" data-category="展览" data-fee="收费">
           <div class="date">2026-11-13</div>
           <div class="title"><a href="https://www.douban.com/event/37971993/" target="_blank" rel="noopener">沉浸影片《无垠之境》&amp;《生生长流》</a></div>
           <div class="meta">
@@ -348,7 +625,67 @@
           <div class="loc">龙岗区 D+数字艺术馆 坂田街道贝尔路4号(贝尔路地铁站D出口前行100米)</div>
         </div>
 
-        <div class="card" data-district="罗湖" data-category="演出" data-fee="收费">
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="免费">
+          <div class="date">2026-11-13 ~ 2026-11-24</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6aaa44ec58126ca83fed0b86/国泰西九爵士音乐节" target="_blank" rel="noopener">国泰西九爵士音乐节</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="展览" data-fee="免费">
+          <div class="date">2026-11-13 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6acd9a5855d23e3c57e3f4c5/太古广场及星街小区-圣诞夜之梦-" target="_blank" rel="noopener">「圣诞夜之梦」装置 @太古广场及星街小区</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 太古广场及星街小区</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="展览" data-fee="免费">
+          <div class="date">2026-11-13 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ae9a2da01b2e8d0e9862ac8/Pixar40週年特展-Pixar-AIRSIDE圣诞奇趣之旅--AIRSIDE" target="_blank" rel="noopener">Pixar 40 週年特展 圣诞奇趣之旅 2026 ＠AIRSIDE</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 AIRSIDE</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-13 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ae04b7e17f5a5d6d25b815d/荷里活广场x麵包超人-冬日星际之旅--荷里活广场" target="_blank" rel="noopener">荷里活广场 x 麵包超人「冬日星际之旅」＠荷里活广场</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 荷里活广场</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="展览" data-fee="收费">
+          <div class="date">2026-11-13 ~ 2026-11-15</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6acdd19655d23e3c57e77335/香港首个大型成人展MEGAFANSEXPO2026" target="_blank" rel="noopener">香港首个大型成人展  MEGA FANS EXPO 2026 (取消)</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$480 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="深圳" data-district="罗湖" data-category="演出" data-fee="收费">
           <div class="date">2026-11-14</div>
           <div class="title"><a href="https://www.douban.com/event/38112804/" target="_blank" rel="noopener">《文艺复兴·重回非主流时代》威仔＆格子兮演唱会-罗湖站</a></div>
           <div class="meta">
@@ -360,7 +697,55 @@
           <div class="loc">罗湖区 罗湖先锋剧场 黄贝街道碧波社区怡景路1014号罗湖区图书馆、罗湖区青少年宫101（罗湖先锋剧场）</div>
         </div>
 
-        <div class="card" data-district="罗湖" data-category="演出" data-fee="收费">
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="收费">
+          <div class="date">2026-11-14 ~ 2026-11-15</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6aeab052f0de2836cdff3033/独读4--独立叙事读物节" target="_blank" rel="noopener">「独读4｣ @独立叙事读物节</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$40 起</span>
+          </div>
+          <div class="loc">香港 独立叙事读物节</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-14 ~ 2026-11-15</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ae99dcfd31eae1b873025a7/渣打艺趣嘉年华-2026" target="_blank" rel="noopener">「渣打艺趣嘉年华」2026</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-14 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ae84be0f3d1164a2dfee814/TeddyLuLu圣诞时光之旅2026-奥海城" target="_blank" rel="noopener">Teddy LuLu 圣诞时光之旅 2026 @奥海城</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 奥海城</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-14 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ae9ab01216eeec142f2c5d4/iSQUARE-TOYZEROPLUSMEWKY奇幻圣诞裁缝店2026" target="_blank" rel="noopener">TOYZEROPLUS MEWKY 奇幻圣诞裁缝店 2026 @iSQUARE</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 iSQUARE</div>
+        </div>
+
+        <div class="card" data-city="深圳" data-district="罗湖" data-category="演出" data-fee="收费">
           <div class="date">2026-11-15</div>
           <div class="title"><a href="https://www.douban.com/event/38157095/" target="_blank" rel="noopener">华禧艺术·枉凝眉·埙萧说红楼·民族赏析民乐音乐会</a></div>
           <div class="meta">
@@ -372,7 +757,7 @@
           <div class="loc">罗湖区 华禧文化艺术中心 黄贝岭街怡景路2008号德必深广电数创公园B区一楼华禧艺术文化中心</div>
         </div>
 
-        <div class="card" data-district="宝安" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="宝安" data-category="演出" data-fee="收费">
           <div class="date">2026-11-15</div>
           <div class="title"><a href="https://www.douban.com/event/38137112/" target="_blank" rel="noopener">次元趴·宅化危机ACG乐队拼盘-湾剧场</a></div>
           <div class="meta">
@@ -384,7 +769,7 @@
           <div class="loc">宝安区 湾剧场(万有空间) 新安街道宝华路1号湾区之眼南区B120</div>
         </div>
 
-        <div class="card" data-district="罗湖" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="罗湖" data-category="演出" data-fee="收费">
           <div class="date">2026-11-16</div>
           <div class="title"><a href="https://www.douban.com/event/38114314/" target="_blank" rel="noopener">华禧艺术 岁月鎏金 港乐怀旧金曲 民乐音乐会</a></div>
           <div class="meta">
@@ -396,7 +781,7 @@
           <div class="loc">罗湖区 华禧文化艺术中心 黄贝岭街怡景路2008号德必深广电数创公园B区一楼华禧艺术文化中心</div>
         </div>
 
-        <div class="card" data-district="其他" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="其他" data-category="演出" data-fee="收费">
           <div class="date">2026-11-16 ~ 2026-11-17</div>
           <div class="title"><a href="http://sz.bendibao.com/xiuxian/2026115/1015539.shtm" target="_blank" rel="noopener">2027王力宏最好的地方Ⅱ世界巡回演唱会</a></div>
           <div class="meta">
@@ -408,7 +793,103 @@
           <div class="loc">其他 深圳大运中心体育场</div>
         </div>
 
-        <div class="card" data-district="其他" data-category="展览" data-fee="收费">
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-17 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6aec461f016992a51dc97548/&quot;A Disney Christmas&quot; 香港迪士尼乐园 2026" target="_blank" rel="noopener">&quot;A Disney Christmas&quot; 香港迪士尼乐园 2026</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-17 ~ 2026-11-17</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6af4212301c3a2968ec197c6/StevenChoix小王子-LePetitPrinceXZuandPi-TheRoseTale--黄埔天地" target="_blank" rel="noopener">&quot;Le Petit Prince X Zu and Pi: The Rose Tale&quot; 圣诞装饰 ＠黄埔天地</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 黄埔天地</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-17 ~ 2026-12-17</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6af570fc5a828187b98228a7/寿司郎x-咒术迴战-香港之旅主题活动" target="_blank" rel="noopener">寿司郎 x《咒术迴战》香港之旅主题活动</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-18 ~ 2027-01-05</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6af3d8dc01c3a2968ebd744f/「香港冬日小镇．尖沙咀」香港缤纷冬日巡礼 2026" target="_blank" rel="noopener">「香港冬日小镇．尖沙咀」香港缤纷冬日巡礼 2026</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-18 ~ 2027-01-05</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6af54b2f01c3a2968ed00ad6/「香港冬日小镇．中环​」香港缤纷冬日巡礼 2026" target="_blank" rel="noopener">「香港冬日小镇．中环​」香港缤纷冬日巡礼 2026</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-19 ~ 2026-11-21</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ae02af01415a73788c12e74/DesignInspire2026" target="_blank" rel="noopener">DesignInspire 2026</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-19 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ae99c4af3d1164a2d0e7606/Pingu-xLCX-NOOTNOOT圣诞冰FUN小镇-" target="_blank" rel="noopener">Pingu™ 「NOOT NOOT 圣诞冰FUN小镇」 @海港城LCX</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 海港城LCX</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-19 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6af2a76a01c3a2968eae4ed1/PETITFACTORY圣诞星光梦工场2026-天玺-天MALL" target="_blank" rel="noopener">PETIT FACTORY 圣诞星光梦工场 2026 @天玺•天MALL</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 天玺•天MALL</div>
+        </div>
+
+        <div class="card" data-city="深圳" data-district="其他" data-category="展览" data-fee="收费">
           <div class="date">2026-11-20</div>
           <div class="title"><a href="https://www.douban.com/event/38050712/" target="_blank" rel="noopener">KF1 擂台英雄（我是拳手）第一季</a></div>
           <div class="meta">
@@ -420,7 +901,7 @@
           <div class="loc">光明区 茅洲河体育艺术中心·剧场 公明北环大道633号茅洲河体育艺术中心文化和图书中心2栋403</div>
         </div>
 
-        <div class="card" data-district="其他" data-category="其他" data-fee="免费">
+        <div class="card" data-city="深圳" data-district="其他" data-category="其他" data-fee="免费">
           <div class="date">2026-11-20 ~ 2027-02-28</div>
           <div class="title"><a href="http://sz.bendibao.com/xiuxian/20261012/1014586.shtm" target="_blank" rel="noopener">洪湖公园秋季落羽杉</a></div>
           <div class="meta">
@@ -432,7 +913,211 @@
           <div class="loc">其他 深圳洪湖公园</div>
         </div>
 
-        <div class="card" data-district="福田" data-category="演出" data-fee="收费">
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-20 ~ 2027-01-01</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6aec3f19b80bcf9a3f2674d4/Santa-sChristmasAirway圣诞梦幻航空--圣诞中央客运大楼--ifc商场" target="_blank" rel="noopener">「Santa’s Christmas Airway圣诞梦幻航空」 @ifc商场</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 ifc商场</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-20 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6af28fb301c3a2968eac9fd3/告罗士打酒店-圣诞传奇-" target="_blank" rel="noopener">告罗士打酒店: 圣诞传奇 2026 @置地广场</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 置地广场</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="收费">
+          <div class="date">2026-11-20 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ae052ee2c2d3a9160139ed0/冬日飘雪小镇-沉浸式雪国体验-D-PARK" target="_blank" rel="noopener">「冬日飘雪小镇」沉浸式雪国体验＠D‧PARK</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$40 起</span>
+          </div>
+          <div class="loc">香港 D‧PARK</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-20 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ae0513f1415a73788c3327d/SKIPPY-Brand-花生烘焙所-圣诞主题活动-东荟城名店仓" target="_blank" rel="noopener">SKIPPY® Brand 「花生烘焙所」圣诞主题活动 @东荟城名店仓</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 东荟城名店仓</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-20 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6aec327a216eeec1421973aa/CitywalkXART-ZOO-JoyFromTheStars星愿圣诞" target="_blank" rel="noopener">Citywalk X ART-ZOO 「Joy From The Stars 星愿圣诞」</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-21 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ae85ee1d31eae1b872201b7/TheCoolestXmas零度冰雪乐园2026-荃湾广场" target="_blank" rel="noopener">The Coolest Xmas 零度冰雪乐园 2026 @荃湾广场</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 荃湾广场</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="展览" data-fee="免费">
+          <div class="date">2026-11-21 ~ 2027-01-10</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6aeab77401b2e8d0e9962b5d/THEGUNDAMBASEHONGKONG-展览-啟德双子汇" target="_blank" rel="noopener">&quot;THE GUNDAM BASE HONG KONG &quot; 展览 @啟德双子汇</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 啟德双子汇</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-21 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6af548935a828187b9800c13/冰蓝乐园RollingXmas-圣诞装饰-新都会广场" target="_blank" rel="noopener">「冰蓝乐园 Rolling Xmas」 圣诞装饰 @新都会广场</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 新都会广场</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="收费">
+          <div class="date">2026-11-21 ~ 2026-11-21</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ae976fcf3d1164a2d0c7ce0/圣诞筑梦小镇2026-裕民坊" target="_blank" rel="noopener">圣诞筑梦小镇 2026 ＠裕民坊</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$52 起</span>
+          </div>
+          <div class="loc">香港 裕民坊</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-21 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6aeaff8c01b2e8d0e99b01c6/圣诞小镇-壹-号车站--朗壹广场" target="_blank" rel="noopener">圣诞小镇「壹」号车站 2026 ＠朗壹广场</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 朗壹广场</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="收费">
+          <div class="date">2026-11-21 ~ 2026-11-21</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6af593336842ba2c825b1301/TheEncounter3-国际职业拳击赛2026" target="_blank" rel="noopener">&quot;The Encounter 3&quot; 国际职业拳击赛 2026</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$750 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="展览" data-fee="免费">
+          <div class="date">2026-11-22 ~ 2026-12-29</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6af582a65a828187b9832bed/WINDSORXBUCKETMAN-ABUCKETFULOFXMAS-圣诞主题装置-皇室堡" target="_blank" rel="noopener">WINDSOR X BUCKET MAN &quot;A BUCKETFUL OF XMAS&quot; 圣诞主题装置 ＠皇室堡</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 皇室堡</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="免费">
+          <div class="date">2026-11-23 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6aec2f02216eeec14219366e/圣诞音乐馆-璀璨圣诞之旅--MegaBox" target="_blank" rel="noopener">「圣诞音乐馆: 璀璨圣诞之旅」@MegaBox</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 MegaBox</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="展览" data-fee="免费">
+          <div class="date">2026-11-24 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ae19b1517f5a5d6d26f191e/《葬送的芙莉莲特展》香港站" target="_blank" rel="noopener">《葬送的芙莉莲特展》香港站</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-24 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6aec5082cd056e688d35729a/KakaoFriends-Ryan10週年圣诞派对---Ryan10週年圣诞交响乐--大埔超级城元朗广场" target="_blank" rel="noopener">Kakao Friends 《Ryan 10週年圣诞派对》/ 《Ryan 10週年圣诞交响乐》＠大埔超级城 元朗广场</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-25 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6af54d1501c3a2968ed0367d/「香港冬日小镇．铜锣湾​​」香港缤纷冬日巡礼 2026" target="_blank" rel="noopener">「香港冬日小镇．铜锣湾​」香港缤纷冬日巡礼 2026</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-25 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6af51e075a828187b97d9816/NewTownCrystalPalace星愿水晶殿--新城市广场" target="_blank" rel="noopener">「New Town Crystal Palace 星愿水晶殿」圣诞装饰 @新城市广场</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 新城市广场</div>
+        </div>
+
+        <div class="card" data-city="深圳" data-district="福田" data-category="演出" data-fee="收费">
           <div class="date">2026-11-27</div>
           <div class="title"><a href="https://www.douban.com/event/38124642/" target="_blank" rel="noopener">《好势乘双》—乘风25｜26跨季演唱会</a></div>
           <div class="meta">
@@ -444,7 +1129,67 @@
           <div class="loc">福田区 深圳市体育中心体育场 笋岗西路2006号</div>
         </div>
 
-        <div class="card" data-district="南山" data-category="演出" data-fee="收费">
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="收费">
+          <div class="date">2026-11-27 ~ 2026-11-29</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6a3a46757f53726bb87d0615/梁咏琪红馆演唱会2026" target="_blank" rel="noopener">梁咏琪《LOVE GiGi爱自己》世界巡迴演唱会 2026 香港站</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$480 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="收费">
+          <div class="date">2026-11-27 ~ 2026-11-27</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6a68269deac1ed563bcf8d8a/优里YUURI香港演唱会2026" target="_blank" rel="noopener">优里YUURI 香港演唱会 2026</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$980 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="市集" data-fee="免费">
+          <div class="date">2026-11-27 ~ 2026-12-06</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ab3759b9bbd8535a99a4301/今个圣诞碳水自由---集不甩市集系列-碳水主题圣诞市集" target="_blank" rel="noopener">今个圣诞碳水自由！ @《集不甩市集系列》碳水主题圣诞市集</a></div>
+          <div class="meta">
+            <span class="tag cat">市集</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 《集不甩市集系列》碳水主题圣诞市集</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-27 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6af41c2a6842ba2c8248702f/西沙GOPARK-HAPPYGORIDE冬日歷险村-" target="_blank" rel="noopener">《HAPPY GO RIDE 冬日歷险村》@西沙 GO PARK</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-11-27 ~ 2027-01-12</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6af5807c01c3a2968ed2f66f/ChiikawaClinic主题区-CHIIKAWASHOPinHONGKONG" target="_blank" rel="noopener">Chiikawa Clinic 主题区 @CHIIKAWA SHOP in HONG KONG</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="深圳" data-district="南山" data-category="演出" data-fee="收费">
           <div class="date">2026-11-28</div>
           <div class="title"><a href="https://www.douban.com/event/37970179/" target="_blank" rel="noopener">奇妙嘿夜烛光音乐会“最伟大的作品”流行曲目钢琴&amp;小提琴&amp;大提琴演奏</a></div>
           <div class="meta">
@@ -456,7 +1201,7 @@
           <div class="loc">南山区 青春无限乐团烛光音乐会音乐厅 沙河街道侨发路侨城坊1栋1层主会场</div>
         </div>
 
-        <div class="card" data-district="南山" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="南山" data-category="演出" data-fee="收费">
           <div class="date">2026-11-28</div>
           <div class="title"><a href="https://www.douban.com/event/38006199/" target="_blank" rel="noopener">奇妙嘿夜烛光音乐会“海上钢琴师”&amp;“汉斯季默”曲目钢琴&amp;小提琴&amp;大提琴三重奏</a></div>
           <div class="meta">
@@ -468,7 +1213,7 @@
           <div class="loc">南山区 青春无限乐团烛光音乐会音乐厅 沙河街道侨发路侨城坊1栋1层主会场</div>
         </div>
 
-        <div class="card" data-district="福田" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="福田" data-category="演出" data-fee="收费">
           <div class="date">2026-11-28</div>
           <div class="title"><a href="https://www.douban.com/event/38103266/" target="_blank" rel="noopener">蒲熠星《银河系旅行攻略》巡回演唱会-深圳站</a></div>
           <div class="meta">
@@ -480,7 +1225,7 @@
           <div class="loc">福田区 深圳市体育中心体育馆主馆 体育中心笋岗西路2006号</div>
         </div>
 
-        <div class="card" data-district="南山" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="南山" data-category="演出" data-fee="收费">
           <div class="date">2026-11-28</div>
           <div class="title"><a href="https://www.douban.com/event/38154667/" target="_blank" rel="noopener">好戏来了！全场半价！成人浪漫奇幻！治愈系《小王子》</a></div>
           <div class="meta">
@@ -492,7 +1237,43 @@
           <div class="loc">南山区 4号剧场(爪马世界) 沙河街道华生活馆爪马世界4号剧场</div>
         </div>
 
-        <div class="card" data-district="南山" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="南山" data-category="演出" data-fee="收费">
+          <div class="date">2026-11-28</div>
+          <div class="title"><a href="https://www.douban.com/event/37976172/" target="_blank" rel="noopener">奇妙嘿夜烛光音乐会“爱乐之城”汉斯季默&quot;双主题曲目演奏钢琴&amp;小提琴&amp;大提琴曲目</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag dist">南山</span>
+            <span class="tag paid">收费</span>
+            <span class="price">388.00元起</span>
+          </div>
+          <div class="loc">南山区 青春无限乐团烛光音乐会音乐厅 沙河街道侨发路侨城坊1栋1层主会场</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="展览" data-fee="免费">
+          <div class="date">2026-11-28 ~ 2027-01-10</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6af295dc6842ba2c8233fc96/HelloKittyBowtiful-Christmas红丝绒时尚精品店-2026-朗豪坊" target="_blank" rel="noopener">「Hello Kitty Bowtiful: Christmas 红丝绒时尚」2026 期间限定店 @朗豪坊</a></div>
+          <div class="meta">
+            <span class="tag cat">展览</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 朗豪坊</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="收费">
+          <div class="date">2026-11-28 ~ 2026-11-28</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6af58a435a828187b9838362/乐-谊国际音乐节-闭幕音乐会-相相之约-曼托瓦室乐团2026" target="_blank" rel="noopener">乐．谊国际音乐节 – 闭幕音乐会《相相之约》曼托瓦室乐团 2026</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$190 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="深圳" data-district="南山" data-category="演出" data-fee="收费">
           <div class="date">2026-11-29</div>
           <div class="title"><a href="https://www.douban.com/event/38115332/" target="_blank" rel="noopener">2026声动南山 张玮玮 feat. 郭龙「特别专场」</a></div>
           <div class="meta">
@@ -504,7 +1285,19 @@
           <div class="loc">南山区 南山文体中心聚橙剧院 南山大道南头街62号</div>
         </div>
 
-        <div class="card" data-district="南山" data-category="展览" data-fee="收费">
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="收费">
+          <div class="date">2026-11-29 ~ 2026-11-29</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/69a4f442f4daf21a84c4f94c/Joji-SOLARIS-世界巡迴演唱会2026香港站" target="_blank" rel="noopener">Joji &quot;SOLARIS&quot; 世界巡迴演唱会 2026 香港站</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$699 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="深圳" data-district="南山" data-category="展览" data-fee="收费">
           <div class="date">2026-12-01</div>
           <div class="title"><a href="https://www.douban.com/event/38142269/" target="_blank" rel="noopener">深圳湾文化广场-南馆通票</a></div>
           <div class="meta">
@@ -516,7 +1309,55 @@
           <div class="loc">南山区 深圳湾文化广场展览区 创业路阿里中心东北侧约270米</div>
         </div>
 
-        <div class="card" data-district="福田" data-category="演出" data-fee="收费">
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="收费">
+          <div class="date">2026-12-01 ~ 2026-12-01</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6a5d8a703dfaa92fdf976063/Khalid-It-sAlwaysSummerSomewhere-亚洲巡迴演唱会2026香港站" target="_blank" rel="noopener">Khalid &quot;It&#x27;s Always Summer Somewhere&quot; 亚洲巡迴演唱会 2026 香港站</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$699 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-12-01 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6a8e53d1d7ad78bf4521e17f/小心意-大众乐2026" target="_blank" rel="noopener">小心意 • 大众乐 2026</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="免费">
+          <div class="date">2026-12-03 ~ 2026-12-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6a4b55084dc0b24de0d41fab/FrenchKiwiJuice-FKJ-TyberTour-巡迴演唱会2026香港站" target="_blank" rel="noopener">French Kiwi Juice &quot;FKJ – Tyber Tour&quot; 巡迴演唱会 2026 香港站</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="市集" data-fee="免费">
+          <div class="date">2026-12-03 ~ 2026-12-06</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6abb48a258126ca83fffeb3f/THEPRESENTOFMOMENTS-太古地产白色圣诞市集2026" target="_blank" rel="noopener">&quot;THE PRESENT OF MOMENTS&quot; 太古地产白色圣诞市集 2026</a></div>
+          <div class="meta">
+            <span class="tag cat">市集</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="深圳" data-district="福田" data-category="演出" data-fee="收费">
           <div class="date">2026-12-04</div>
           <div class="title"><a href="https://www.douban.com/event/38070183/" target="_blank" rel="noopener">桂冠之声｜沈周慧《根脉凝光：钢琴名作的溯源之旅》钢琴独奏音乐会</a></div>
           <div class="meta">
@@ -528,7 +1369,7 @@
           <div class="loc">福田区 安托山公共文化中心(演出售票) 香蜜湖街道安托山六路与侨香四道安托山公共文化中心</div>
         </div>
 
-        <div class="card" data-district="南山" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="南山" data-category="演出" data-fee="收费">
           <div class="date">2026-12-04</div>
           <div class="title"><a href="https://www.douban.com/event/38148608/" target="_blank" rel="noopener">爱沙尼亚奇趣弓弦琴二人组PUULUUP音乐会</a></div>
           <div class="meta">
@@ -540,7 +1381,7 @@
           <div class="loc">南山区 境山剧场 望海路1187号海上世界文化艺术中心3-4楼</div>
         </div>
 
-        <div class="card" data-district="福田" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="福田" data-category="演出" data-fee="收费">
           <div class="date">2026-12-04</div>
           <div class="title"><a href="https://www.douban.com/event/38164052/" target="_blank" rel="noopener">第二十四届中外艺术精品演出季——澳大利亚爵士天后Simone Waddell “天籁之音”音乐会</a></div>
           <div class="meta">
@@ -552,7 +1393,19 @@
           <div class="loc">福田区 深圳音乐厅·演奏大厅 福中一路2016号深圳音乐厅二楼演奏大厅</div>
         </div>
 
-        <div class="card" data-district="南山" data-category="演出" data-fee="收费">
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="收费">
+          <div class="date">2026-12-04 ~ 2026-12-06</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/69362062cde2ba55de795112/Clockenflap音乐及艺术节2026" target="_blank" rel="noopener">Clockenflap 音乐及艺术节 2026</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$833 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="深圳" data-district="南山" data-category="演出" data-fee="收费">
           <div class="date">2026-12-05</div>
           <div class="title"><a href="https://www.douban.com/event/38060668/" target="_blank" rel="noopener">萧忆情 ALEX【拾·忆】2026巡回演唱会--深圳站</a></div>
           <div class="meta">
@@ -564,7 +1417,7 @@
           <div class="loc">南山区 南山文体中心聚橙剧院 南山大道南头街62号</div>
         </div>
 
-        <div class="card" data-district="龙岗" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="龙岗" data-category="演出" data-fee="收费">
           <div class="date">2026-12-05</div>
           <div class="title"><a href="https://www.douban.com/event/38111922/" target="_blank" rel="noopener">黎明ROBBABA演唱会2026 - 深圳站</a></div>
           <div class="meta">
@@ -576,7 +1429,7 @@
           <div class="loc">龙岗区 深圳大运中心体育馆 龙城街道黄阁路99号(龙岗区黄阁路)</div>
         </div>
 
-        <div class="card" data-district="南山" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="南山" data-category="演出" data-fee="收费">
           <div class="date">2026-12-05</div>
           <div class="title"><a href="https://www.douban.com/event/38153646/" target="_blank" rel="noopener">合韵四重奏《不止是古典——音乐的意义》室内乐音乐会-南山站</a></div>
           <div class="meta">
@@ -588,7 +1441,7 @@
           <div class="loc">南山区 南山文体中心聚橙剧院 南山大道南头街62号</div>
         </div>
 
-        <div class="card" data-district="龙岗" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="龙岗" data-category="演出" data-fee="收费">
           <div class="date">2026-12-05</div>
           <div class="title"><a href="https://www.douban.com/event/38111271/" target="_blank" rel="noopener">龙岗歌剧周——张诚杰、宋倩、于浩磊领衔 《经典歌剧选段音乐会》</a></div>
           <div class="meta">
@@ -600,7 +1453,31 @@
           <div class="loc">龙岗区 龙岗文化中心大剧院 龙岗中心城龙翔大道8308号</div>
         </div>
 
-        <div class="card" data-district="南山" data-category="演出" data-fee="收费">
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="收费">
+          <div class="date">2026-12-05 ~ 2026-12-05</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6a3a1a67dc90e3783f2d2a1c/StrayKids-RUNIT-世界巡迴演唱会香港站2026" target="_blank" rel="noopener">Stray Kids &quot;RUN IT&quot; 世界巡迴演唱会 2026 香港站</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$799 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="收费">
+          <div class="date">2026-12-05 ~ 2026-12-05</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6adefbd91415a73788b12248/维港爱乐管弦乐团-MyInnerChristmasSymphony圣诞心声交响乐-音乐会" target="_blank" rel="noopener">维港爱乐管弦乐团《My Inner Christmas Symphony 圣诞心声交响乐》音乐会</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$90 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="深圳" data-district="南山" data-category="演出" data-fee="收费">
           <div class="date">2026-12-06</div>
           <div class="title"><a href="https://www.douban.com/event/37973030/" target="_blank" rel="noopener">「复刻回忆」Pianoboy高至豪流行钢琴音乐会</a></div>
           <div class="meta">
@@ -612,7 +1489,19 @@
           <div class="loc">南山区 深圳保利剧院 后海滨路3013号（后海地铁站E口旁）</div>
         </div>
 
-        <div class="card" data-district="其他" data-category="演出" data-fee="收费">
+        <div class="card" data-city="香港" data-district="周边" data-category="市集" data-fee="免费">
+          <div class="date">2026-12-08 ~ 2027-02-14</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6aab6a9bd7ad78bf4543dd04/维港圣诞市集2026" target="_blank" rel="noopener">维港圣诞市集 2026</a></div>
+          <div class="meta">
+            <span class="tag cat">市集</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="深圳" data-district="其他" data-category="演出" data-fee="收费">
           <div class="date">2026-12-11</div>
           <div class="title"><a href="https://www.douban.com/event/38052560/" target="_blank" rel="noopener">12月11-13日法语音乐剧《茶花女》</a></div>
           <div class="meta">
@@ -624,7 +1513,7 @@
           <div class="loc">坪山区 坪山大剧院 汇德路2号坪山大剧院</div>
         </div>
 
-        <div class="card" data-district="宝安" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="宝安" data-category="演出" data-fee="收费">
           <div class="date">2026-12-11</div>
           <div class="title"><a href="https://www.douban.com/event/37972885/" target="_blank" rel="noopener">老舍经典话剧《骆驼祥子》 深圳</a></div>
           <div class="meta">
@@ -636,7 +1525,7 @@
           <div class="loc">宝安区 海雅大剧院 建安一路99号海雅缤纷城F3层L399、F4层</div>
         </div>
 
-        <div class="card" data-district="南山" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="南山" data-category="演出" data-fee="收费">
           <div class="date">2026-12-11</div>
           <div class="title"><a href="https://www.douban.com/event/37972164/" target="_blank" rel="noopener">Sold Out、Wildfire 原唱 Jon Steingard 2026 深圳演唱会</a></div>
           <div class="meta">
@@ -648,7 +1537,7 @@
           <div class="loc">南山区 MAO Livehouse深圳-海上世界店 招商街道水湾社区海上世界C区船后广场C-L2005A、C-L3002A</div>
         </div>
 
-        <div class="card" data-district="福田" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="福田" data-category="演出" data-fee="收费">
           <div class="date">2026-12-11</div>
           <div class="title"><a href="https://www.douban.com/event/37973381/" target="_blank" rel="noopener">深圳交响乐团2026-2027乐季——布鲁克纳的浪漫</a></div>
           <div class="meta">
@@ -660,7 +1549,7 @@
           <div class="loc">福田区 深圳音乐厅·演奏大厅 福中一路2016号深圳音乐厅二楼演奏大厅</div>
         </div>
 
-        <div class="card" data-district="龙华" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="龙华" data-category="演出" data-fee="收费">
           <div class="date">2026-12-11</div>
           <div class="title"><a href="https://www.douban.com/event/38150519/" target="_blank" rel="noopener">开心麻花惊怂爆笑喜剧《出马》深圳</a></div>
           <div class="meta">
@@ -672,7 +1561,7 @@
           <div class="loc">龙华区 深圳开心麻花红山剧场 大岭社区红山6979三期1栋B区</div>
         </div>
 
-        <div class="card" data-district="宝安" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="宝安" data-category="演出" data-fee="收费">
           <div class="date">2026-12-11</div>
           <div class="title"><a href="https://www.douban.com/event/38017371/" target="_blank" rel="noopener">大道文化出品 陈佩斯主演 话剧《惊梦》</a></div>
           <div class="meta">
@@ -684,7 +1573,7 @@
           <div class="loc">宝安区 深圳滨海艺术中心 宝兴路欢乐港湾16号（滨海文化公园内）</div>
         </div>
 
-        <div class="card" data-district="南山" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="南山" data-category="演出" data-fee="收费">
           <div class="date">2026-12-11</div>
           <div class="title"><a href="https://www.douban.com/event/38109587/" target="_blank" rel="noopener">赖声川导演作品 话剧《暗恋桃花源》专属版 深圳站</a></div>
           <div class="meta">
@@ -696,7 +1585,7 @@
           <div class="loc">南山区 华夏艺术中心 华侨城光侨街1号2楼</div>
         </div>
 
-        <div class="card" data-district="福田" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="福田" data-category="演出" data-fee="收费">
           <div class="date">2026-12-11</div>
           <div class="title"><a href="https://www.douban.com/event/38166115/" target="_blank" rel="noopener">Quark夸克乐队“下蛋蛋” No Stage 2026 不巡 演！深圳</a></div>
           <div class="meta">
@@ -708,7 +1597,43 @@
           <div class="loc">福田区 HOU LIVE 滨河路9289号京基滨河时代广场B112A</div>
         </div>
 
-        <div class="card" data-district="龙岗" data-category="演出" data-fee="收费">
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-12-11 ~ 2027-01-01</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6a991797d7ad78bf45e7ab9f/玩转大馆马戏季2026" target="_blank" rel="noopener">玩转大馆马戏季 2026</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="市集" data-fee="免费">
+          <div class="date">2026-12-11 ~ 2026-12-27</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6acc6a169bb0baabc375eaeb/中港城-STARTFROMZERO车尾箱圣诞市集2026" target="_blank" rel="noopener">中港城 × START FROM ZERO 车尾箱圣诞市集 2026</a></div>
+          <div class="meta">
+            <span class="tag cat">市集</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="收费">
+          <div class="date">2026-12-11 ~ 2026-12-27</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6aeae426216eeec14204d8ed/胡桃夹子-剧场" target="_blank" rel="noopener">《胡桃夹子》芭蕾舞剧场</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$180 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="深圳" data-district="龙岗" data-category="演出" data-fee="收费">
           <div class="date">2026-12-12</div>
           <div class="title"><a href="https://www.douban.com/event/38097480/" target="_blank" rel="noopener">龙岗新年古典音乐季——《海上升明月·清歌落大湾》中外声乐经典音乐会</a></div>
           <div class="meta">
@@ -720,7 +1645,7 @@
           <div class="loc">龙岗区 龙岗文化中心大剧院 龙岗中心城龙翔大道8308号</div>
         </div>
 
-        <div class="card" data-district="南山" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="南山" data-category="演出" data-fee="收费">
           <div class="date">2026-12-12</div>
           <div class="title"><a href="https://www.douban.com/event/38090588/" target="_blank" rel="noopener">鬼卞2026「FOR TEN」巡演·深圳站</a></div>
           <div class="meta">
@@ -732,7 +1657,7 @@
           <div class="loc">南山区 ON AIR音乐现场 粤海街道科苑南路2666号中国华润大厦B1层发布厅</div>
         </div>
 
-        <div class="card" data-district="罗湖" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="罗湖" data-category="演出" data-fee="收费">
           <div class="date">2026-12-12</div>
           <div class="title"><a href="https://www.douban.com/event/38123160/" target="_blank" rel="noopener">610乐队致敬家驹33周年海阔天空演唱会-罗湖站</a></div>
           <div class="meta">
@@ -744,7 +1669,7 @@
           <div class="loc">罗湖区 罗湖先锋剧场 黄贝街道碧波社区怡景路1014号罗湖区图书馆、罗湖区青少年宫101（罗湖先锋剧场）</div>
         </div>
 
-        <div class="card" data-district="龙岗" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="龙岗" data-category="演出" data-fee="收费">
           <div class="date">2026-12-12</div>
           <div class="title"><a href="https://www.douban.com/event/38033764/" target="_blank" rel="noopener">花开四季~心路歌者乌兰图雅演唱会专场</a></div>
           <div class="meta">
@@ -756,7 +1681,7 @@
           <div class="loc">龙岗区 龙岗国际艺术中心 贝尔路4号</div>
         </div>
 
-        <div class="card" data-district="福田" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="福田" data-category="演出" data-fee="收费">
           <div class="date">2026-12-12</div>
           <div class="title"><a href="https://www.douban.com/event/38123170/" target="_blank" rel="noopener">莉莉周她說「致走到這裡的」2026巡演深圳站</a></div>
           <div class="meta">
@@ -768,7 +1693,7 @@
           <div class="loc">福田区 HOU LIVE 滨河路9289号京基滨河时代广场B112A</div>
         </div>
 
-        <div class="card" data-district="宝安" data-category="展览" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="宝安" data-category="展览" data-fee="收费">
           <div class="date">2026-12-12</div>
           <div class="title"><a href="https://www.douban.com/event/38130993/" target="_blank" rel="noopener">深圳·纸梦相逢嘉年华</a></div>
           <div class="meta">
@@ -780,7 +1705,7 @@
           <div class="loc">宝安区 深圳纸梦相逢嘉年华 沙井街道锦程路与南环路交汇处昌达国际酒店会议厅二楼多功能会议厅</div>
         </div>
 
-        <div class="card" data-district="龙岗" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="龙岗" data-category="演出" data-fee="收费">
           <div class="date">2026-12-12</div>
           <div class="title"><a href="https://www.douban.com/event/38129282/" target="_blank" rel="noopener">2026「良辰·吟风成曲 」国风女声深圳音乐会(阵容：银临/少司命/董真/不才等）</a></div>
           <div class="meta">
@@ -792,7 +1717,7 @@
           <div class="loc">龙岗区 回响之地·深圳馆 宝龙街道宝龙大道景园公寓西侧约170米宝龙文体中心内</div>
         </div>
 
-        <div class="card" data-district="福田" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="福田" data-category="演出" data-fee="收费">
           <div class="date">2026-12-12</div>
           <div class="title"><a href="https://www.douban.com/event/38166947/" target="_blank" rel="noopener">原创话剧《不到园林，怎知春色如许》</a></div>
           <div class="meta">
@@ -804,7 +1729,7 @@
           <div class="loc">福田区 安托山公共文化中心(演出售票) 香蜜湖街道安托山六路与侨香四道安托山公共文化中心</div>
         </div>
 
-        <div class="card" data-district="福田" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="福田" data-category="演出" data-fee="收费">
           <div class="date">2026-12-12</div>
           <div class="title"><a href="https://www.douban.com/event/38072505/" target="_blank" rel="noopener">翩跹琴舞——扬·利谢茨基钢琴独奏音乐会</a></div>
           <div class="meta">
@@ -816,7 +1741,7 @@
           <div class="loc">福田区 深圳音乐厅·演奏大厅 福中一路2016号深圳音乐厅二楼演奏大厅</div>
         </div>
 
-        <div class="card" data-district="宝安" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="宝安" data-category="演出" data-fee="收费">
           <div class="date">2026-12-12</div>
           <div class="title"><a href="https://www.douban.com/event/38114648/" target="_blank" rel="noopener">呐喊剧团《渐冻——在呼吸消失之前》丨2026“艺述”湾区演出季</a></div>
           <div class="meta">
@@ -828,7 +1753,7 @@
           <div class="loc">宝安区 深圳滨海艺术中心 宝兴路欢乐港湾16号（滨海文化公园内）</div>
         </div>
 
-        <div class="card" data-district="宝安" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="宝安" data-category="演出" data-fee="收费">
           <div class="date">2026-12-12</div>
           <div class="title"><a href="https://www.douban.com/event/38079665/" target="_blank" rel="noopener">Max李玄“星际漫游”2026巡演深圳站</a></div>
           <div class="meta">
@@ -840,7 +1765,7 @@
           <div class="loc">宝安区 HOU LIVE·Z空间·演出售票 新安街道欢乐港湾18号滨海欢乐园西L3-001(IPIC电影中心3楼)</div>
         </div>
 
-        <div class="card" data-district="福田" data-category="展览" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="福田" data-category="展览" data-fee="收费">
           <div class="date">2026-12-12</div>
           <div class="title"><a href="https://www.douban.com/event/38100041/" target="_blank" rel="noopener">深圳星幻动漫节2026第25届|深圳漫展</a></div>
           <div class="meta">
@@ -852,7 +1777,79 @@
           <div class="loc">福田区 星幻动漫节-华驿俱乐部 八卦一路614栋一楼华驿俱乐部</div>
         </div>
 
-        <div class="card" data-district="南山" data-category="其他" data-fee="免费">
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="收费">
+          <div class="date">2026-12-12 ~ 2027-02-20</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ad1b4b255d23e3c571d576c/陈奕迅-新创举-连开26场不过唔係演唱会-" target="_blank" rel="noopener">陈奕迅 &quot;Recording Sessions with Mr. Eason Chan&quot; 现场录音音乐会 2026</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$980 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="收费">
+          <div class="date">2026-12-13 ~ 2026-12-13</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ae953b1d31eae1b872c3c84/JYDance圣诞舞蹈汇演2026" target="_blank" rel="noopener">JY Dance 圣诞舞蹈汇演 2026</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$160 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-12-18 ~ 2026-12-27</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ad6e47717f5a5d6d2d5c510/MerryBalloonHongKong2026" target="_blank" rel="noopener">Merry Balloon Hong Kong 2026</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="市集" data-fee="免费">
+          <div class="date">2026-12-18 ~ 2026-12-27</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6aa8c1ed9bbd8535a9daaac9/赤柱广场海滨圣诞市集2026--赤柱广场" target="_blank" rel="noopener">赤柱广场海滨圣诞市集 2026 ＠赤柱广场</a></div>
+          <div class="meta">
+            <span class="tag cat">市集</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 赤柱广场</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="收费">
+          <div class="date">2026-12-18 ~ 2027-01-03</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ae2fa7aea5b5089ed671c74/香港地-巨型充气嘉年华" target="_blank" rel="noopener">「香港地」巨型充气嘉年华 2026</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$165 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="市集" data-fee="免费">
+          <div class="date">2026-12-18 ~ 2026-12-27</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ae019f817f5a5d6d2588a92/冬日暖心好物市集-大埔超级城" target="_blank" rel="noopener">冬日暖心好物市集＠大埔超级城</a></div>
+          <div class="meta">
+            <span class="tag cat">市集</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 大埔超级城</div>
+        </div>
+
+        <div class="card" data-city="深圳" data-district="南山" data-category="其他" data-fee="免费">
           <div class="date">2026-12-19</div>
           <div class="title"><a href="http://sz.bendibao.com/xiuxian/2026113/1015436.shtm" target="_blank" rel="noopener">南山区第十九届“鸳鸯和鸣”集体婚礼</a></div>
           <div class="meta">
@@ -864,7 +1861,103 @@
           <div class="loc">南山区 太子湾美高梅酒店</div>
         </div>
 
-        <div class="card" data-district="其他" data-category="演出" data-fee="收费">
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="收费">
+          <div class="date">2026-12-19 ~ 2026-12-27</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6a7bd7234951f58fb8d54c46/Cinderella圣诞奇缘-圣诞音乐剧-POPTheatre" target="_blank" rel="noopener">《Cinderella 圣诞奇缘》圣诞音乐剧 @POP Theatre</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$150 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="收费">
+          <div class="date">2026-12-19 ~ 2026-12-19</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ac4804e55d23e3c57703e90/陈婉榆-JAZZXCOMEDY-焦头烂额年终派对音乐栋笃笑演出" target="_blank" rel="noopener">陈婉榆《JAZZ X COMEDY焦头烂额年终派对」》音乐栋笃笑演出</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$380 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="收费">
+          <div class="date">2026-12-19 ~ 2026-12-20</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6acdd4c455d23e3c57e798f1/普世平安星光夜音乐会2026" target="_blank" rel="noopener">普世平安星光夜音乐会2026</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$580 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="收费">
+          <div class="date">2026-12-19 ~ 2026-12-19</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6af5234601c3a2968ecdb244/WYKOldBoys-MusicAssociation-SongsofPeace-TheChristmasConcert2026-巡迴演唱会2026香港站" target="_blank" rel="noopener">WYK Old Boys&#x27; Music Association &quot;Songs of Peace - The Christmas Concert 2026&quot;  圣诞音乐会</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$50 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="收费">
+          <div class="date">2026-12-20 ~ 2026-12-20</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ad735e117f5a5d6d2d9f050/童真仰望-音乐剧" target="_blank" rel="noopener">《童真仰望》音乐剧</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$224 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="收费">
+          <div class="date">2026-12-22 ~ 2027-02-21</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ad8834e1415a737885046f2/AIACarnival友邦嘉年华2026" target="_blank" rel="noopener">AIA Carnival 友邦嘉年华 2026</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$85 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="收费">
+          <div class="date">2026-12-22 ~ 2026-12-23</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6a72be321e2442085c9eda40/张贝芝x廖国敏-节庆华彩-张贝芝的梦幻圣诞乐章-音乐会" target="_blank" rel="noopener">张贝芝 x 廖国敏《节庆华彩:张贝芝的梦幻圣诞乐章》音乐会</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$260 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="市集" data-fee="免费">
+          <div class="date">2026-12-24 ~ 2026-12-27</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ad09d048591906f20166d39/WISHMASMARKETinAQUABEAT-圣诞市集" target="_blank" rel="noopener">&quot;WISHMAS MARKET in AQUABEAT&quot;圣诞市集</a></div>
+          <div class="meta">
+            <span class="tag cat">市集</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="深圳" data-district="其他" data-category="演出" data-fee="收费">
           <div class="date">2026-12-25</div>
           <div class="title"><a href="http://sz.bendibao.com/xiuxian/2026113/1015445.shtm" target="_blank" rel="noopener">2026尤长靖深圳演唱会</a></div>
           <div class="meta">
@@ -876,7 +1969,19 @@
           <div class="loc">其他 深圳体育中心体育馆</div>
         </div>
 
-        <div class="card" data-district="其他" data-category="演出" data-fee="收费">
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2026-12-25 ~ 2026-12-26</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6a4b3b334dc0b24de0d2cb8e/RainbowGalaHK34同人誌即卖会" target="_blank" rel="noopener">Rainbow Gala HK 34 同人誌即卖会</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="深圳" data-district="其他" data-category="演出" data-fee="收费">
           <div class="date">2026-12-26</div>
           <div class="title"><a href="http://sz.bendibao.com/xiuxian/20261110/1015660.shtm" target="_blank" rel="noopener">苏醒2026-2027巡回演唱会深圳站情歌而已</a></div>
           <div class="meta">
@@ -888,7 +1993,7 @@
           <div class="loc">其他 深圳湾体育中心“春茧”体育馆</div>
         </div>
 
-        <div class="card" data-district="其他" data-category="演出" data-fee="收费">
+        <div class="card" data-city="深圳" data-district="其他" data-category="演出" data-fee="收费">
           <div class="date">2026-12-31 ~ 2027-01-01</div>
           <div class="title"><a href="http://sz.bendibao.com/xiuxian/202694/1012231.shtm" target="_blank" rel="noopener">2026周传雄念念不忘再遇见plus演唱会深圳站</a></div>
           <div class="meta">
@@ -898,13 +2003,134 @@
             <span class="price">需购票</span>
           </div>
           <div class="loc">其他 深圳湾体育中心“春茧”体育场</div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="其他" data-fee="免费">
+          <div class="date">2027-01-02 ~ 2027-01-02</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6a570cb97cf1fb0d6e247633/QWER-ROCKATION-ROCKETLAUNCH---第二次巡迴演唱会香港站" target="_blank" rel="noopener">QWER &quot;ROCKATION: ROCKET LAUNCH!!&quot; 香港站2027</a></div>
+          <div class="meta">
+            <span class="tag cat">其他</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="收费">
+          <div class="date">2027-01-08 ~ 2027-01-10</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6a015d84b4b2e9056dd5dcc3/BABYMONSTER-CHOOM-世界巡迴演唱会2027香港站" target="_blank" rel="noopener">BABYMONSTER &quot;CHOOM&quot; 世界巡迴演唱会 2027 香港站</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$799 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="收费">
+          <div class="date">2027-01-15 ~ 2027-01-15</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6af585016842ba2c825a558f/陈卉蕾-第六届即兴喜剧夜IMPROVNIGHT-剧场栋笃笑演出" target="_blank" rel="noopener">陈卉蕾《第六届 即兴喜剧夜 IMPROV NIGHT》剧场栋笃笑演出</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$188 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="免费">
+          <div class="date">2027-01-16 ~ 2027-01-16</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6a7ad15397024b799aa7bf12/都暻秀-DAYOFF-巡迴演唱会2026-2027香港站" target="_blank" rel="noopener">都敬秀 &quot;DAY OFF&quot; 巡迴演唱会 2027 香港站</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="收费">
+          <div class="date">2027-01-20 ~ 2027-01-23</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6a4ef0024dc0b24de00562a3/Gareth-T汤令山红馆演唱会2027" target="_blank" rel="noopener">Gareth.T 汤令山 Coliseum 演唱会 2027</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$680 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="收费">
+          <div class="date">2027-01-21 ~ 2027-01-22</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/692d050b67fc5f31050747f6/YOASOBI香港演唱会2026-27" target="_blank" rel="noopener">YOASOBI  &quot;SUPER PLANET&quot;  亚洲巡迴演唱会 2027 香港站</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$980 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="免费">
+          <div class="date">2027-01-27 ~ 2027-01-30</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6a016049b4b2e9056dd5fd98/WESTLIFE25週年世界巡迴演唱会2027香港站" target="_blank" rel="noopener">WESTLIFE 25週年纪念世界巡迴演唱会 2027 香港站</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="免费">
+          <div class="date">2027-01-30 ~ 2027-01-30</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6ad6d18e2c2d3a916089a22f/AKMU乐童音乐家-AKDONGDEUL-亚洲巡迴演唱会2027香港站" target="_blank" rel="noopener">乐童音乐家 AKMU &quot;AKDONGDEUL&quot; 亚洲巡迴演唱会 2027 香港站</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="收费">
+          <div class="date">2027-03-04 ~ 2027-03-07</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/6966eb6ec7e30d3b81c6adb2/BTS-ARIRANG-世界巡迴演唱会2027香港站" target="_blank" rel="noopener">BTS &quot;ARIRANG&quot; 世界巡迴演唱会 2027 香港站</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag paid">收费</span>
+            <span class="price">HK$799 起</span>
+          </div>
+          <div class="loc">香港 </div>
+        </div>
+
+        <div class="card" data-city="香港" data-district="周边" data-category="演出" data-fee="免费">
+          <div class="date">2027-08-20 ~ 2027-08-20</div>
+          <div class="title"><a href="https://timable.com/hk/cn/event/69e58e1fb7dc6867e9d8b918/JustinBieber-THEERAS-世界巡迴演唱会2027香港站" target="_blank" rel="noopener">Justin Bieber &quot;THE ERAS&quot; 世界巡迴演唱会 2027 香港站</a></div>
+          <div class="meta">
+            <span class="tag cat">演出</span>
+            <span class="tag city">香港</span><span class="tag dist">周边</span>
+            <span class="tag free">免费</span>
+            <span class="price">免费</span>
+          </div>
+          <div class="loc">香港 </div>
         </div></div>
 <script>
   const cats=["展览","演出","讲座","市集","亲子","其他"];
-  const dists=["福田","南山","罗湖","宝安","龙华","龙岗","其他"];
+  const dists=["福田","南山","罗湖","宝安","龙华","龙岗","周边","其他"];
   const fees=["免费","收费","未知"];
+  const cities=["深圳", "香港"];
   const f=document.getElementById('filters');
-  let active={cat:'',dist:'',fee:''};
+  let active={cat:'',dist:'',fee:'',city:''};
   function chip(label,kind,val){
     const b=document.createElement('button');
     b.className='chip'+(active[kind]===val?' on':'');
@@ -920,10 +2146,13 @@
     dists.forEach(d=>f.appendChild(chip(d,'dist',d)));
     f.appendChild(chip('全部费用','fee',''));
     fees.forEach(x=>f.appendChild(chip(x,'fee',x)));
+    f.appendChild(chip('全部城市','city',''));
+    cities.forEach(c=>f.appendChild(chip(c,'city',c)));
     document.querySelectorAll('.card').forEach(c=>{
       const ok=(!active.cat||c.dataset.category===active.cat)
               &&(!active.dist||c.dataset.district===active.dist)
-              &&(!active.fee||c.dataset.fee===active.fee);
+              &&(!active.fee||c.dataset.fee===active.fee)
+              &&(!active.city||c.dataset.city===active.city);
       c.style.display=ok?'':'none';
     });
   }
