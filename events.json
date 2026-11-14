@@ -113,21 +113,6 @@
       "id": "77240f3a533e1e15"
     },
     {
-      "title": "2026深圳“一带一路”国际音乐季启幕",
-      "date_start": "2026-09-14",
-      "date_end": null,
-      "district_raw": "其他",
-      "district": "其他",
-      "location": "",
-      "category": "其他",
-      "price": "",
-      "is_free": "免费",
-      "link": "https://wtl.sz.gov.cn/xxgk/qt/gzdt/content/post_12979223.html",
-      "source": "深圳文旅局·工作动态",
-      "id": "56f06af897fe7fbc",
-      "city": "深圳"
-    },
-    {
       "title": "深圳市文化馆新馆28日试运营",
       "date_start": "2026-09-18",
       "date_end": null,
@@ -835,66 +820,6 @@
       "id": "672396e618585d1d"
     },
     {
-      "title": "全息舞剧《幻境 天鹅湖》",
-      "date_start": "2026-11-13",
-      "date_end": null,
-      "district_raw": "龙岗区",
-      "district": "龙岗",
-      "location": "D+数字艺术馆 坂田街道贝尔路4号(贝尔路地铁站D出口前行100米)",
-      "category": "展览",
-      "price": "38.0元起",
-      "is_free": "收费",
-      "link": "https://www.douban.com/event/37973182/",
-      "source": "豆瓣同城·深圳热门活动",
-      "id": "68f839f283667311",
-      "city": "深圳"
-    },
-    {
-      "title": "《相聚之地：走进澳大利亚原住民文化》｜韦恩·奎利安",
-      "date_start": "2026-11-13",
-      "date_end": null,
-      "district_raw": "坪山区",
-      "district": "其他",
-      "location": "坪山展览馆 汇德路4号（美术馆旁）",
-      "category": "展览",
-      "price": "48.0元起",
-      "is_free": "收费",
-      "link": "https://www.douban.com/event/38143613/",
-      "source": "豆瓣同城·深圳热门活动",
-      "id": "73fea52689d3f7a6",
-      "city": "深圳"
-    },
-    {
-      "title": "穹幕影片《天穹无界·民族万象》",
-      "date_start": "2026-11-13",
-      "date_end": null,
-      "district_raw": "龙岗区",
-      "district": "龙岗",
-      "location": "D+数字艺术馆 坂田街道贝尔路4号(贝尔路地铁站D出口前行100米)",
-      "category": "展览",
-      "price": "38.0元起",
-      "is_free": "收费",
-      "link": "https://www.douban.com/event/37972017/",
-      "source": "豆瓣同城·深圳热门活动",
-      "id": "db8109142e21426f",
-      "city": "深圳"
-    },
-    {
-      "title": "沉浸影片《无垠之境》&《生生长流》",
-      "date_start": "2026-11-13",
-      "date_end": null,
-      "district_raw": "龙岗区",
-      "district": "龙岗",
-      "location": "D+数字艺术馆 坂田街道贝尔路4号(贝尔路地铁站D出口前行100米)",
-      "category": "展览",
-      "price": "53.0元起",
-      "is_free": "收费",
-      "link": "https://www.douban.com/event/37971993/",
-      "source": "豆瓣同城·深圳热门活动",
-      "id": "437be4ec2cdc61ce",
-      "city": "深圳"
-    },
-    {
       "title": "国泰西九爵士音乐节",
       "date_start": "2026-11-13",
       "date_end": "2026-11-24",
@@ -973,6 +898,22 @@
       "time_note": "活动时间: 2026-11-13 ~ 2026-11-15",
       "source": "Timable·香港活动",
       "id": "9d19626960e5e5d9"
+    },
+    {
+      "title": "BIGBANG \"XX: COSMOS\" 世界巡迴演唱会 2026/2027 香港站",
+      "date_start": "2026-11-13",
+      "date_end": "2026-11-17",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$699 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6899518077ea0793a867891c/BIGBANG世界巡迴演唱会2026香港站",
+      "time_note": "活动时间: 2026-11-13 ~ 2026-11-17",
+      "source": "Timable·香港活动",
+      "id": "5a9f7bb9e34d8687"
     },
     {
       "title": "《文艺复兴·重回非主流时代》威仔＆格子兮演唱会-罗湖站",
@@ -1480,6 +1421,21 @@
       "time_note": "活动时间: 2026-11-21 ~ 2026-11-21",
       "source": "Timable·香港活动",
       "id": "28c6fb8f928d9b15"
+    },
+    {
+      "title": "深圳＊沈阳故宫百年精粹展《笔落万物生——沈阳故宫博物院建院百年精粹展》",
+      "date_start": "2026-11-21",
+      "date_end": null,
+      "district_raw": "福田区",
+      "district": "福田",
+      "location": "天空美术馆 福中三路与鹏程一路交汇处广电金融中心",
+      "category": "展览",
+      "price": "68.0元起",
+      "is_free": "收费",
+      "link": "https://www.douban.com/event/38164377/",
+      "source": "豆瓣同城·深圳热门活动",
+      "city": "深圳",
+      "id": "6ca6dd19dedc49b8"
     },
     {
       "title": "WINDSOR X BUCKET MAN \"A BUCKETFUL OF XMAS\" 圣诞主题装置 ＠皇室堡",
@@ -2086,6 +2042,21 @@
       "source": "豆瓣同城·深圳热门活动",
       "city": "深圳",
       "id": "4d24b78eedaacd74"
+    },
+    {
+      "title": "麻辣王子年轻之夜",
+      "date_start": "2026-12-06",
+      "date_end": null,
+      "district_raw": "南山区",
+      "district": "南山",
+      "location": "深圳 | 深圳湾体育中心\"春茧\"体育馆 滨海大道3001号",
+      "category": "演出",
+      "price": "59.0元起",
+      "is_free": "收费",
+      "link": "https://www.douban.com/event/38169122/",
+      "source": "豆瓣同城·深圳热门活动",
+      "city": "深圳",
+      "id": "a3f8b46196af4aef"
     },
     {
       "title": "维港圣诞市集 2026",
