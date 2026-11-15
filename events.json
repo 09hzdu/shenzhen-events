@@ -916,21 +916,6 @@
       "id": "5a9f7bb9e34d8687"
     },
     {
-      "title": "《文艺复兴·重回非主流时代》威仔＆格子兮演唱会-罗湖站",
-      "date_start": "2026-11-14",
-      "date_end": null,
-      "district_raw": "罗湖区",
-      "district": "罗湖",
-      "location": "罗湖先锋剧场 黄贝街道碧波社区怡景路1014号罗湖区图书馆、罗湖区青少年宫101（罗湖先锋剧场）",
-      "category": "演出",
-      "price": "147.0元起",
-      "is_free": "收费",
-      "link": "https://www.douban.com/event/38112804/",
-      "source": "豆瓣同城·深圳热门活动",
-      "id": "6a50bab86d7dc5a9",
-      "city": "深圳"
-    },
-    {
       "title": "「独读4｣ @独立叙事读物节",
       "date_start": "2026-11-14",
       "date_end": "2026-11-15",
@@ -995,6 +980,22 @@
       "id": "335b1d90811b78d8"
     },
     {
+      "title": "JANICE VIDAL 卫兰 \"OUT OF FRAME\" 世界巡迴演唱会 2026 香港站",
+      "date_start": "2026-11-14",
+      "date_end": "2026-11-18",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$580 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/677b429850d771019a9dad75/JANICEVIDAL卫兰-OUTOFFRAME-世界巡迴演唱会-香港站",
+      "time_note": "活动时间: 2026-11-14 ~ 2026-11-18",
+      "source": "Timable·香港活动",
+      "id": "8b899a84a828ee9d"
+    },
+    {
       "title": "华禧艺术·枉凝眉·埙萧说红楼·民族赏析民乐音乐会",
       "date_start": "2026-11-15",
       "date_end": null,
@@ -1023,6 +1024,36 @@
       "source": "豆瓣同城·深圳热门活动",
       "id": "1ac9b2b40f3cccc3",
       "city": "深圳"
+    },
+    {
+      "title": "华禧艺术 侠骨柔情 影视金曲民乐主题音乐会",
+      "date_start": "2026-11-15",
+      "date_end": null,
+      "district_raw": "罗湖区",
+      "district": "罗湖",
+      "location": "华禧文化艺术中心 黄贝岭街怡景路2008号德必深广电数创公园B区一楼华禧艺术文化中心",
+      "category": "演出",
+      "price": "48.0元起",
+      "is_free": "收费",
+      "link": "https://www.douban.com/event/38075096/",
+      "source": "豆瓣同城·深圳热门活动",
+      "city": "深圳",
+      "id": "e1e09d7a96f0912c"
+    },
+    {
+      "title": "华禧艺术·埙箫说红楼·红楼梦音乐赏析",
+      "date_start": "2026-11-15",
+      "date_end": null,
+      "district_raw": "罗湖区",
+      "district": "罗湖",
+      "location": "华禧文化艺术中心 黄贝岭街怡景路2008号德必深广电数创公园B区一楼华禧艺术文化中心",
+      "category": "演出",
+      "price": "58.0元起",
+      "is_free": "收费",
+      "link": "https://www.douban.com/event/38157095/",
+      "source": "豆瓣同城·深圳热门活动",
+      "city": "深圳",
+      "id": "a69d1e97aaaa0e56"
     },
     {
       "title": "华禧艺术 岁月鎏金 港乐怀旧金曲 民乐音乐会",
@@ -2241,6 +2272,21 @@
       "time_note": "活动时间: 2026-12-11 ~ 2026-12-27",
       "source": "Timable·香港活动",
       "id": "9a31b3c1aeb5e0cf"
+    },
+    {
+      "title": "第三届全国优秀音乐剧展演音乐剧《玉意非凡》",
+      "date_start": "2026-12-11",
+      "date_end": null,
+      "district_raw": "南山区",
+      "district": "南山",
+      "location": "南山文体中心聚橙剧院 南山大道南头街62号",
+      "category": "演出",
+      "price": "80.0元起",
+      "is_free": "收费",
+      "link": "https://www.douban.com/event/38169431/",
+      "source": "豆瓣同城·深圳热门活动",
+      "city": "深圳",
+      "id": "2068aad5581fdbde"
     },
     {
       "title": "龙岗新年古典音乐季——《海上升明月·清歌落大湾》中外声乐经典音乐会",
