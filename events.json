@@ -113,21 +113,6 @@
       "id": "77240f3a533e1e15"
     },
     {
-      "title": "深圳市文化馆新馆28日试运营",
-      "date_start": "2026-09-18",
-      "date_end": null,
-      "district_raw": "其他",
-      "district": "其他",
-      "location": "",
-      "category": "其他",
-      "price": "",
-      "is_free": "免费",
-      "link": "https://wtl.sz.gov.cn/whfw/whxw/content/post_12988917.html",
-      "source": "深圳文旅局·文化服务",
-      "id": "d49b60392307e463",
-      "city": "深圳"
-    },
-    {
       "title": "“为爱点灯”中秋公益关爱活动在深圳图书馆举行",
       "date_start": "2026-09-23",
       "date_end": null,
@@ -964,22 +949,6 @@
       "id": "7415a0759ae54f64"
     },
     {
-      "title": "BIGBANG \"XX: COSMOS\" 世界巡迴演唱会 2026/2027 香港站",
-      "date_start": "2026-11-13",
-      "date_end": "2026-11-17",
-      "city": "香港",
-      "district_raw": "香港",
-      "district": "周边",
-      "location": "",
-      "category": "演出",
-      "price": "HK$699 起",
-      "is_free": "收费",
-      "link": "https://timable.com/hk/cn/event/6899518077ea0793a867891c/BIGBANG世界巡迴演唱会2026香港站",
-      "time_note": "活动时间: 2026-11-13 ~ 2026-11-17",
-      "source": "Timable·香港活动",
-      "id": "5a9f7bb9e34d8687"
-    },
-    {
       "title": "《孤独摇滚！》动画展览",
       "date_start": "2026-11-13",
       "date_end": "2026-12-13",
@@ -1092,38 +1061,6 @@
       "id": "8b899a84a828ee9d"
     },
     {
-      "title": "2027王力宏最好的地方Ⅱ世界巡回演唱会",
-      "date_start": "2026-11-16",
-      "date_end": "2026-11-17",
-      "district_raw": "其他",
-      "district": "其他",
-      "location": "深圳大运中心体育场",
-      "category": "演出",
-      "price": "需购票",
-      "is_free": "收费",
-      "link": "http://sz.bendibao.com/xiuxian/2026115/1015539.shtm",
-      "time_note": "活动时间: 2026.11.16-2026.11.17",
-      "source": "深圳本地宝·活动汇总",
-      "id": "2251f780ec9dcfd0",
-      "city": "深圳"
-    },
-    {
-      "title": "2027王力宏最好的地方Ⅱ世界巡回演唱会",
-      "date_start": "2026-11-16",
-      "date_end": "2026-11-17",
-      "city": "深圳",
-      "district_raw": "其他",
-      "district": "其他",
-      "location": "深圳大运中心体育场",
-      "category": "演出",
-      "price": "需购票",
-      "is_free": "收费",
-      "link": "https://sz.bendibao.com/xiuxian/2026115/1015539.shtm",
-      "time_note": "活动时间: 2026.11.16-2026.11.17",
-      "source": "深圳本地宝·活动汇总",
-      "id": "5bac5ce2fbac8352"
-    },
-    {
       "title": "Fluffmas Garden: 抱抱「毛」限圣诞村 2026 @YOHO MALL",
       "date_start": "2026-11-16",
       "date_end": "2027-01-03",
@@ -1156,22 +1093,6 @@
       "id": "99f4428389a1f16d"
     },
     {
-      "title": "\"Le Petit Prince X Zu and Pi: The Rose Tale\" 圣诞装饰 ＠黄埔天地",
-      "date_start": "2026-11-17",
-      "date_end": "2026-11-17",
-      "city": "香港",
-      "district_raw": "香港",
-      "district": "周边",
-      "location": "黄埔天地",
-      "category": "其他",
-      "price": "免费",
-      "is_free": "免费",
-      "link": "https://timable.com/hk/cn/event/6af4212301c3a2968ec197c6/StevenChoix小王子-LePetitPrinceXZuandPi-TheRoseTale--黄埔天地",
-      "time_note": "活动时间: 2026-11-17 ~ 2026-11-17",
-      "source": "Timable·香港活动",
-      "id": "f9cbd3bd2f6def48"
-    },
-    {
       "title": "寿司郎 x《咒术迴战》香港之旅主题活动",
       "date_start": "2026-11-17",
       "date_end": "2026-12-17",
@@ -1186,21 +1107,6 @@
       "time_note": "活动时间: 2026-11-17 ~ 2026-12-17",
       "source": "Timable·香港活动",
       "id": "f174d62574dfc068"
-    },
-    {
-      "title": "D+数字艺术馆-展览通票",
-      "date_start": "2026-11-17",
-      "date_end": null,
-      "district_raw": "龙岗区",
-      "district": "龙岗",
-      "location": "D+数字艺术馆 坂田街道贝尔路4号(贝尔路地铁站D出口前行100米)",
-      "category": "展览",
-      "price": "285.0元起",
-      "is_free": "收费",
-      "link": "https://www.douban.com/event/37973161/",
-      "source": "豆瓣同城·深圳热门活动",
-      "city": "深圳",
-      "id": "6567ac1b9b4dd970"
     },
     {
       "title": "「香港冬日小镇．尖沙咀」香港缤纷冬日巡礼 2026",
@@ -1930,6 +1836,22 @@
       "id": "890ef20862552399"
     },
     {
+      "title": "「房与家之间 Between A House and A Home」展览",
+      "date_start": "2026-11-28",
+      "date_end": "2027-01-02",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "展览",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6afd5300c659b857e593a2f9/房与家之间BetweenAHouseandAHome-展览",
+      "time_note": "活动时间: 2026-11-28 ~ 2027-01-02",
+      "source": "Timable·香港活动",
+      "id": "881605a57417e063"
+    },
+    {
       "title": "2026声动南山 张玮玮 feat. 郭龙「特别专场」",
       "date_start": "2026-11-29",
       "date_end": null,
@@ -2378,6 +2300,22 @@
       "id": "1c0297ff456497c4"
     },
     {
+      "title": "Mike 曾比特 \"Rerouting\" 新碟分享会",
+      "date_start": "2026-12-06",
+      "date_end": "2026-12-06",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "讲座",
+      "price": "HK$572 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6afd544b4af748c4b1d834d0/Mike曾比特-Rerouting-新碟分享会",
+      "time_note": "活动时间: 2026-12-06 ~ 2026-12-06",
+      "source": "Timable·香港活动",
+      "id": "a5c1ab395a8b756f"
+    },
+    {
       "title": "维港圣诞市集 2026",
       "date_start": "2026-12-08",
       "date_end": "2027-02-14",
@@ -2575,6 +2513,54 @@
       "source": "豆瓣同城·深圳热门活动",
       "city": "深圳",
       "id": "2068aad5581fdbde"
+    },
+    {
+      "title": "PSYCHIC FEVER \"DIFFERENT\" MEET&GREET AND LISTENING PARTY 香港站",
+      "date_start": "2026-12-11",
+      "date_end": "2026-12-11",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "HK$198 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6afd57c5c659b857e59415d7/PSYCHICFEVER-DIFFERENT-MEET-GREETANDLISTENINGPARTY香港站",
+      "time_note": "活动时间: 2026-12-11 ~ 2026-12-11",
+      "source": "Timable·香港活动",
+      "id": "551767ac85b3483b"
+    },
+    {
+      "title": "活版印艺市集 @国际活版节 2026",
+      "date_start": "2026-12-11",
+      "date_end": "2026-12-13",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "市集",
+      "price": "HK$20 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6afd4e7e4af748c4b1d79065/活版印艺市集-国际活版节2026",
+      "time_note": "活动时间: 2026-12-11 ~ 2026-12-13",
+      "source": "Timable·香港活动",
+      "id": "a8f25fa8002c20aa"
+    },
+    {
+      "title": "《波希米亚生涯》普契尼 歌剧",
+      "date_start": "2026-12-11",
+      "date_end": "2026-12-13",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "HK$280 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6afd3d595354ffffe36ab3f9/-波希米亚生涯-普契尼歌剧",
+      "time_note": "活动时间: 2026-12-11 ~ 2026-12-13",
+      "source": "Timable·香港活动",
+      "id": "11222ef75037e850"
     },
     {
       "title": "龙岗新年古典音乐季——《海上升明月·清歌落大湾》中外声乐经典音乐会",
@@ -3236,6 +3222,22 @@
       "id": "c34244a917d780ea"
     },
     {
+      "title": "2026潘玮柏深圳跨年演唱会",
+      "date_start": "2026-12-31",
+      "date_end": null,
+      "city": "深圳",
+      "district_raw": "其他",
+      "district": "其他",
+      "location": "深圳体育中心体育场",
+      "category": "演出",
+      "price": "需购票",
+      "is_free": "收费",
+      "link": "https://sz.bendibao.com/xiuxian/20261110/1015661.shtm",
+      "time_note": "活动时间: 2026.12.31",
+      "source": "深圳本地宝·活动汇总",
+      "id": "33ef44aa5982d50d"
+    },
+    {
       "title": "QWER \"ROCKATION: ROCKET LAUNCH!!\" 香港站2027",
       "date_start": "2027-01-02",
       "date_end": "2027-01-02",
@@ -3394,6 +3396,22 @@
       "time_note": "活动时间: 2027-03-04 ~ 2027-03-07",
       "source": "Timable·香港活动",
       "id": "9dfe5010e0be2c57"
+    },
+    {
+      "title": "《马克白》胡军 x 卢芳 舞台剧 @第55届香港艺术节",
+      "date_start": "2027-03-18",
+      "date_end": "2027-03-21",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "第55届香港艺术节",
+      "category": "演出",
+      "price": "HK$160 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6afd5f2d4af748c4b1d96bfa/马克白-胡军x卢芳舞台剧-第55届香港艺术节",
+      "time_note": "活动时间: 2027-03-18 ~ 2027-03-21",
+      "source": "Timable·香港活动",
+      "id": "8a3c2da55f3fbac2"
     },
     {
       "title": "\"BIG ART Festival\" 艺术节 2027",
