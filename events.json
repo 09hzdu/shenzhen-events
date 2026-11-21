@@ -143,6 +143,22 @@
       "city": "深圳"
     },
     {
+      "title": "深圳世界之窗「奇思狂想季」",
+      "date_start": "2026-09-25",
+      "date_end": "2026-11-22",
+      "city": "深圳",
+      "district_raw": "其他",
+      "district": "其他",
+      "location": "深圳世界之窗",
+      "category": "其他",
+      "price": "",
+      "is_free": "未知",
+      "link": "https://sz.bendibao.com/xiuxian/2026918/1013428.shtm",
+      "time_note": "活动时间: 2026.09.25-2026.11.22",
+      "source": "深圳本地宝·活动汇总",
+      "id": "0bc6f0974b6187b9"
+    },
+    {
       "title": "深圳音乐厅双节演出启幕",
       "date_start": "2026-09-28",
       "date_end": null,
@@ -409,22 +425,6 @@
       "id": "045725db2c6b384e"
     },
     {
-      "title": "陌上花公园粉黛乱子草",
-      "date_start": "2026-10-25",
-      "date_end": "2026-11-20",
-      "district_raw": "其他",
-      "district": "其他",
-      "location": "陌上花公园",
-      "category": "其他",
-      "price": "",
-      "is_free": "未知",
-      "link": "http://sz.bendibao.com/xiuxian/20261012/1014587.shtm",
-      "time_note": "活动时间: 2026.10.25-2026.11.20",
-      "source": "深圳本地宝·活动汇总",
-      "id": "df9a5095b562be96",
-      "city": "深圳"
-    },
-    {
       "title": "「城市漫想」 100位画师的白日梦想像 实体展览 香港站",
       "date_start": "2026-10-25",
       "date_end": "2026-11-25",
@@ -439,22 +439,6 @@
       "time_note": "活动时间: 2026-10-25 ~ 2026-11-25",
       "source": "Timable·香港活动",
       "id": "12f4aee1f0f396d7"
-    },
-    {
-      "title": "陌上花公园粉黛乱子草",
-      "date_start": "2026-10-25",
-      "date_end": "2026-11-20",
-      "city": "深圳",
-      "district_raw": "其他",
-      "district": "其他",
-      "location": "陌上花公园",
-      "category": "其他",
-      "price": "",
-      "is_free": "未知",
-      "link": "https://sz.bendibao.com/xiuxian/20261012/1014587.shtm",
-      "time_note": "活动时间: 2026.10.25-2026.11.20",
-      "source": "深圳本地宝·活动汇总",
-      "id": "bc2565986eaa7399"
     },
     {
       "title": "第二十七届深圳读书月11月1日开幕",
@@ -1221,21 +1205,6 @@
       "id": "a33bd3f68d087904"
     },
     {
-      "title": "KF1 擂台英雄（我是拳手）第一季",
-      "date_start": "2026-11-20",
-      "date_end": null,
-      "district_raw": "光明区",
-      "district": "其他",
-      "location": "茅洲河体育艺术中心·剧场 公明北环大道633号茅洲河体育艺术中心文化和图书中心2栋403",
-      "category": "展览",
-      "price": "58.0元起",
-      "is_free": "收费",
-      "link": "https://www.douban.com/event/38050712/",
-      "source": "豆瓣同城·深圳热门活动",
-      "id": "9f9f4874c55875ac",
-      "city": "深圳"
-    },
-    {
       "title": "洪湖公园秋季落羽杉",
       "date_start": "2026-11-20",
       "date_end": "2027-02-28",
@@ -1362,21 +1331,6 @@
       "time_note": "活动时间: 2026-11-20 ~ 2027-01-03",
       "source": "Timable·香港活动",
       "id": "9be09f9cfff33d3f"
-    },
-    {
-      "title": "沉浸影片《无垠之境》&《生生长流》",
-      "date_start": "2026-11-20",
-      "date_end": null,
-      "district_raw": "龙岗区",
-      "district": "龙岗",
-      "location": "D+数字艺术馆 坂田街道贝尔路4号(贝尔路地铁站D出口前行100米)",
-      "category": "展览",
-      "price": "53.0元起",
-      "is_free": "收费",
-      "link": "https://www.douban.com/event/37971993/",
-      "source": "豆瓣同城·深圳热门活动",
-      "city": "深圳",
-      "id": "816997fd7a9d7d5a"
     },
     {
       "title": "The Coolest Xmas 零度冰雪乐园 2026 @荃湾广场",
@@ -1943,6 +1897,22 @@
       "time_note": "活动时间: 2026-11-28 ~ 2026-12-25",
       "source": "Timable·香港活动",
       "id": "9cf289c60fcfed1a"
+    },
+    {
+      "title": "灿若星辰：生命中那些塑造了我们的人与风景 | Bonnie Pang 个展",
+      "date_start": "2026-11-28",
+      "date_end": "2026-12-13",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "展览",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6b0022f34af748c4b1085f8a/灿若星辰-生命中那些塑造了我们的人与风景-BonniePang个展",
+      "time_note": "活动时间: 2026-11-28 ~ 2026-12-13",
+      "source": "Timable·香港活动",
+      "id": "731d21dba7ff089a"
     },
     {
       "title": "2026声动南山 张玮玮 feat. 郭龙「特别专场」",
@@ -3088,6 +3058,36 @@
       "id": "dc8b924760078696"
     },
     {
+      "title": "《国潮燃情》跨界交响音乐会——福田金融之夜",
+      "date_start": "2026-12-18",
+      "date_end": null,
+      "district_raw": "福田区",
+      "district": "福田",
+      "location": "安托山公共文化中心(演出售票) 香蜜湖街道安托山六路与侨香四道安托山公共文化中心",
+      "category": "演出",
+      "price": "99.0元起",
+      "is_free": "收费",
+      "link": "https://www.douban.com/event/38156028/",
+      "source": "豆瓣同城·深圳热门活动",
+      "city": "深圳",
+      "id": "6f9f7e42a3a48d72"
+    },
+    {
+      "title": "深圳交响乐团2026-2027乐季——醇享勃兰登堡",
+      "date_start": "2026-12-18",
+      "date_end": null,
+      "district_raw": "福田区",
+      "district": "福田",
+      "location": "深圳音乐厅·演奏大厅 福中一路2016号深圳音乐厅二楼演奏大厅",
+      "category": "演出",
+      "price": "80.0元起",
+      "is_free": "收费",
+      "link": "https://www.douban.com/event/37970118/",
+      "source": "豆瓣同城·深圳热门活动",
+      "city": "深圳",
+      "id": "3aaaec81f3716213"
+    },
+    {
       "title": "南山区第十九届“鸳鸯和鸣”集体婚礼",
       "date_start": "2026-12-19",
       "date_end": null,
@@ -3272,6 +3272,36 @@
       "source": "豆瓣同城·深圳热门活动",
       "city": "深圳",
       "id": "fd9a2f7c1d61c64e"
+    },
+    {
+      "title": "黄凯芹40年来深圳演唱会",
+      "date_start": "2026-12-19",
+      "date_end": null,
+      "district_raw": "宝安区",
+      "district": "宝安",
+      "location": "深圳国际会展中心-20号馆 展城路1号深圳宝安会展中心(宝安新馆)F1",
+      "category": "演出",
+      "price": "398.0元起",
+      "is_free": "收费",
+      "link": "https://www.douban.com/event/38099204/",
+      "source": "豆瓣同城·深圳热门活动",
+      "city": "深圳",
+      "id": "53642e1602e321c3"
+    },
+    {
+      "title": "「本该走神的」张醒婵首次专场巡演-深圳站",
+      "date_start": "2026-12-19",
+      "date_end": null,
+      "district_raw": "南山区",
+      "district": "南山",
+      "location": "深圳B10现场 香山东街华侨城创意文化园北区C2栋",
+      "category": "演出",
+      "price": "117.0元起",
+      "is_free": "收费",
+      "link": "https://www.douban.com/event/38130267/",
+      "source": "豆瓣同城·深圳热门活动",
+      "city": "深圳",
+      "id": "d3c1ff66dbd3d8a6"
     },
     {
       "title": "《童真仰望》音乐剧",
