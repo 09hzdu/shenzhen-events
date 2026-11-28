@@ -113,36 +113,6 @@
       "id": "77240f3a533e1e15"
     },
     {
-      "title": "深圳音乐厅双节演出启幕",
-      "date_start": "2026-09-28",
-      "date_end": null,
-      "district_raw": "其他",
-      "district": "其他",
-      "location": "",
-      "category": "演出",
-      "price": "",
-      "is_free": "免费",
-      "link": "https://wtl.sz.gov.cn/whfw/whxw/content/post_13000570.html",
-      "source": "深圳文旅局·文化服务",
-      "id": "2aa59e6a1a77e2f4",
-      "city": "深圳"
-    },
-    {
-      "title": "新潮夜游魅力足 商圈市集人气旺",
-      "date_start": "2026-09-28",
-      "date_end": null,
-      "district_raw": "其他",
-      "district": "其他",
-      "location": "",
-      "category": "市集",
-      "price": "",
-      "is_free": "免费",
-      "link": "https://wtl.sz.gov.cn/xxgk/qt/gzdt/content/post_13000303.html",
-      "source": "深圳文旅局·工作动态",
-      "id": "28e8b522823a381d",
-      "city": "深圳"
-    },
-    {
       "title": "深圳市文化馆新馆开馆！",
       "date_start": "2026-09-28",
       "date_end": "2027-01-01",
@@ -1750,21 +1720,6 @@
       "id": "872cb91836f52a46"
     },
     {
-      "title": "《好势乘双》—乘风25｜26跨季演唱会",
-      "date_start": "2026-11-27",
-      "date_end": null,
-      "district_raw": "福田区",
-      "district": "福田",
-      "location": "深圳市体育中心体育场 笋岗西路2006号",
-      "category": "演出",
-      "price": "380.0元起",
-      "is_free": "收费",
-      "link": "https://www.douban.com/event/38124642/",
-      "source": "豆瓣同城·深圳热门活动",
-      "id": "b9cf6d5b5139b776",
-      "city": "深圳"
-    },
-    {
       "title": "梁咏琪《LOVE GiGi爱自己》世界巡迴演唱会 2026 香港站",
       "date_start": "2026-11-27",
       "date_end": "2026-11-29",
@@ -1779,22 +1734,6 @@
       "time_note": "活动时间: 2026-11-27 ~ 2026-11-29",
       "source": "Timable·香港活动",
       "id": "dd7ea4d926b10071"
-    },
-    {
-      "title": "优里YUURI 香港演唱会 2026",
-      "date_start": "2026-11-27",
-      "date_end": "2026-11-27",
-      "city": "香港",
-      "district_raw": "香港",
-      "district": "周边",
-      "location": "",
-      "category": "演出",
-      "price": "HK$980 起",
-      "is_free": "收费",
-      "link": "https://timable.com/hk/cn/event/6a68269deac1ed563bcf8d8a/优里YUURI香港演唱会2026",
-      "time_note": "活动时间: 2026-11-27 ~ 2026-11-27",
-      "source": "Timable·香港活动",
-      "id": "50a07a228c1e60bf"
     },
     {
       "title": "今个圣诞碳水自由！ @《集不甩市集系列》碳水主题圣诞市集",
@@ -1906,6 +1845,22 @@
       "source": "深圳文旅局·工作动态",
       "city": "深圳",
       "id": "4bd872afaf97557b"
+    },
+    {
+      "title": "FIBA \"3x3 Village\" 嘉年华 2026",
+      "date_start": "2026-11-27",
+      "date_end": "2026-11-29",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6b09cf23c9d6001957d2742e/FIBA-3x3Village-嘉年华2026",
+      "time_note": "活动时间: 2026-11-27 ~ 2026-11-29",
+      "source": "Timable·香港活动",
+      "id": "eb04f8bc8e78db49"
     },
     {
       "title": "奇妙嘿夜烛光音乐会“最伟大的作品”流行曲目钢琴&小提琴&大提琴演奏",
@@ -2359,6 +2314,22 @@
       "time_note": "活动时间: 2026-12-02 ~ 2026-12-03",
       "source": "Timable·香港活动",
       "id": "26778c4f091690d7"
+    },
+    {
+      "title": "圣诞狂欢弹跳嘉年华 2026 @合和商场",
+      "date_start": "2026-12-02",
+      "date_end": "2027-01-07",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "合和商场",
+      "category": "其他",
+      "price": "HK$50 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6b065ae33ebe58419e7195f9/圣诞狂欢弹跳嘉年华2026-合和商场",
+      "time_note": "活动时间: 2026-12-02 ~ 2027-01-07",
+      "source": "Timable·香港活动",
+      "id": "6870174b3ab00604"
     },
     {
       "title": "French Kiwi Juice \"FKJ – Tyber Tour\" 巡迴演唱会 2026 香港站",
@@ -3523,6 +3494,38 @@
       "id": "50bf043484a4f5a0"
     },
     {
+      "title": "「爱协毛孩感恩大派对」市集",
+      "date_start": "2026-12-12",
+      "date_end": "2026-12-12",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "市集",
+      "price": "免费",
+      "is_free": "免费",
+      "link": "https://timable.com/hk/cn/event/6b09cccfc9d6001957d25ebd/爱协毛孩感恩大派对-市集",
+      "time_note": "活动时间: 2026-12-12 ~ 2026-12-12",
+      "source": "Timable·香港活动",
+      "id": "3e04fb9c9ab925d1"
+    },
+    {
+      "title": "《圣诞老人学堂》舞台剧",
+      "date_start": "2026-12-12",
+      "date_end": "2026-12-21",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "其他",
+      "price": "HK$240 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6b09b99ec9d6001957d1849d/圣诞老人学堂-舞台剧",
+      "time_note": "活动时间: 2026-12-12 ~ 2026-12-21",
+      "source": "Timable·香港活动",
+      "id": "b1acaefabbafac5a"
+    },
+    {
       "title": "JY Dance 圣诞舞蹈汇演 2026",
       "date_start": "2026-12-13",
       "date_end": "2026-12-13",
@@ -4635,6 +4638,22 @@
       "id": "0b939a761cd3fb0a"
     },
     {
+      "title": "《飞往梦想的乐章》Fribrassion Brass Ensemble 音乐会",
+      "date_start": "2026-12-27",
+      "date_end": "2026-12-27",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$150 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6b09c0ffc6d750d88db9bb91/飞往梦想的乐章-FribrassionBrassEnsemble音乐会",
+      "time_note": "活动时间: 2026-12-27 ~ 2026-12-27",
+      "source": "Timable·香港活动",
+      "id": "9e7f39776b198ce2"
+    },
+    {
       "title": "2026周传雄念念不忘再遇见plus演唱会深圳站",
       "date_start": "2026-12-31",
       "date_end": "2027-01-01",
@@ -4683,6 +4702,22 @@
       "id": "33ef44aa5982d50d"
     },
     {
+      "title": "染色体家族 \"THE NEXT CHAPTER\" 演唱会 2027 香港站",
+      "date_start": "2027-01-01",
+      "date_end": "2027-01-01",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$980 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6b09600ec9d6001957cceb11/染色体家族-THENEXTCHAPTER-新年演唱会2027",
+      "time_note": "活动时间: 2027-01-01 ~ 2027-01-01",
+      "source": "Timable·香港活动",
+      "id": "3661bce48bf4c5c6"
+    },
+    {
       "title": "QWER \"ROCKATION: ROCKET LAUNCH!!\" 香港站2027",
       "date_start": "2027-01-02",
       "date_end": "2027-01-02",
@@ -4713,6 +4748,38 @@
       "time_note": "活动时间: 2027-01-08 ~ 2027-01-10",
       "source": "Timable·香港活动",
       "id": "21548f3dbeb22784"
+    },
+    {
+      "title": "「又嚟开」朱咪咪 慈善演唱会 2027",
+      "date_start": "2027-01-08",
+      "date_end": "2027-01-09",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$488 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6aea9952f0de2836cdfd497a/又嚟开-朱咪咪慈善演唱会",
+      "time_note": "活动时间: 2027-01-08 ~ 2027-01-09",
+      "source": "Timable·香港活动",
+      "id": "8e600eae2dc7235a"
+    },
+    {
+      "title": "紧急祭《愿世界如你所想》演唱会 2027",
+      "date_start": "2027-01-09",
+      "date_end": "2027-01-09",
+      "city": "香港",
+      "district_raw": "香港",
+      "district": "周边",
+      "location": "",
+      "category": "演出",
+      "price": "HK$298 起",
+      "is_free": "收费",
+      "link": "https://timable.com/hk/cn/event/6b09c56f4b636a24672d29ed/紧急祭-愿世界如你所想-演唱会2027",
+      "time_note": "活动时间: 2027-01-09 ~ 2027-01-09",
+      "source": "Timable·香港活动",
+      "id": "ac3c10921c8ccc9d"
     },
     {
       "title": "礒部花凛 香港粉丝见面会 2027",
